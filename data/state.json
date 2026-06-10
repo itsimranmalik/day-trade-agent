@@ -1,11 +1,37 @@
 {
   "ideas": [],
-  "scan_history": [],
-  "scorecard": null,
-  "today": null,
+  "scan_history": [
+    {
+      "date": "2026-06-10",
+      "provider": "groq",
+      "market_context": "Today's market conditions are mixed, with some US tech stocks like AAPL and AMD showing significant gains, while others like NVDA and MSFT are experiencing losses. The Indian market is also seeing a decline, with many major stocks like RELIANCE.NS and TCS.NS down by over 10%. The UK market data is incomplete, making it difficult to assess the overall trend.",
+      "no_trade_reason": "The market conditions are choppy and unclear, with incomplete data from the UK market and significant declines in the Indian market. The US market is also showing mixed results, making it difficult to identify high-confidence trading opportunities.",
+      "idea_count": 0,
+      "recordedAt": "2026-06-10T02:23:00.079Z"
+    }
+  ],
+  "scorecard": {
+    "count": 0,
+    "wins": 0,
+    "losses": 0,
+    "winRate": null,
+    "avgR": null,
+    "totalPnl": 0,
+    "maxDrawdown": 0,
+    "byOutcome": {}
+  },
+  "today": {
+    "date": "2026-06-10",
+    "market_context": "Today's market conditions are mixed, with some US tech stocks like AAPL and AMD showing significant gains, while others like NVDA and MSFT are experiencing losses. The Indian market is also seeing a decline, with many major stocks like RELIANCE.NS and TCS.NS down by over 10%. The UK market data is incomplete, making it difficult to assess the overall trend.",
+    "no_trade_reason": "The market conditions are choppy and unclear, with incomplete data from the UK market and significant declines in the Indian market. The US market is also showing mixed results, making it difficult to identify high-confidence trading opportunities.",
+    "ideas": [],
+    "provider": "groq",
+    "scannedAt": "2026-06-10T02:23:00.079Z"
+  },
   "meta": {
     "created": "2026-01-01T00:00:00.000Z",
     "version": 1,
-    "disclaimer": "NOT financial advice. Delayed/unofficial data. Confirm in your broker. Paper trading only."
+    "disclaimer": "NOT financial advice. Delayed/unofficial data. Confirm in your broker. Paper trading only.",
+    "lastScan": "2026-06-10T02:23:00.079Z"
   }
 }
