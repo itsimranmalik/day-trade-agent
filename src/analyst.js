@@ -44,39 +44,57 @@ VALIDATION RULES (enforce yourself before responding):
 // ── Gemini call ───────────────────────────────────────────────────────
 async function callGemini(prompt) {
   if (!config.geminiApiKey) throw new Error('GEMINI_API_KEY not set');
-  const url =
-    `https://generativelanguage.googleapis.com/v1beta/models/${config.geminiModel}:generateContent` +
-    `?key=${config.geminiApiKey}`;
 
-  const body = {
-    systemInstruction: {
-      parts: [{ text: SYSTEM_PROMPT.replace('N', config.maxIdeas) }],
-    },
-    contents: [{ role: 'user', parts: [{ text: prompt }] }],
-    generationConfig: {
-      temperature:       0.25,
-      maxOutputTokens:   2048,
-      responseMimeType:  'application/json',
-    },
-  };
+  // Try primary model first, then flash-lite as secondary Gemini option
+  const models = [config.geminiModel, 'gemini-2.0-flash-lite', 'gemini-1.5-flash'];
+  const seen   = new Set();
 
-  const res = await fetch(url, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(body),
-    signal: AbortSignal.timeout(90_000),
-  });
+  for (const model of models) {
+    if (seen.has(model)) continue;
+    seen.add(model);
 
-  if (res.status === 429) throw new Error('Gemini rate-limited (429)');
-  if (!res.ok) {
-    const err = await res.text().catch(() => '');
-    throw new Error(`Gemini ${res.status}: ${err.slice(0, 300)}`);
+    const url =
+      `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent` +
+      `?key=${config.geminiApiKey}`;
+
+    const body = {
+      systemInstruction: { parts: [{ text: SYSTEM_PROMPT.replace('N', config.maxIdeas) }] },
+      contents:          [{ role: 'user', parts: [{ text: prompt }] }],
+      generationConfig:  { temperature: 0.25, maxOutputTokens: 2048, responseMimeType: 'application/json' },
+    };
+
+    for (let attempt = 0; attempt < 3; attempt++) {
+      const res = await fetch(url, {
+        method:  'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body:    JSON.stringify(body),
+        signal:  AbortSignal.timeout(90_000),
+      });
+
+      if (res.status === 429) {
+        const waitSec = [15, 30, 60][attempt] || 60;
+        console.warn(`[analyst] Gemini ${model} rate-limited, waiting ${waitSec}s (attempt ${attempt + 1}/3)...`);
+        await new Promise(r => setTimeout(r, waitSec * 1000));
+        continue;
+      }
+      if (res.status === 404) {
+        console.warn(`[analyst] Gemini model ${model} not found, trying next...`);
+        break; // try next model
+      }
+      if (!res.ok) {
+        const err = await res.text().catch(() => '');
+        throw new Error(`Gemini ${res.status}: ${err.slice(0, 300)}`);
+      }
+
+      const data = await res.json();
+      const text = data?.candidates?.[0]?.content?.parts?.[0]?.text;
+      if (!text) throw new Error('Gemini returned empty content');
+      console.log(`[analyst] Gemini responded using model: ${model}`);
+      return text;
+    }
   }
 
-  const data = await res.json();
-  const text = data?.candidates?.[0]?.content?.parts?.[0]?.text;
-  if (!text) throw new Error('Gemini returned empty content');
-  return text;
+  throw new Error('Gemini rate-limited (429) on all models and retries');
 }
 
 // ── Groq call ────────────────────────────────────────────────────────
