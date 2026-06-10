@@ -120,38 +120,76 @@ export async function fetchOHLCV(ticker, days = 5) {
     .filter(d => d.close != null);
 }
 
-// ── Bulk real-time quote for up to 20 tickers per call ───────────────
+// ── Per-ticker quote via chart endpoint ───────────────────────────────
+// The v7/finance/quote bulk endpoint returns 401 from datacenter IPs (GitHub Actions).
+// The v8/finance/chart endpoint works reliably without auth — we use 30d range
+// so we can compute avg volume from history ourselves.
 export async function fetchQuotes(tickers) {
   await ensureYahooSession();
-
-  // chunk into 20s to stay well inside URL-length limits
-  const chunks = [];
-  for (let i = 0; i < tickers.length; i += 20) chunks.push(tickers.slice(i, i + 20));
-
   const results = {};
-  for (const chunk of chunks) {
-    const symbols = chunk.join(',');
-    const crumbParam = _crumb ? `&crumb=${encodeURIComponent(_crumb)}` : '';
-    const fields = [
-      'symbol', 'shortName', 'currency',
-      'regularMarketPrice', 'regularMarketChange', 'regularMarketChangePercent',
-      'regularMarketVolume', 'averageDailyVolume3Month',
-      'regularMarketDayHigh', 'regularMarketDayLow',
-      'regularMarketPreviousClose', 'regularMarketOpen',
-      'fiftyTwoWeekHigh', 'fiftyTwoWeekLow', 'marketCap',
-    ].join(',');
-    const url =
-      `https://query2.finance.yahoo.com/v7/finance/quote?symbols=${encodeURIComponent(symbols)}&fields=${fields}${crumbParam}`;
 
+  for (const ticker of tickers) {
     try {
-      const data = await fetchWithRetry(url);
-      const quotes = data?.quoteResponse?.result || [];
-      for (const q of quotes) results[q.symbol] = q;
+      const crumbParam = _crumb ? `&crumb=${encodeURIComponent(_crumb)}` : '';
+      const url =
+        `https://query1.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(ticker)}` +
+        `?interval=1d&range=30d${crumbParam}`;
+
+      let data;
+      try {
+        data = await fetchWithRetry(url);
+      } catch {
+        // fallback: query2, no crumb
+        data = await fetchWithRetry(
+          `https://query2.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(ticker)}?interval=1d&range=30d`
+        );
+      }
+
+      const result = data?.chart?.result?.[0];
+      if (!result) continue;
+
+      const meta       = result.meta || {};
+      const q          = result.indicators?.quote?.[0] || {};
+      const timestamps = result.timestamp || [];
+      if (!timestamps.length) continue;
+
+      const lastIdx    = timestamps.length - 1;
+      const prevIdx    = lastIdx - 1;
+
+      const currentPrice = meta.regularMarketPrice ?? q.close?.[lastIdx];
+      const prevClose    = meta.chartPreviousClose  ?? meta.previousClose ?? q.close?.[prevIdx];
+      const changeAmt    = (prevClose && currentPrice) ? currentPrice - prevClose : 0;
+      const changePct    = (prevClose && prevClose !== 0) ? (changeAmt / prevClose) * 100 : 0;
+
+      // Average daily volume from prior bars (exclude today's partial bar)
+      const historicVols = (q.volume || []).slice(0, lastIdx).filter(v => v != null && v > 0);
+      const avgVol = historicVols.length
+        ? Math.round(historicVols.reduce((a, b) => a + b, 0) / historicVols.length)
+        : null;
+
+      results[ticker] = {
+        symbol:                      ticker,
+        shortName:                   meta.shortName || meta.longName || ticker,
+        currency:                    meta.currency  || '',
+        regularMarketPrice:          currentPrice,
+        regularMarketChange:         parseFloat(changeAmt.toFixed(4)),
+        regularMarketChangePercent:  parseFloat(changePct.toFixed(4)),
+        regularMarketVolume:         q.volume?.[lastIdx] ?? meta.regularMarketVolume ?? null,
+        averageDailyVolume3Month:    avgVol,
+        regularMarketDayHigh:        q.high?.[lastIdx]   ?? meta.regularMarketDayHigh  ?? null,
+        regularMarketDayLow:         q.low?.[lastIdx]    ?? meta.regularMarketDayLow   ?? null,
+        regularMarketPreviousClose:  prevClose            ?? null,
+        regularMarketOpen:           q.open?.[lastIdx]   ?? meta.regularMarketOpen     ?? null,
+        fiftyTwoWeekHigh:            meta.fiftyTwoWeekHigh ?? null,
+        fiftyTwoWeekLow:             meta.fiftyTwoWeekLow  ?? null,
+        marketCap:                   meta.marketCap        ?? null,
+      };
     } catch (err) {
-      console.warn(`[data] Quote chunk failed [${chunk.join(',')}]: ${err.message}`);
+      console.warn(`[data] Quote failed for ${ticker}: ${err.message}`);
     }
     await sleep(config.reqDelayMs);
   }
+
   return results;
 }
 
