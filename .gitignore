@@ -1,0 +1,5 @@
+.env
+node_modules/
+data/backtest.json
+*.log
+.DS_Store

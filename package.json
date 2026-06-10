@@ -1,0 +1,19 @@
+{
+  "name": "day-trade-agent",
+  "version": "1.0.0",
+  "description": "£0 day-trade research agent: GitHub Actions + Gemini/Groq + Yahoo Finance + GitHub Pages",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "scan":      "node scripts/scan.js",
+    "score":     "node scripts/score.js",
+    "backtest":  "node scripts/backtest.js",
+    "test":      "node --test tests/math.test.js",
+    "test:v":    "node --test --reporter=spec tests/math.test.js"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "license": "MIT"
+}

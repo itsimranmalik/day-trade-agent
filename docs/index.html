@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Day-Trade Research Dashboard</title>
+  <style>
+    :root {
+      --bg:      #0f1117;
+      --card:    #1a1d27;
+      --border:  #2a2d3a;
+      --text:    #e2e8f0;
+      --muted:   #94a3b8;
+      --green:   #22c55e;
+      --red:     #ef4444;
+      --amber:   #f59e0b;
+      --blue:    #3b82f6;
+      --accent:  #6366f1;
+      --radius:  8px;
+      font-size: 14px;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      min-height: 100vh;
+      padding: 0 0 60px;
+    }
+
+    /* Banner */
+    .banner {
+      background: #1e1b2e;
+      border-bottom: 1px solid #3730a3;
+      padding: 10px 24px;
+      font-size: 12px;
+      color: #a5b4fc;
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .banner strong { color: #c7d2fe; }
+    .banner .sep { color: #4f46e5; }
+
+    header {
+      padding: 28px 24px 16px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: baseline;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    header h1 { font-size: 20px; font-weight: 700; }
+    header .sub { font-size: 12px; color: var(--muted); }
+    .refresh-btn {
+      margin-left: auto;
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      border-radius: var(--radius);
+      padding: 6px 16px;
+      font-size: 13px;
+      cursor: pointer;
+    }
+    .refresh-btn:hover { background: #4f46e5; }
+
+    main { padding: 24px; max-width: 1100px; margin: 0 auto; }
+
+    .grid { display: grid; gap: 16px; }
+    .grid-2 { grid-template-columns: repeat(auto-fit, minmax(480px, 1fr)); }
+    .grid-4 { grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px;
+    }
+    .card h2 {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      margin-bottom: 12px;
+    }
+
+    /* Scorecard stat tiles */
+    .stat-tile { text-align: center; }
+    .stat-tile .val {
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+    .stat-tile .lbl { font-size: 12px; color: var(--muted); margin-top: 4px; }
+    .positive { color: var(--green); }
+    .negative { color: var(--red); }
+    .neutral  { color: var(--amber); }
+
+    /* Ideas */
+    .idea-card {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px;
+      margin-bottom: 12px;
+      position: relative;
+      overflow: hidden;
+    }
+    .idea-card.long  { border-left: 4px solid var(--green); }
+    .idea-card.short { border-left: 4px solid var(--red); }
+
+    .idea-header { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 10px; }
+    .ticker { font-size: 20px; font-weight: 700; }
+    .badge {
+      font-size: 11px;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 4px;
+      text-transform: uppercase;
+    }
+    .badge.long  { background: rgba(34,197,94,.18); color: var(--green); }
+    .badge.short { background: rgba(239,68,68,.18);  color: var(--red); }
+    .conf { font-size: 12px; color: var(--muted); margin-left: auto; }
+
+    .price-row {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 10px;
+      flex-wrap: wrap;
+    }
+    .price-item { text-align: center; }
+    .price-item .val { font-size: 17px; font-weight: 600; }
+    .price-item .lbl { font-size: 11px; color: var(--muted); }
+
+    .rr-bar-wrap { margin: 8px 0; }
+    .rr-bar-bg {
+      background: var(--border);
+      border-radius: 4px;
+      height: 6px;
+      overflow: hidden;
+    }
+    .rr-bar-fill {
+      height: 100%;
+      border-radius: 4px;
+      background: linear-gradient(90deg, var(--amber), var(--green));
+    }
+
+    .meta-row { font-size: 12px; color: var(--muted); margin-top: 8px; }
+    .meta-row strong { color: var(--text); }
+
+    /* Resolved trades */
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    th { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; padding: 6px 8px; border-bottom: 1px solid var(--border); text-align: left; }
+    td { padding: 7px 8px; border-bottom: 1px solid #1e2030; }
+    tr:last-child td { border-bottom: none; }
+    .pill {
+      display: inline-block;
+      font-size: 11px;
+      padding: 2px 7px;
+      border-radius: 10px;
+    }
+    .pill.target   { background: rgba(34,197,94,.15);  color: var(--green); }
+    .pill.stopped  { background: rgba(239,68,68,.15);  color: var(--red); }
+    .pill.expired  { background: rgba(148,163,184,.12); color: var(--muted); }
+
+    /* Context & no-trade */
+    .context-box {
+      font-size: 13px;
+      line-height: 1.7;
+      color: var(--text);
+      background: #141620;
+      border-radius: var(--radius);
+      padding: 14px;
+    }
+    .no-trade {
+      text-align: center;
+      padding: 40px 20px;
+      color: var(--muted);
+    }
+    .no-trade .icon { font-size: 32px; margin-bottom: 8px; }
+
+    /* Loading / error */
+    #loading, #error {
+      text-align: center;
+      padding: 80px 20px;
+      color: var(--muted);
+    }
+    #error { color: var(--red); }
+
+    .ts { font-size: 11px; color: var(--muted); }
+  </style>
+</head>
+<body>
+
+<div class="banner">
+  <strong>⚠ RESEARCH TOOL</strong>
+  <span class="sep">·</span>
+  NOT financial advice
+  <span class="sep">·</span>
+  Delayed &amp; unofficial data — confirm in your broker
+  <span class="sep">·</span>
+  Paper trading only — no live orders ever placed
+  <span class="sep">·</span>
+  Public page: do not share with people who might confuse this for signals
+</div>
+
+<header>
+  <div>
+    <h1>Day-Trade Research</h1>
+    <div class="sub" id="scan-ts">Loading…</div>
+  </div>
+  <button class="refresh-btn" onclick="load()">↻ Refresh</button>
+</header>
+
+<main>
+  <div id="loading">Loading state.json…</div>
+  <div id="error"  style="display:none"></div>
+  <div id="app"    style="display:none">
+
+    <!-- Scorecard -->
+    <section style="margin-bottom:24px">
+      <div class="grid grid-4" id="scorecard-tiles"></div>
+    </section>
+
+    <div class="grid grid-2">
+
+      <!-- Today's ideas -->
+      <section>
+        <div class="card" style="padding-bottom:8px">
+          <h2>Today's Ideas</h2>
+          <div id="ideas-wrap"></div>
+        </div>
+      </section>
+
+      <!-- Market context + recent trades -->
+      <section class="grid" style="gap:16px">
+        <div class="card">
+          <h2>Market Context</h2>
+          <div class="context-box" id="context-box">—</div>
+        </div>
+        <div class="card">
+          <h2>Recent Resolved Trades</h2>
+          <div id="recent-wrap"></div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+</main>
+
+<script>
+// state.json is copied to docs/ by the workflow, so it lives alongside index.html.
+// For local dev, run: cp data/state.json docs/state.json first.
+async function load() {
+  document.getElementById('loading').style.display = 'block';
+  document.getElementById('error').style.display   = 'none';
+  document.getElementById('app').style.display     = 'none';
+
+  let state;
+  for (const url of ['./state.json', '../data/state.json']) {
+    try {
+      const r = await fetch(url + '?t=' + Date.now());
+      if (r.ok) { state = await r.json(); break; }
+    } catch {}
+  }
+
+  if (!state) {
+    document.getElementById('loading').style.display = 'none';
+    document.getElementById('error').style.display   = 'block';
+    document.getElementById('error').textContent = 'Could not load state.json. Make sure the scan has run at least once.';
+    return;
+  }
+
+  render(state);
+}
+
+function fmt(n, dp = 2) {
+  if (n == null) return '—';
+  return Number(n).toFixed(dp);
+}
+function sign(n) { return n >= 0 ? '+' : ''; }
+function outcomeClass(o) {
+  if (!o) return 'expired';
+  if (o.includes('target')) return 'target';
+  if (o.includes('stop'))   return 'stopped';
+  return 'expired';
+}
+function outcomeLabel(o) {
+  const map = {
+    target: 'Target Hit', stopped: 'Stopped', stopped_gap: 'Gapped Stop',
+    expired_at_close: 'Expired (Close)', pending: 'Pending',
+  };
+  return map[o] || o || '—';
+}
+
+function render(state) {
+  const sc     = state.scorecard || {};
+  const today  = state.today    || {};
+  const ideas  = today.ideas    || [];
+
+  // ── Scan timestamp
+  const ts = today.scannedAt || state.meta?.lastScan;
+  document.getElementById('scan-ts').textContent =
+    ts ? `Last scan: ${new Date(ts).toLocaleString('en-GB', { timeZone: 'UTC', timeZoneName: 'short' })}` : 'No scan yet';
+
+  // ── Scorecard tiles
+  const wr = sc.winRate != null ? `${(sc.winRate * 100).toFixed(1)}%` : '—';
+  const avgR = sc.avgR != null ? `${sign(sc.avgR)}${sc.avgR}R` : '—';
+  const pnl  = sc.totalPnl != null ? `${sign(sc.totalPnl)}£${Math.abs(sc.totalPnl).toFixed(0)}` : '—';
+  const dd   = sc.maxDrawdown != null ? `-£${sc.maxDrawdown}` : '—';
+
+  const tiles = [
+    { val: sc.count ?? '0',            lbl: 'Total Trades',    cls: '' },
+    { val: wr,                          lbl: 'Win Rate',        cls: sc.winRate > 0.45 ? 'positive' : sc.winRate < 0.35 ? 'negative' : 'neutral' },
+    { val: avgR,                        lbl: 'Avg R',           cls: sc.avgR > 0 ? 'positive' : sc.avgR < 0 ? 'negative' : '' },
+    { val: pnl,                         lbl: 'Paper P&L',       cls: (sc.totalPnl || 0) >= 0 ? 'positive' : 'negative' },
+  ];
+
+  document.getElementById('scorecard-tiles').innerHTML = tiles.map(t => `
+    <div class="card stat-tile">
+      <div class="val ${t.cls}">${t.val}</div>
+      <div class="lbl">${t.lbl}</div>
+    </div>`).join('');
+
+  // ── Market context
+  document.getElementById('context-box').textContent =
+    today.market_context || 'No context available yet.';
+
+  // ── Today's ideas
+  const ideasWrap = document.getElementById('ideas-wrap');
+  if (!ideas.length) {
+    const reason = today.no_trade_reason || 'No ideas recorded for today.';
+    ideasWrap.innerHTML = `<div class="no-trade"><div class="icon">🚫</div><div>${reason}</div></div>`;
+  } else {
+    ideasWrap.innerHTML = ideas.map(idea => {
+      const rrPct = Math.min(100, ((idea.rr - 1) / 2) * 100);
+      return `
+      <div class="idea-card ${idea.side}">
+        <div class="idea-header">
+          <span class="ticker">${idea.ticker}</span>
+          <span class="badge ${idea.side}">${idea.side}</span>
+          <span class="conf">Conf: ${(idea.confidence * 100).toFixed(0)}% · R:R ${idea.rr}:1</span>
+        </div>
+        <div class="price-row">
+          <div class="price-item">
+            <div class="val">${fmt(idea.entry)}</div>
+            <div class="lbl">Entry</div>
+          </div>
+          <div class="price-item">
+            <div class="val negative">${fmt(idea.stop)}</div>
+            <div class="lbl">Stop</div>
+          </div>
+          <div class="price-item">
+            <div class="val positive">${fmt(idea.target)}</div>
+            <div class="lbl">Target</div>
+          </div>
+          <div class="price-item">
+            <div class="val">${idea.shares}</div>
+            <div class="lbl">Shares</div>
+          </div>
+          <div class="price-item">
+            <div class="val">£${fmt(idea.riskAmount, 0)}</div>
+            <div class="lbl">Risk</div>
+          </div>
+        </div>
+        <div class="rr-bar-wrap">
+          <div class="rr-bar-bg"><div class="rr-bar-fill" style="width:${rrPct}%"></div></div>
+        </div>
+        <div class="meta-row"><strong>Catalyst:</strong> ${idea.catalyst || '—'}</div>
+        <div class="meta-row"><strong>Thesis:</strong> ${idea.thesis || '—'}</div>
+        <div class="meta-row"><strong>Invalidation:</strong> ${idea.invalidation || '—'}</div>
+        ${idea.status === 'resolved' ? `
+        <div class="meta-row" style="margin-top:10px;padding-top:8px;border-top:1px solid var(--border)">
+          <strong>Outcome:</strong> ${outcomeLabel(idea.outcome)} · Exit: ${fmt(idea.exitPrice)} ·
+          R: <span class="${idea.r >= 0 ? 'positive' : 'negative'}">${sign(idea.r)}${idea.r}R</span> ·
+          P&amp;L: <span class="${idea.pnl >= 0 ? 'positive' : 'negative'}">${sign(idea.pnl)}£${Math.abs(idea.pnl)}</span>
+        </div>` : ''}
+      </div>`;
+    }).join('');
+  }
+
+  // ── Recent resolved trades
+  const recent = sc.recent || [];
+  const recentWrap = document.getElementById('recent-wrap');
+  if (!recent.length) {
+    recentWrap.innerHTML = '<p style="color:var(--muted);font-size:13px">No resolved trades yet. Scorecard builds after first evening score run.</p>';
+  } else {
+    recentWrap.innerHTML = `<table>
+      <thead><tr><th>Date</th><th>Ticker</th><th>Side</th><th>Outcome</th><th>R</th><th>P&amp;L</th></tr></thead>
+      <tbody>${recent.map(i => `
+        <tr>
+          <td class="ts">${i.resolvedDate || '—'}</td>
+          <td><strong>${i.ticker}</strong></td>
+          <td>${i.side}</td>
+          <td><span class="pill ${outcomeClass(i.outcome)}">${outcomeLabel(i.outcome)}</span></td>
+          <td class="${i.r >= 0 ? 'positive' : 'negative'}">${sign(i.r)}${fmt(i.r)}</td>
+          <td class="${i.pnl >= 0 ? 'positive' : 'negative'}">${sign(i.pnl)}£${Math.abs(i.pnl).toFixed(0)}</td>
+        </tr>`).join('')}
+      </tbody>
+    </table>`;
+  }
+
+  document.getElementById('loading').style.display = 'none';
+  document.getElementById('app').style.display     = 'block';
+}
+
+load();
+</script>
+</body>
+</html>

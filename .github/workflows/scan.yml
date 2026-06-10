@@ -1,0 +1,60 @@
+name: Pre-market Scan
+
+on:
+  schedule:
+    # 08:00 UTC = 08:00 BST-1 (UK pre-market) / 13:30 IST (India mid) / 04:00 ET (US pre-pre)
+    # GitHub Actions cron runs on UTC. Adjust if your focus shifts to US open (use 13:25 UTC).
+    - cron: '0 8 * * 1-5'   # Mon–Fri at 08:00 UTC
+  workflow_dispatch:         # Manual trigger for testing
+
+permissions:
+  contents: write            # needed to commit state.json + push
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run pre-market scan
+        env:
+          GEMINI_API_KEY:      ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY:        ${{ secrets.GROQ_API_KEY }}
+          TELEGRAM_BOT_TOKEN:  ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID:    ${{ secrets.TELEGRAM_CHAT_ID }}
+          LLM_PROVIDER:        ${{ vars.LLM_PROVIDER      || 'gemini' }}
+          GEMINI_MODEL:        ${{ vars.GEMINI_MODEL       || 'gemini-2.0-flash' }}
+          GROQ_MODEL:          ${{ vars.GROQ_MODEL         || 'llama-3.3-70b-versatile' }}
+          ACCOUNT_SIZE:        ${{ vars.ACCOUNT_SIZE       || '10000' }}
+          RISK_PCT:            ${{ vars.RISK_PCT           || '1' }}
+          MAX_IDEAS:           ${{ vars.MAX_IDEAS          || '2' }}
+          WATCHLIST:           ${{ vars.WATCHLIST          || '' }}
+          UNIVERSE_SIZE:       ${{ vars.UNIVERSE_SIZE      || '30' }}
+          NEWS_COUNT:          ${{ vars.NEWS_COUNT         || '3' }}
+          REQ_DELAY_MS:        ${{ vars.REQ_DELAY_MS       || '1200' }}
+          MAX_RETRIES:         ${{ vars.MAX_RETRIES        || '3' }}
+        run: node scripts/scan.js
+
+      - name: Commit and push state.json
+        run: |
+          # Copy state to docs/ so GitHub Pages can serve it without CORS issues
+          cp data/state.json docs/state.json
+          git config --global user.name  "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/state.json docs/state.json
+          git diff --cached --quiet || git commit -m "scan: $(date -u +%Y-%m-%d)"
+          git push

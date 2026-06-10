@@ -1,0 +1,52 @@
+name: Evening Score
+
+on:
+  schedule:
+    # 21:30 UTC = after all three markets have closed:
+    #   UK (LSE) closes 16:30 BST = 15:30 UTC
+    #   India (NSE) closes 15:30 IST = 10:00 UTC
+    #   US (NYSE/NASDAQ) closes 16:00 ET = 21:00 UTC
+    - cron: '30 21 * * 1-5'   # Mon–Fri at 21:30 UTC
+  workflow_dispatch:            # Manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  score:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Mark ideas to market
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID:   ${{ secrets.TELEGRAM_CHAT_ID }}
+          ACCOUNT_SIZE:       ${{ vars.ACCOUNT_SIZE  || '10000' }}
+          RISK_PCT:           ${{ vars.RISK_PCT       || '1' }}
+          REQ_DELAY_MS:       ${{ vars.REQ_DELAY_MS   || '1200' }}
+          MAX_RETRIES:        ${{ vars.MAX_RETRIES     || '3' }}
+        run: node scripts/score.js
+
+      - name: Commit and push state.json
+        run: |
+          cp data/state.json docs/state.json
+          git config --global user.name  "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/state.json docs/state.json
+          git diff --cached --quiet || git commit -m "score: $(date -u +%Y-%m-%d)"
+          git push
