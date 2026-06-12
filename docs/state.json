@@ -24,6 +24,14 @@
       "no_trade_reason": "The current market conditions are choppy and unclear, with no clear trends or setups that meet the required criteria.",
       "idea_count": 0,
       "recordedAt": "2026-06-11T12:11:28.815Z"
+    },
+    {
+      "date": "2026-06-12",
+      "provider": "groq",
+      "market_context": "The US market is experiencing a significant uptrend with major indices such as SPY and QQQ showing substantial gains, while the UK market is mixed with some stocks like HSBA.L and BARC.L showing gains, and the Indian market is experiencing a downturn with major stocks like RELIANCE.NS and TCS.NS showing significant losses.",
+      "no_trade_reason": "The market conditions are choppy and unclear, with some stocks showing significant gains and others showing significant losses, making it difficult to identify high-quality intraday setups.",
+      "idea_count": 0,
+      "recordedAt": "2026-06-12T11:45:25.751Z"
     }
   ],
   "scorecard": {
@@ -37,17 +45,17 @@
     "byOutcome": {}
   },
   "today": {
-    "date": "2026-06-11",
-    "market_context": "Today's market conditions show a mixed bag of performances across the US, UK, and Indian markets. The US market saw some significant gains in tech stocks like AAPL and QQQ, while others like NVDA and AMZN experienced losses. The UK market was relatively stable, with some minor gains and losses, while the Indian market saw significant losses in stocks like RELIANCE.NS and TCS.NS.",
-    "no_trade_reason": "The current market conditions are choppy and unclear, with no clear trends or setups that meet the required criteria.",
+    "date": "2026-06-12",
+    "market_context": "The US market is experiencing a significant uptrend with major indices such as SPY and QQQ showing substantial gains, while the UK market is mixed with some stocks like HSBA.L and BARC.L showing gains, and the Indian market is experiencing a downturn with major stocks like RELIANCE.NS and TCS.NS showing significant losses.",
+    "no_trade_reason": "The market conditions are choppy and unclear, with some stocks showing significant gains and others showing significant losses, making it difficult to identify high-quality intraday setups.",
     "ideas": [],
     "provider": "groq",
-    "scannedAt": "2026-06-11T12:11:28.815Z"
+    "scannedAt": "2026-06-12T11:45:25.752Z"
   },
   "meta": {
     "created": "2026-01-01T00:00:00.000Z",
     "version": 1,
     "disclaimer": "NOT financial advice. Delayed/unofficial data. Confirm in your broker. Paper trading only.",
-    "lastScan": "2026-06-11T12:11:28.815Z"
+    "lastScan": "2026-06-12T11:45:25.752Z"
   }
 }
