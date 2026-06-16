@@ -1,5 +1,42 @@
 {
-  "ideas": [],
+  "ideas": [
+    {
+      "id": "2026-06-16-NVDA-long",
+      "date": "2026-06-16",
+      "status": "pending",
+      "ticker": "NVDA",
+      "side": "long",
+      "entry": 210,
+      "stop": 205,
+      "target": 220,
+      "confidence": 0.5,
+      "catalyst": "Strong earnings report and increasing demand for AI-related products",
+      "thesis": "If NVDA breaks out above its recent resistance level, it may continue its upward trend. The stock has shown strong momentum and is likely to continue its growth. A long position can be taken with a stop loss below the recent low.",
+      "invalidation": "If NVDA falls below its recent low, it may indicate a reversal in trend and the long position should be closed.",
+      "rr": 2,
+      "shares": 20,
+      "riskAmount": 100,
+      "recordedAt": "2026-06-16T12:53:43.298Z"
+    },
+    {
+      "id": "2026-06-16-BARC.L-long",
+      "date": "2026-06-16",
+      "status": "pending",
+      "ticker": "BARC.L",
+      "side": "long",
+      "entry": 480,
+      "stop": 470,
+      "target": 500,
+      "confidence": 0.45,
+      "catalyst": "Positive economic data and increasing banking sector performance",
+      "thesis": "If BARC.L breaks out above its recent resistance level, it may continue its upward trend. The stock has shown strong momentum and is likely to continue its growth. A long position can be taken with a stop loss below the recent low.",
+      "invalidation": "If BARC.L falls below its recent low, it may indicate a reversal in trend and the long position should be closed.",
+      "rr": 2,
+      "shares": 10,
+      "riskAmount": 100,
+      "recordedAt": "2026-06-16T12:53:43.298Z"
+    }
+  ],
   "scan_history": [
     {
       "date": "2026-06-10",
@@ -40,6 +77,14 @@
       "no_trade_reason": "The current market conditions are choppy and unclear, with no strong setups meeting the required criteria.",
       "idea_count": 0,
       "recordedAt": "2026-06-15T13:55:13.547Z"
+    },
+    {
+      "date": "2026-06-16",
+      "provider": "groq",
+      "market_context": "Today's market is showing a mixed trend with some stocks like AAPL, TSLA, and NVDA showing significant gains, while others like AMZN and MSFT are experiencing losses. The overall market sentiment is cautious, with some stocks experiencing high volatility.",
+      "no_trade_reason": null,
+      "idea_count": 2,
+      "recordedAt": "2026-06-16T12:53:43.298Z"
     }
   ],
   "scorecard": {
@@ -53,17 +98,54 @@
     "byOutcome": {}
   },
   "today": {
-    "date": "2026-06-15",
-    "market_context": "Today's market conditions are characterized by a mix of gains and losses across the US, UK, and Indian equity markets. The US market saw significant gains in tech stocks such as AAPL, TSLA, and NVDA, while the UK market experienced a decline in energy stocks like BP.L and SHEL.L. The Indian market witnessed a decline in RELIANCE.NS and TCS.NS.",
-    "no_trade_reason": "The current market conditions are choppy and unclear, with no strong setups meeting the required criteria.",
-    "ideas": [],
+    "date": "2026-06-16",
+    "market_context": "Today's market is showing a mixed trend with some stocks like AAPL, TSLA, and NVDA showing significant gains, while others like AMZN and MSFT are experiencing losses. The overall market sentiment is cautious, with some stocks experiencing high volatility.",
+    "no_trade_reason": null,
+    "ideas": [
+      {
+        "id": "2026-06-16-NVDA-long",
+        "date": "2026-06-16",
+        "status": "pending",
+        "ticker": "NVDA",
+        "side": "long",
+        "entry": 210,
+        "stop": 205,
+        "target": 220,
+        "confidence": 0.5,
+        "catalyst": "Strong earnings report and increasing demand for AI-related products",
+        "thesis": "If NVDA breaks out above its recent resistance level, it may continue its upward trend. The stock has shown strong momentum and is likely to continue its growth. A long position can be taken with a stop loss below the recent low.",
+        "invalidation": "If NVDA falls below its recent low, it may indicate a reversal in trend and the long position should be closed.",
+        "rr": 2,
+        "shares": 20,
+        "riskAmount": 100,
+        "recordedAt": "2026-06-16T12:53:43.298Z"
+      },
+      {
+        "id": "2026-06-16-BARC.L-long",
+        "date": "2026-06-16",
+        "status": "pending",
+        "ticker": "BARC.L",
+        "side": "long",
+        "entry": 480,
+        "stop": 470,
+        "target": 500,
+        "confidence": 0.45,
+        "catalyst": "Positive economic data and increasing banking sector performance",
+        "thesis": "If BARC.L breaks out above its recent resistance level, it may continue its upward trend. The stock has shown strong momentum and is likely to continue its growth. A long position can be taken with a stop loss below the recent low.",
+        "invalidation": "If BARC.L falls below its recent low, it may indicate a reversal in trend and the long position should be closed.",
+        "rr": 2,
+        "shares": 10,
+        "riskAmount": 100,
+        "recordedAt": "2026-06-16T12:53:43.298Z"
+      }
+    ],
     "provider": "groq",
-    "scannedAt": "2026-06-15T13:55:13.547Z"
+    "scannedAt": "2026-06-16T12:53:43.298Z"
   },
   "meta": {
     "created": "2026-01-01T00:00:00.000Z",
     "version": 1,
     "disclaimer": "NOT financial advice. Delayed/unofficial data. Confirm in your broker. Paper trading only.",
-    "lastScan": "2026-06-15T13:55:13.547Z"
+    "lastScan": "2026-06-16T12:53:43.298Z"
   }
 }
