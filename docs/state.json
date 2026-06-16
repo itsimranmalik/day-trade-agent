@@ -3,7 +3,7 @@
     {
       "id": "2026-06-16-NVDA-long",
       "date": "2026-06-16",
-      "status": "pending",
+      "status": "resolved",
       "ticker": "NVDA",
       "side": "long",
       "entry": 210,
@@ -16,12 +16,18 @@
       "rr": 2,
       "shares": 20,
       "riskAmount": 100,
-      "recordedAt": "2026-06-16T12:53:43.298Z"
+      "recordedAt": "2026-06-16T12:53:43.298Z",
+      "outcome": "expired_at_close",
+      "exitPrice": 207.41,
+      "pnl": -51.8,
+      "r": -0.52,
+      "resolvedDate": "2026-06-16",
+      "resolvedAt": "2026-06-16T23:06:29.127Z"
     },
     {
       "id": "2026-06-16-BARC.L-long",
       "date": "2026-06-16",
-      "status": "pending",
+      "status": "resolved",
       "ticker": "BARC.L",
       "side": "long",
       "entry": 480,
@@ -34,7 +40,13 @@
       "rr": 2,
       "shares": 10,
       "riskAmount": 100,
-      "recordedAt": "2026-06-16T12:53:43.298Z"
+      "recordedAt": "2026-06-16T12:53:43.298Z",
+      "outcome": "expired_at_close",
+      "exitPrice": 479.9,
+      "pnl": -1,
+      "r": -0.01,
+      "resolvedDate": "2026-06-15",
+      "resolvedAt": "2026-06-16T23:06:29.229Z"
     }
   ],
   "scan_history": [
@@ -88,14 +100,68 @@
     }
   ],
   "scorecard": {
-    "count": 0,
+    "count": 2,
     "wins": 0,
-    "losses": 0,
-    "winRate": null,
-    "avgR": null,
-    "totalPnl": 0,
-    "maxDrawdown": 0,
-    "byOutcome": {}
+    "losses": 2,
+    "even": 0,
+    "winRate": 0,
+    "avgR": -0.27,
+    "totalPnl": -52.8,
+    "maxDrawdown": 52.8,
+    "byOutcome": {
+      "expired_at_close": 2
+    },
+    "recent": [
+      {
+        "id": "2026-06-16-NVDA-long",
+        "date": "2026-06-16",
+        "status": "resolved",
+        "ticker": "NVDA",
+        "side": "long",
+        "entry": 210,
+        "stop": 205,
+        "target": 220,
+        "confidence": 0.5,
+        "catalyst": "Strong earnings report and increasing demand for AI-related products",
+        "thesis": "If NVDA breaks out above its recent resistance level, it may continue its upward trend. The stock has shown strong momentum and is likely to continue its growth. A long position can be taken with a stop loss below the recent low.",
+        "invalidation": "If NVDA falls below its recent low, it may indicate a reversal in trend and the long position should be closed.",
+        "rr": 2,
+        "shares": 20,
+        "riskAmount": 100,
+        "recordedAt": "2026-06-16T12:53:43.298Z",
+        "outcome": "expired_at_close",
+        "exitPrice": 207.41,
+        "pnl": -51.8,
+        "r": -0.52,
+        "resolvedDate": "2026-06-16",
+        "resolvedAt": "2026-06-16T23:06:29.127Z"
+      },
+      {
+        "id": "2026-06-16-BARC.L-long",
+        "date": "2026-06-16",
+        "status": "resolved",
+        "ticker": "BARC.L",
+        "side": "long",
+        "entry": 480,
+        "stop": 470,
+        "target": 500,
+        "confidence": 0.45,
+        "catalyst": "Positive economic data and increasing banking sector performance",
+        "thesis": "If BARC.L breaks out above its recent resistance level, it may continue its upward trend. The stock has shown strong momentum and is likely to continue its growth. A long position can be taken with a stop loss below the recent low.",
+        "invalidation": "If BARC.L falls below its recent low, it may indicate a reversal in trend and the long position should be closed.",
+        "rr": 2,
+        "shares": 10,
+        "riskAmount": 100,
+        "recordedAt": "2026-06-16T12:53:43.298Z",
+        "outcome": "expired_at_close",
+        "exitPrice": 479.9,
+        "pnl": -1,
+        "r": -0.01,
+        "resolvedDate": "2026-06-15",
+        "resolvedAt": "2026-06-16T23:06:29.229Z"
+      }
+    ],
+    "asOf": "2026-06-16T23:06:29.593Z"
   },
   "today": {
     "date": "2026-06-16",
@@ -145,7 +211,8 @@
   "meta": {
     "created": "2026-01-01T00:00:00.000Z",
     "version": 1,
-    "disclaimer": "NOT financial advice. Delayed/unofficial data. Confirm in your broker. Paper trading only.",
-    "lastScan": "2026-06-16T12:53:43.298Z"
+    "disclaimer": "NOT financial advice. Delayed/unofficial data. Paper trading only.",
+    "lastScan": "2026-06-16T12:53:43.298Z",
+    "lastScore": "2026-06-16T23:06:29.593Z"
   }
 }
