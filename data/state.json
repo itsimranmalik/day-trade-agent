@@ -105,6 +105,14 @@
       "no_trade_reason": "The current market conditions are choppy, with some stocks experiencing significant gains and others experiencing losses. There is a lack of clear trends and setups that meet the required criteria for a high-confidence trade.",
       "idea_count": 0,
       "recordedAt": "2026-06-17T12:17:36.944Z"
+    },
+    {
+      "date": "2026-06-18",
+      "provider": "groq",
+      "market_context": "Today's market conditions are mixed, with some US tech stocks like AAPL and NVDA showing significant gains, while others like AMZN and MSFT are experiencing losses. The UK market is also seeing varied performance, with BP.L down and HSBA.L up. The Indian market is experiencing a decline, with RELIANCE.NS and TCS.NS down.",
+      "no_trade_reason": "The overall market conditions are choppy and unclear, with no strong trends or setups emerging.",
+      "idea_count": 0,
+      "recordedAt": "2026-06-18T11:52:28.214Z"
     }
   ],
   "scorecard": {
@@ -169,21 +177,21 @@
         "resolvedAt": "2026-06-16T23:06:29.229Z"
       }
     ],
-    "asOf": "2026-06-17T12:17:36.960Z"
+    "asOf": "2026-06-18T11:52:28.230Z"
   },
   "today": {
-    "date": "2026-06-17",
-    "market_context": "Today's market conditions show a mix of gains and losses across the US, UK, and Indian equity markets. The US market saw significant gains in tech stocks such as AAPL, TSLA, and NVDA, while the UK market saw a surge in banking stocks like LLOY.L and BARC.L. The Indian market experienced a decline in several major stocks, including RELIANCE.NS and TCS.NS.",
-    "no_trade_reason": "The current market conditions are choppy, with some stocks experiencing significant gains and others experiencing losses. There is a lack of clear trends and setups that meet the required criteria for a high-confidence trade.",
+    "date": "2026-06-18",
+    "market_context": "Today's market conditions are mixed, with some US tech stocks like AAPL and NVDA showing significant gains, while others like AMZN and MSFT are experiencing losses. The UK market is also seeing varied performance, with BP.L down and HSBA.L up. The Indian market is experiencing a decline, with RELIANCE.NS and TCS.NS down.",
+    "no_trade_reason": "The overall market conditions are choppy and unclear, with no strong trends or setups emerging.",
     "ideas": [],
     "provider": "groq",
-    "scannedAt": "2026-06-17T12:17:36.960Z"
+    "scannedAt": "2026-06-18T11:52:28.230Z"
   },
   "meta": {
     "created": "2026-01-01T00:00:00.000Z",
     "version": 1,
     "disclaimer": "NOT financial advice. Delayed/unofficial data. Confirm in your broker. Paper trading only.",
-    "lastScan": "2026-06-17T12:17:36.960Z",
+    "lastScan": "2026-06-18T11:52:28.230Z",
     "lastScore": "2026-06-16T23:06:29.593Z"
   }
 }
