@@ -113,6 +113,14 @@
       "no_trade_reason": "The overall market conditions are choppy and unclear, with no strong trends or setups emerging.",
       "idea_count": 0,
       "recordedAt": "2026-06-18T11:52:28.214Z"
+    },
+    {
+      "date": "2026-06-19",
+      "provider": "groq",
+      "market_context": "Today's market conditions are mixed, with some US tech stocks like AAPL and NVDA showing gains, while others like AMZN and MSFT are experiencing significant losses. The UK market is seeing some volatility, with BP.L down over 7% and HSBA.L up over 7%. The Indian market is also experiencing fluctuations, with RELIANCE.NS and INFY.NS down, but HDFCBANK.NS and ICICIBANK.NS up.",
+      "no_trade_reason": "The market conditions are choppy and unclear, with no clear trends or setups that meet the required criteria.",
+      "idea_count": 0,
+      "recordedAt": "2026-06-19T12:06:56.133Z"
     }
   ],
   "scorecard": {
@@ -177,21 +185,21 @@
         "resolvedAt": "2026-06-16T23:06:29.229Z"
       }
     ],
-    "asOf": "2026-06-18T11:52:28.230Z"
+    "asOf": "2026-06-19T12:06:56.149Z"
   },
   "today": {
-    "date": "2026-06-18",
-    "market_context": "Today's market conditions are mixed, with some US tech stocks like AAPL and NVDA showing significant gains, while others like AMZN and MSFT are experiencing losses. The UK market is also seeing varied performance, with BP.L down and HSBA.L up. The Indian market is experiencing a decline, with RELIANCE.NS and TCS.NS down.",
-    "no_trade_reason": "The overall market conditions are choppy and unclear, with no strong trends or setups emerging.",
+    "date": "2026-06-19",
+    "market_context": "Today's market conditions are mixed, with some US tech stocks like AAPL and NVDA showing gains, while others like AMZN and MSFT are experiencing significant losses. The UK market is seeing some volatility, with BP.L down over 7% and HSBA.L up over 7%. The Indian market is also experiencing fluctuations, with RELIANCE.NS and INFY.NS down, but HDFCBANK.NS and ICICIBANK.NS up.",
+    "no_trade_reason": "The market conditions are choppy and unclear, with no clear trends or setups that meet the required criteria.",
     "ideas": [],
     "provider": "groq",
-    "scannedAt": "2026-06-18T11:52:28.230Z"
+    "scannedAt": "2026-06-19T12:06:56.149Z"
   },
   "meta": {
     "created": "2026-01-01T00:00:00.000Z",
     "version": 1,
     "disclaimer": "NOT financial advice. Delayed/unofficial data. Confirm in your broker. Paper trading only.",
-    "lastScan": "2026-06-18T11:52:28.230Z",
+    "lastScan": "2026-06-19T12:06:56.149Z",
     "lastScore": "2026-06-16T23:06:29.593Z"
   }
 }
