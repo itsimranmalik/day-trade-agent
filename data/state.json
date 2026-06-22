@@ -47,6 +47,24 @@
       "r": -0.01,
       "resolvedDate": "2026-06-15",
       "resolvedAt": "2026-06-16T23:06:29.229Z"
+    },
+    {
+      "id": "2026-06-22-HDFCBANK.NS-long",
+      "date": "2026-06-22",
+      "status": "pending",
+      "ticker": "HDFCBANK.NS",
+      "side": "long",
+      "entry": 785,
+      "stop": 775,
+      "target": 800,
+      "confidence": 0.45,
+      "catalyst": "Banking sector strength",
+      "thesis": "If HDFCBANK.NS can hold above the 785.00 level, it may target the 800.00 level, driven by the overall strength in the Indian banking sector. The stock's strong volume and momentum suggest a potential upside move.",
+      "invalidation": "A close below 775.00 would invalidate this thesis, indicating a lack of buying interest.",
+      "rr": 1.5,
+      "shares": 10,
+      "riskAmount": 100,
+      "recordedAt": "2026-06-22T13:35:43.434Z"
     }
   ],
   "scan_history": [
@@ -121,6 +139,14 @@
       "no_trade_reason": "The market conditions are choppy and unclear, with no clear trends or setups that meet the required criteria.",
       "idea_count": 0,
       "recordedAt": "2026-06-19T12:06:56.133Z"
+    },
+    {
+      "date": "2026-06-22",
+      "provider": "groq",
+      "market_context": "Today's market conditions are mixed, with some US tech stocks experiencing significant gains, while others are facing losses. The UK market is seeing a surge in banking stocks, with LLOY.L and BARC.L making notable gains. The Indian market is experiencing a decline in IT stocks, with INFY.NS and TCS.NS facing losses.",
+      "no_trade_reason": null,
+      "idea_count": 1,
+      "recordedAt": "2026-06-22T13:35:43.434Z"
     }
   ],
   "scorecard": {
@@ -185,21 +211,40 @@
         "resolvedAt": "2026-06-16T23:06:29.229Z"
       }
     ],
-    "asOf": "2026-06-19T12:06:56.149Z"
+    "asOf": "2026-06-22T13:35:43.591Z"
   },
   "today": {
-    "date": "2026-06-19",
-    "market_context": "Today's market conditions are mixed, with some US tech stocks like AAPL and NVDA showing gains, while others like AMZN and MSFT are experiencing significant losses. The UK market is seeing some volatility, with BP.L down over 7% and HSBA.L up over 7%. The Indian market is also experiencing fluctuations, with RELIANCE.NS and INFY.NS down, but HDFCBANK.NS and ICICIBANK.NS up.",
-    "no_trade_reason": "The market conditions are choppy and unclear, with no clear trends or setups that meet the required criteria.",
-    "ideas": [],
+    "date": "2026-06-22",
+    "market_context": "Today's market conditions are mixed, with some US tech stocks experiencing significant gains, while others are facing losses. The UK market is seeing a surge in banking stocks, with LLOY.L and BARC.L making notable gains. The Indian market is experiencing a decline in IT stocks, with INFY.NS and TCS.NS facing losses.",
+    "no_trade_reason": null,
+    "ideas": [
+      {
+        "id": "2026-06-22-HDFCBANK.NS-long",
+        "date": "2026-06-22",
+        "status": "pending",
+        "ticker": "HDFCBANK.NS",
+        "side": "long",
+        "entry": 785,
+        "stop": 775,
+        "target": 800,
+        "confidence": 0.45,
+        "catalyst": "Banking sector strength",
+        "thesis": "If HDFCBANK.NS can hold above the 785.00 level, it may target the 800.00 level, driven by the overall strength in the Indian banking sector. The stock's strong volume and momentum suggest a potential upside move.",
+        "invalidation": "A close below 775.00 would invalidate this thesis, indicating a lack of buying interest.",
+        "rr": 1.5,
+        "shares": 10,
+        "riskAmount": 100,
+        "recordedAt": "2026-06-22T13:35:43.434Z"
+      }
+    ],
     "provider": "groq",
-    "scannedAt": "2026-06-19T12:06:56.149Z"
+    "scannedAt": "2026-06-22T13:35:43.591Z"
   },
   "meta": {
     "created": "2026-01-01T00:00:00.000Z",
     "version": 1,
     "disclaimer": "NOT financial advice. Delayed/unofficial data. Confirm in your broker. Paper trading only.",
-    "lastScan": "2026-06-19T12:06:56.149Z",
+    "lastScan": "2026-06-22T13:35:43.591Z",
     "lastScore": "2026-06-16T23:06:29.593Z"
   }
 }
