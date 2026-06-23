@@ -71,6 +71,24 @@
       "r": -0.52,
       "resolvedDate": "2026-06-19",
       "resolvedAt": "2026-06-22T23:03:39.653Z"
+    },
+    {
+      "id": "2026-06-23-HDFCBANK.NS-long",
+      "date": "2026-06-23",
+      "status": "pending",
+      "ticker": "HDFCBANK.NS",
+      "side": "long",
+      "entry": 775,
+      "stop": 755,
+      "target": 805,
+      "confidence": 0.45,
+      "catalyst": "Positive economic data and strong sector performance",
+      "thesis": "If HDFCBANK.NS can hold above its recent support level, it may continue its upward trend. The stock has shown strong momentum and positive economic data could further boost its price. A long position could be taken with a stop loss below the recent low and a target near the next resistance level.",
+      "invalidation": "A close below 750.00 would invalidate this thesis",
+      "rr": 1.5,
+      "shares": 5,
+      "riskAmount": 100,
+      "recordedAt": "2026-06-23T11:02:59.260Z"
     }
   ],
   "scan_history": [
@@ -153,6 +171,14 @@
       "no_trade_reason": null,
       "idea_count": 1,
       "recordedAt": "2026-06-22T13:35:43.434Z"
+    },
+    {
+      "date": "2026-06-23",
+      "provider": "groq",
+      "market_context": "Today's market conditions are mixed, with some US tech stocks experiencing significant gains, while others are seeing losses. The UK market is also seeing a mix of gains and losses, with some financial stocks performing well. The Indian market is experiencing a decline in some of its major stocks.",
+      "no_trade_reason": null,
+      "idea_count": 1,
+      "recordedAt": "2026-06-23T11:02:59.260Z"
     }
   ],
   "scorecard": {
@@ -241,40 +267,40 @@
         "resolvedAt": "2026-06-16T23:06:29.229Z"
       }
     ],
-    "asOf": "2026-06-22T23:03:39.767Z"
+    "asOf": "2026-06-23T11:02:59.371Z"
   },
   "today": {
-    "date": "2026-06-22",
-    "market_context": "Today's market conditions are mixed, with some US tech stocks experiencing significant gains, while others are facing losses. The UK market is seeing a surge in banking stocks, with LLOY.L and BARC.L making notable gains. The Indian market is experiencing a decline in IT stocks, with INFY.NS and TCS.NS facing losses.",
+    "date": "2026-06-23",
+    "market_context": "Today's market conditions are mixed, with some US tech stocks experiencing significant gains, while others are seeing losses. The UK market is also seeing a mix of gains and losses, with some financial stocks performing well. The Indian market is experiencing a decline in some of its major stocks.",
     "no_trade_reason": null,
     "ideas": [
       {
-        "id": "2026-06-22-HDFCBANK.NS-long",
-        "date": "2026-06-22",
+        "id": "2026-06-23-HDFCBANK.NS-long",
+        "date": "2026-06-23",
         "status": "pending",
         "ticker": "HDFCBANK.NS",
         "side": "long",
-        "entry": 785,
-        "stop": 775,
-        "target": 800,
+        "entry": 775,
+        "stop": 755,
+        "target": 805,
         "confidence": 0.45,
-        "catalyst": "Banking sector strength",
-        "thesis": "If HDFCBANK.NS can hold above the 785.00 level, it may target the 800.00 level, driven by the overall strength in the Indian banking sector. The stock's strong volume and momentum suggest a potential upside move.",
-        "invalidation": "A close below 775.00 would invalidate this thesis, indicating a lack of buying interest.",
+        "catalyst": "Positive economic data and strong sector performance",
+        "thesis": "If HDFCBANK.NS can hold above its recent support level, it may continue its upward trend. The stock has shown strong momentum and positive economic data could further boost its price. A long position could be taken with a stop loss below the recent low and a target near the next resistance level.",
+        "invalidation": "A close below 750.00 would invalidate this thesis",
         "rr": 1.5,
-        "shares": 10,
+        "shares": 5,
         "riskAmount": 100,
-        "recordedAt": "2026-06-22T13:35:43.434Z"
+        "recordedAt": "2026-06-23T11:02:59.260Z"
       }
     ],
     "provider": "groq",
-    "scannedAt": "2026-06-22T13:35:43.591Z"
+    "scannedAt": "2026-06-23T11:02:59.371Z"
   },
   "meta": {
     "created": "2026-01-01T00:00:00.000Z",
     "version": 1,
-    "disclaimer": "NOT financial advice. Delayed/unofficial data. Paper trading only.",
-    "lastScan": "2026-06-22T13:35:43.591Z",
+    "disclaimer": "NOT financial advice. Delayed/unofficial data. Confirm in your broker. Paper trading only.",
+    "lastScan": "2026-06-23T11:02:59.371Z",
     "lastScore": "2026-06-22T23:03:39.767Z"
   }
 }
