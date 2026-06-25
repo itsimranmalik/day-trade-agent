@@ -193,6 +193,14 @@
       "no_trade_reason": "No qualifying setups found after validation",
       "idea_count": 0,
       "recordedAt": "2026-06-24T10:49:11.513Z"
+    },
+    {
+      "date": "2026-06-25",
+      "provider": "groq",
+      "market_context": "Today's market conditions are characterized by significant volatility and price movements across various sectors, with some stocks experiencing substantial losses while others have seen notable gains. The overall sentiment appears bearish, with many stocks trading lower. However, a few banking and financial stocks have shown resilience and are trading higher.",
+      "no_trade_reason": "No qualifying setups found after validation",
+      "idea_count": 0,
+      "recordedAt": "2026-06-25T10:42:20.931Z"
     }
   ],
   "scorecard": {
@@ -305,21 +313,21 @@
         "resolvedAt": "2026-06-16T23:06:29.229Z"
       }
     ],
-    "asOf": "2026-06-24T10:49:11.635Z"
+    "asOf": "2026-06-25T10:42:21.015Z"
   },
   "today": {
-    "date": "2026-06-24",
-    "market_context": "Today's market conditions are characterized by significant volatility, with several major stocks experiencing large price swings. The overall sentiment is bearish, with many stocks trading lower. However, some banking stocks, such as JPM and LLOY.L, are showing strength.",
+    "date": "2026-06-25",
+    "market_context": "Today's market conditions are characterized by significant volatility and price movements across various sectors, with some stocks experiencing substantial losses while others have seen notable gains. The overall sentiment appears bearish, with many stocks trading lower. However, a few banking and financial stocks have shown resilience and are trading higher.",
     "no_trade_reason": "No qualifying setups found after validation",
     "ideas": [],
     "provider": "groq",
-    "scannedAt": "2026-06-24T10:49:11.635Z"
+    "scannedAt": "2026-06-25T10:42:21.015Z"
   },
   "meta": {
     "created": "2026-01-01T00:00:00.000Z",
     "version": 1,
     "disclaimer": "NOT financial advice. Delayed/unofficial data. Confirm in your broker. Paper trading only.",
-    "lastScan": "2026-06-24T10:49:11.635Z",
+    "lastScan": "2026-06-25T10:42:21.015Z",
     "lastScore": "2026-06-23T22:48:38.424Z"
   }
 }
