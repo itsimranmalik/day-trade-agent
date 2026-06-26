@@ -95,6 +95,24 @@
       "r": 0.57,
       "resolvedDate": "2026-06-22",
       "resolvedAt": "2026-06-23T22:48:38.305Z"
+    },
+    {
+      "id": "2026-06-26-HDFCBANK.NS-long",
+      "date": "2026-06-26",
+      "status": "pending",
+      "ticker": "HDFCBANK.NS",
+      "side": "long",
+      "entry": 800,
+      "stop": 790,
+      "target": 815,
+      "confidence": 0.55,
+      "catalyst": "Positive earnings report and increasing trading volume",
+      "thesis": "If HDFCBANK.NS can break above the 805 level, it may continue its upward trend, potentially reaching the 815 resistance level. A strong bullish candle and increasing trading volume could be indicative of a further price increase.",
+      "invalidation": "A close below 790 would invalidate this thesis, suggesting a potential reversal in the trend.",
+      "rr": 1.5,
+      "shares": 10,
+      "riskAmount": 100,
+      "recordedAt": "2026-06-26T10:51:37.380Z"
     }
   ],
   "scan_history": [
@@ -201,6 +219,14 @@
       "no_trade_reason": "No qualifying setups found after validation",
       "idea_count": 0,
       "recordedAt": "2026-06-25T10:42:20.931Z"
+    },
+    {
+      "date": "2026-06-26",
+      "provider": "groq",
+      "market_context": "Today's market conditions are highly volatile, with many major stocks experiencing significant declines. The overall sentiment is bearish, with some stocks showing potential for short-term rebounds. The US market is seeing a mix of gains and losses, while the UK and Indian markets are experiencing similar volatility.",
+      "no_trade_reason": null,
+      "idea_count": 1,
+      "recordedAt": "2026-06-26T10:51:37.380Z"
     }
   ],
   "scorecard": {
@@ -313,21 +339,40 @@
         "resolvedAt": "2026-06-16T23:06:29.229Z"
       }
     ],
-    "asOf": "2026-06-25T10:42:21.015Z"
+    "asOf": "2026-06-26T10:51:37.617Z"
   },
   "today": {
-    "date": "2026-06-25",
-    "market_context": "Today's market conditions are characterized by significant volatility and price movements across various sectors, with some stocks experiencing substantial losses while others have seen notable gains. The overall sentiment appears bearish, with many stocks trading lower. However, a few banking and financial stocks have shown resilience and are trading higher.",
-    "no_trade_reason": "No qualifying setups found after validation",
-    "ideas": [],
+    "date": "2026-06-26",
+    "market_context": "Today's market conditions are highly volatile, with many major stocks experiencing significant declines. The overall sentiment is bearish, with some stocks showing potential for short-term rebounds. The US market is seeing a mix of gains and losses, while the UK and Indian markets are experiencing similar volatility.",
+    "no_trade_reason": null,
+    "ideas": [
+      {
+        "id": "2026-06-26-HDFCBANK.NS-long",
+        "date": "2026-06-26",
+        "status": "pending",
+        "ticker": "HDFCBANK.NS",
+        "side": "long",
+        "entry": 800,
+        "stop": 790,
+        "target": 815,
+        "confidence": 0.55,
+        "catalyst": "Positive earnings report and increasing trading volume",
+        "thesis": "If HDFCBANK.NS can break above the 805 level, it may continue its upward trend, potentially reaching the 815 resistance level. A strong bullish candle and increasing trading volume could be indicative of a further price increase.",
+        "invalidation": "A close below 790 would invalidate this thesis, suggesting a potential reversal in the trend.",
+        "rr": 1.5,
+        "shares": 10,
+        "riskAmount": 100,
+        "recordedAt": "2026-06-26T10:51:37.380Z"
+      }
+    ],
     "provider": "groq",
-    "scannedAt": "2026-06-25T10:42:21.015Z"
+    "scannedAt": "2026-06-26T10:51:37.617Z"
   },
   "meta": {
     "created": "2026-01-01T00:00:00.000Z",
     "version": 1,
     "disclaimer": "NOT financial advice. Delayed/unofficial data. Confirm in your broker. Paper trading only.",
-    "lastScan": "2026-06-25T10:42:21.015Z",
+    "lastScan": "2026-06-26T10:51:37.617Z",
     "lastScore": "2026-06-23T22:48:38.424Z"
   }
 }
