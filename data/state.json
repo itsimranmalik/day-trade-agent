@@ -233,6 +233,14 @@
       "no_trade_reason": null,
       "idea_count": 1,
       "recordedAt": "2026-06-26T10:51:37.380Z"
+    },
+    {
+      "date": "2026-06-29",
+      "provider": "groq",
+      "market_context": "Today's market conditions are highly volatile, with significant declines in major US tech stocks such as TSLA, NVDA, and AMZN, while some UK and Indian banking stocks like LLOY.L, BARC.L, and ICICIBANK.NS are experiencing substantial gains. The overall sentiment is mixed, with no clear direction across the markets.",
+      "no_trade_reason": "No qualifying setups found after validation",
+      "idea_count": 0,
+      "recordedAt": "2026-06-29T12:32:10.945Z"
     }
   ],
   "scorecard": {
@@ -369,40 +377,21 @@
         "resolvedAt": "2026-06-16T23:06:29.229Z"
       }
     ],
-    "asOf": "2026-06-26T22:46:58.793Z"
+    "asOf": "2026-06-29T12:32:10.963Z"
   },
   "today": {
-    "date": "2026-06-26",
-    "market_context": "Today's market conditions are highly volatile, with many major stocks experiencing significant declines. The overall sentiment is bearish, with some stocks showing potential for short-term rebounds. The US market is seeing a mix of gains and losses, while the UK and Indian markets are experiencing similar volatility.",
-    "no_trade_reason": null,
-    "ideas": [
-      {
-        "id": "2026-06-26-HDFCBANK.NS-long",
-        "date": "2026-06-26",
-        "status": "pending",
-        "ticker": "HDFCBANK.NS",
-        "side": "long",
-        "entry": 800,
-        "stop": 790,
-        "target": 815,
-        "confidence": 0.55,
-        "catalyst": "Positive earnings report and increasing trading volume",
-        "thesis": "If HDFCBANK.NS can break above the 805 level, it may continue its upward trend, potentially reaching the 815 resistance level. A strong bullish candle and increasing trading volume could be indicative of a further price increase.",
-        "invalidation": "A close below 790 would invalidate this thesis, suggesting a potential reversal in the trend.",
-        "rr": 1.5,
-        "shares": 10,
-        "riskAmount": 100,
-        "recordedAt": "2026-06-26T10:51:37.380Z"
-      }
-    ],
+    "date": "2026-06-29",
+    "market_context": "Today's market conditions are highly volatile, with significant declines in major US tech stocks such as TSLA, NVDA, and AMZN, while some UK and Indian banking stocks like LLOY.L, BARC.L, and ICICIBANK.NS are experiencing substantial gains. The overall sentiment is mixed, with no clear direction across the markets.",
+    "no_trade_reason": "No qualifying setups found after validation",
+    "ideas": [],
     "provider": "groq",
-    "scannedAt": "2026-06-26T10:51:37.617Z"
+    "scannedAt": "2026-06-29T12:32:10.963Z"
   },
   "meta": {
     "created": "2026-01-01T00:00:00.000Z",
     "version": 1,
-    "disclaimer": "NOT financial advice. Delayed/unofficial data. Paper trading only.",
-    "lastScan": "2026-06-26T10:51:37.617Z",
+    "disclaimer": "NOT financial advice. Delayed/unofficial data. Confirm in your broker. Paper trading only.",
+    "lastScan": "2026-06-29T12:32:10.963Z",
     "lastScore": "2026-06-26T22:46:58.793Z"
   }
 }
