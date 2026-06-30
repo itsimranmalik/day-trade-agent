@@ -241,6 +241,14 @@
       "no_trade_reason": "No qualifying setups found after validation",
       "idea_count": 0,
       "recordedAt": "2026-06-29T12:32:10.945Z"
+    },
+    {
+      "date": "2026-06-30",
+      "provider": "groq",
+      "market_context": "Today's market is experiencing significant volatility, with many stocks across the US, UK, and Indian markets showing large percentage changes. The overall trend appears bearish, with several major stocks like AAPL, TSLA, and NVDA experiencing substantial declines. In contrast, some banking stocks like JPM, LLOY.L, and ICICIBANK.NS are showing strength.",
+      "no_trade_reason": "No qualifying setups found after validation",
+      "idea_count": 0,
+      "recordedAt": "2026-06-30T10:57:54.725Z"
     }
   ],
   "scorecard": {
@@ -377,21 +385,21 @@
         "resolvedAt": "2026-06-16T23:06:29.229Z"
       }
     ],
-    "asOf": "2026-06-29T12:32:10.963Z"
+    "asOf": "2026-06-30T10:57:54.896Z"
   },
   "today": {
-    "date": "2026-06-29",
-    "market_context": "Today's market conditions are highly volatile, with significant declines in major US tech stocks such as TSLA, NVDA, and AMZN, while some UK and Indian banking stocks like LLOY.L, BARC.L, and ICICIBANK.NS are experiencing substantial gains. The overall sentiment is mixed, with no clear direction across the markets.",
+    "date": "2026-06-30",
+    "market_context": "Today's market is experiencing significant volatility, with many stocks across the US, UK, and Indian markets showing large percentage changes. The overall trend appears bearish, with several major stocks like AAPL, TSLA, and NVDA experiencing substantial declines. In contrast, some banking stocks like JPM, LLOY.L, and ICICIBANK.NS are showing strength.",
     "no_trade_reason": "No qualifying setups found after validation",
     "ideas": [],
     "provider": "groq",
-    "scannedAt": "2026-06-29T12:32:10.963Z"
+    "scannedAt": "2026-06-30T10:57:54.896Z"
   },
   "meta": {
     "created": "2026-01-01T00:00:00.000Z",
     "version": 1,
     "disclaimer": "NOT financial advice. Delayed/unofficial data. Confirm in your broker. Paper trading only.",
-    "lastScan": "2026-06-29T12:32:10.963Z",
+    "lastScan": "2026-06-30T10:57:54.896Z",
     "lastScore": "2026-06-26T22:46:58.793Z"
   }
 }
