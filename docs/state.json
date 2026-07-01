@@ -249,6 +249,14 @@
       "no_trade_reason": "No qualifying setups found after validation",
       "idea_count": 0,
       "recordedAt": "2026-06-30T10:57:54.725Z"
+    },
+    {
+      "date": "2026-07-01",
+      "provider": "groq",
+      "market_context": "Today's market conditions are mixed, with some US tech stocks experiencing significant declines, while others like AMD are seeing substantial gains. The UK market is seeing some volatility, with BP.L experiencing a significant drop, while HSBA.L and BARC.L are seeing notable increases. The Indian market is also experiencing some fluctuations, with RELIANCE.NS and INFY.NS seeing declines, while HDFCBANK.NS and ICICIBANK.NS are seeing gains.",
+      "no_trade_reason": "The market conditions are choppy and unclear, with no clear trends or setups that meet the required criteria.",
+      "idea_count": 0,
+      "recordedAt": "2026-07-01T11:24:45.964Z"
     }
   ],
   "scorecard": {
@@ -385,21 +393,21 @@
         "resolvedAt": "2026-06-16T23:06:29.229Z"
       }
     ],
-    "asOf": "2026-06-30T10:57:54.896Z"
+    "asOf": "2026-07-01T11:24:46.150Z"
   },
   "today": {
-    "date": "2026-06-30",
-    "market_context": "Today's market is experiencing significant volatility, with many stocks across the US, UK, and Indian markets showing large percentage changes. The overall trend appears bearish, with several major stocks like AAPL, TSLA, and NVDA experiencing substantial declines. In contrast, some banking stocks like JPM, LLOY.L, and ICICIBANK.NS are showing strength.",
-    "no_trade_reason": "No qualifying setups found after validation",
+    "date": "2026-07-01",
+    "market_context": "Today's market conditions are mixed, with some US tech stocks experiencing significant declines, while others like AMD are seeing substantial gains. The UK market is seeing some volatility, with BP.L experiencing a significant drop, while HSBA.L and BARC.L are seeing notable increases. The Indian market is also experiencing some fluctuations, with RELIANCE.NS and INFY.NS seeing declines, while HDFCBANK.NS and ICICIBANK.NS are seeing gains.",
+    "no_trade_reason": "The market conditions are choppy and unclear, with no clear trends or setups that meet the required criteria.",
     "ideas": [],
     "provider": "groq",
-    "scannedAt": "2026-06-30T10:57:54.896Z"
+    "scannedAt": "2026-07-01T11:24:46.150Z"
   },
   "meta": {
     "created": "2026-01-01T00:00:00.000Z",
     "version": 1,
     "disclaimer": "NOT financial advice. Delayed/unofficial data. Confirm in your broker. Paper trading only.",
-    "lastScan": "2026-06-30T10:57:54.896Z",
+    "lastScan": "2026-07-01T11:24:46.150Z",
     "lastScore": "2026-06-26T22:46:58.793Z"
   }
 }
