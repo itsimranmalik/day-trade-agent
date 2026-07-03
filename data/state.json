@@ -265,6 +265,14 @@
       "no_trade_reason": "The current market conditions are too choppy and unclear, with many stocks experiencing large price swings. There are no clear, high-probability setups that meet the required criteria.",
       "idea_count": 0,
       "recordedAt": "2026-07-02T10:37:46.869Z"
+    },
+    {
+      "date": "2026-07-03",
+      "provider": "groq",
+      "market_context": "The US market is showing a mixed trend with some stocks like AAPL and JPM gaining, while others like NVDA and AMZN are losing. The UK market is also seeing a mixed trend with stocks like HSBA.L and BARC.L gaining, while others like BP.L and GLEN.L are losing. The Indian market is seeing a decline in stocks like RELIANCE.NS and INFY.NS, while others like ICICIBANK.NS and SBIN.NS are gaining.",
+      "no_trade_reason": "The market conditions are choppy and unclear, with no strong trend or setup emerging.",
+      "idea_count": 0,
+      "recordedAt": "2026-07-03T10:35:17.673Z"
     }
   ],
   "scorecard": {
@@ -401,21 +409,21 @@
         "resolvedAt": "2026-06-16T23:06:29.229Z"
       }
     ],
-    "asOf": "2026-07-02T10:37:46.889Z"
+    "asOf": "2026-07-03T10:35:17.687Z"
   },
   "today": {
-    "date": "2026-07-02",
-    "market_context": "Today's market conditions are marked by significant volatility, with several major stocks experiencing large price swings. The US market is seeing a mix of gains and losses, while the UK and Indian markets are also experiencing fluctuations. Overall, the market environment is complex and warrants caution.",
-    "no_trade_reason": "The current market conditions are too choppy and unclear, with many stocks experiencing large price swings. There are no clear, high-probability setups that meet the required criteria.",
+    "date": "2026-07-03",
+    "market_context": "The US market is showing a mixed trend with some stocks like AAPL and JPM gaining, while others like NVDA and AMZN are losing. The UK market is also seeing a mixed trend with stocks like HSBA.L and BARC.L gaining, while others like BP.L and GLEN.L are losing. The Indian market is seeing a decline in stocks like RELIANCE.NS and INFY.NS, while others like ICICIBANK.NS and SBIN.NS are gaining.",
+    "no_trade_reason": "The market conditions are choppy and unclear, with no strong trend or setup emerging.",
     "ideas": [],
     "provider": "groq",
-    "scannedAt": "2026-07-02T10:37:46.889Z"
+    "scannedAt": "2026-07-03T10:35:17.687Z"
   },
   "meta": {
     "created": "2026-01-01T00:00:00.000Z",
     "version": 1,
     "disclaimer": "NOT financial advice. Delayed/unofficial data. Confirm in your broker. Paper trading only.",
-    "lastScan": "2026-07-02T10:37:46.889Z",
+    "lastScan": "2026-07-03T10:35:17.687Z",
     "lastScore": "2026-06-26T22:46:58.793Z"
   }
 }
