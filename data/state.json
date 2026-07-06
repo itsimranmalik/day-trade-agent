@@ -123,7 +123,7 @@
     {
       "id": "2026-07-06-HDFCBANK.NS-long",
       "date": "2026-07-06",
-      "status": "pending",
+      "status": "resolved",
       "ticker": "HDFCBANK.NS",
       "side": "long",
       "entry": 830,
@@ -136,7 +136,13 @@
       "rr": 1.5,
       "shares": 10,
       "riskAmount": 100,
-      "recordedAt": "2026-07-06T12:04:04.761Z"
+      "recordedAt": "2026-07-06T12:04:04.761Z",
+      "outcome": "stopped_gap",
+      "exitPrice": 803,
+      "pnl": -270,
+      "r": -2.7,
+      "resolvedDate": "2026-07-03",
+      "resolvedAt": "2026-07-06T22:45:42.631Z"
     }
   ],
   "scan_history": [
@@ -302,18 +308,43 @@
     }
   ],
   "scorecard": {
-    "count": 5,
+    "count": 6,
     "wins": 1,
-    "losses": 4,
+    "losses": 5,
     "even": 0,
-    "winRate": 0.2,
-    "avgR": -0.17,
-    "totalPnl": -84.8,
-    "maxDrawdown": 104.8,
+    "winRate": 0.167,
+    "avgR": -0.59,
+    "totalPnl": -354.8,
+    "maxDrawdown": 354.8,
     "byOutcome": {
-      "expired_at_close": 5
+      "expired_at_close": 5,
+      "stopped_gap": 1
     },
     "recent": [
+      {
+        "id": "2026-07-06-HDFCBANK.NS-long",
+        "date": "2026-07-06",
+        "status": "resolved",
+        "ticker": "HDFCBANK.NS",
+        "side": "long",
+        "entry": 830,
+        "stop": 820,
+        "target": 845,
+        "confidence": 0.55,
+        "catalyst": "Strong banking sector performance in India",
+        "thesis": "If HDFCBANK.NS can maintain its current momentum, it may break through the 845.00 level. This setup is based on the stock's recent strength and the overall positive sentiment in the Indian banking sector.",
+        "invalidation": "A close below 820.00 would invalidate this thesis.",
+        "rr": 1.5,
+        "shares": 10,
+        "riskAmount": 100,
+        "recordedAt": "2026-07-06T12:04:04.761Z",
+        "outcome": "stopped_gap",
+        "exitPrice": 803,
+        "pnl": -270,
+        "r": -2.7,
+        "resolvedDate": "2026-07-03",
+        "resolvedAt": "2026-07-06T22:45:42.631Z"
+      },
       {
         "id": "2026-06-26-HDFCBANK.NS-long",
         "date": "2026-06-26",
@@ -435,7 +466,7 @@
         "resolvedAt": "2026-06-16T23:06:29.229Z"
       }
     ],
-    "asOf": "2026-07-06T12:04:04.904Z"
+    "asOf": "2026-07-06T22:45:42.649Z"
   },
   "today": {
     "date": "2026-07-06",
@@ -467,8 +498,8 @@
   "meta": {
     "created": "2026-01-01T00:00:00.000Z",
     "version": 1,
-    "disclaimer": "NOT financial advice. Delayed/unofficial data. Confirm in your broker. Paper trading only.",
+    "disclaimer": "NOT financial advice. Delayed/unofficial data. Paper trading only.",
     "lastScan": "2026-07-06T12:04:04.904Z",
-    "lastScore": "2026-06-26T22:46:58.793Z"
+    "lastScore": "2026-07-06T22:45:42.649Z"
   }
 }
