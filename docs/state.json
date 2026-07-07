@@ -305,6 +305,14 @@
       "no_trade_reason": null,
       "idea_count": 1,
       "recordedAt": "2026-07-06T12:04:04.762Z"
+    },
+    {
+      "date": "2026-07-07",
+      "provider": "groq",
+      "market_context": "Today's market conditions are mixed, with some US tech stocks experiencing significant declines, such as NVDA and AMZN, while others like AAPL and TSLA are seeing gains. The UK market is also showing varied performance, with BP.L dropping sharply and HSBA.L and BARC.L seeing notable increases. The Indian market has HDFCBANK.NS and ICICIBANK.NS performing well, but others like INFY.NS and WIPRO.NS are experiencing losses.",
+      "no_trade_reason": "The market is showing a high level of volatility and unpredictability, with many stocks experiencing large price swings. Given the current conditions, it's prudent to exercise caution and avoid trading until more stable trends emerge.",
+      "idea_count": 0,
+      "recordedAt": "2026-07-07T10:55:26.857Z"
     }
   ],
   "scorecard": {
@@ -466,40 +474,21 @@
         "resolvedAt": "2026-06-16T23:06:29.229Z"
       }
     ],
-    "asOf": "2026-07-06T22:45:42.649Z"
+    "asOf": "2026-07-07T10:55:26.875Z"
   },
   "today": {
-    "date": "2026-07-06",
-    "market_context": "Today's market conditions are mixed, with some US tech stocks experiencing significant declines, while others, such as AMD, saw substantial gains. The UK market saw a mix of gains and losses, with banking stocks like LLOY and BARC performing well. The Indian market also saw a mix of movements, with banking stocks like HDFCBANK and ICICIBANK rising, while others like WIPRO fell.",
-    "no_trade_reason": null,
-    "ideas": [
-      {
-        "id": "2026-07-06-HDFCBANK.NS-long",
-        "date": "2026-07-06",
-        "status": "pending",
-        "ticker": "HDFCBANK.NS",
-        "side": "long",
-        "entry": 830,
-        "stop": 820,
-        "target": 845,
-        "confidence": 0.55,
-        "catalyst": "Strong banking sector performance in India",
-        "thesis": "If HDFCBANK.NS can maintain its current momentum, it may break through the 845.00 level. This setup is based on the stock's recent strength and the overall positive sentiment in the Indian banking sector.",
-        "invalidation": "A close below 820.00 would invalidate this thesis.",
-        "rr": 1.5,
-        "shares": 10,
-        "riskAmount": 100,
-        "recordedAt": "2026-07-06T12:04:04.761Z"
-      }
-    ],
+    "date": "2026-07-07",
+    "market_context": "Today's market conditions are mixed, with some US tech stocks experiencing significant declines, such as NVDA and AMZN, while others like AAPL and TSLA are seeing gains. The UK market is also showing varied performance, with BP.L dropping sharply and HSBA.L and BARC.L seeing notable increases. The Indian market has HDFCBANK.NS and ICICIBANK.NS performing well, but others like INFY.NS and WIPRO.NS are experiencing losses.",
+    "no_trade_reason": "The market is showing a high level of volatility and unpredictability, with many stocks experiencing large price swings. Given the current conditions, it's prudent to exercise caution and avoid trading until more stable trends emerge.",
+    "ideas": [],
     "provider": "groq",
-    "scannedAt": "2026-07-06T12:04:04.904Z"
+    "scannedAt": "2026-07-07T10:55:26.875Z"
   },
   "meta": {
     "created": "2026-01-01T00:00:00.000Z",
     "version": 1,
-    "disclaimer": "NOT financial advice. Delayed/unofficial data. Paper trading only.",
-    "lastScan": "2026-07-06T12:04:04.904Z",
+    "disclaimer": "NOT financial advice. Delayed/unofficial data. Confirm in your broker. Paper trading only.",
+    "lastScan": "2026-07-07T10:55:26.875Z",
     "lastScore": "2026-07-06T22:45:42.649Z"
   }
 }
