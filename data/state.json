@@ -313,6 +313,14 @@
       "no_trade_reason": "The market is showing a high level of volatility and unpredictability, with many stocks experiencing large price swings. Given the current conditions, it's prudent to exercise caution and avoid trading until more stable trends emerge.",
       "idea_count": 0,
       "recordedAt": "2026-07-07T10:55:26.857Z"
+    },
+    {
+      "date": "2026-07-08",
+      "provider": "groq",
+      "market_context": "Today's market conditions are mixed, with some US tech stocks experiencing significant declines, while others, such as AMD, are seeing substantial gains. The UK market is also showing varied performance, with some stocks like LLOY.L and BARC.L rising, while others like GLEN.L and VOD.L are falling. The Indian market is seeing a similar trend, with some stocks like HDFCBANK.NS and ICICIBANK.NS increasing, while others like WIPRO.NS are decreasing.",
+      "no_trade_reason": "The market conditions are choppy and unclear, with no strong setups meeting the criteria.",
+      "idea_count": 0,
+      "recordedAt": "2026-07-08T10:16:26.335Z"
     }
   ],
   "scorecard": {
@@ -474,21 +482,21 @@
         "resolvedAt": "2026-06-16T23:06:29.229Z"
       }
     ],
-    "asOf": "2026-07-07T10:55:26.875Z"
+    "asOf": "2026-07-08T10:16:26.351Z"
   },
   "today": {
-    "date": "2026-07-07",
-    "market_context": "Today's market conditions are mixed, with some US tech stocks experiencing significant declines, such as NVDA and AMZN, while others like AAPL and TSLA are seeing gains. The UK market is also showing varied performance, with BP.L dropping sharply and HSBA.L and BARC.L seeing notable increases. The Indian market has HDFCBANK.NS and ICICIBANK.NS performing well, but others like INFY.NS and WIPRO.NS are experiencing losses.",
-    "no_trade_reason": "The market is showing a high level of volatility and unpredictability, with many stocks experiencing large price swings. Given the current conditions, it's prudent to exercise caution and avoid trading until more stable trends emerge.",
+    "date": "2026-07-08",
+    "market_context": "Today's market conditions are mixed, with some US tech stocks experiencing significant declines, while others, such as AMD, are seeing substantial gains. The UK market is also showing varied performance, with some stocks like LLOY.L and BARC.L rising, while others like GLEN.L and VOD.L are falling. The Indian market is seeing a similar trend, with some stocks like HDFCBANK.NS and ICICIBANK.NS increasing, while others like WIPRO.NS are decreasing.",
+    "no_trade_reason": "The market conditions are choppy and unclear, with no strong setups meeting the criteria.",
     "ideas": [],
     "provider": "groq",
-    "scannedAt": "2026-07-07T10:55:26.875Z"
+    "scannedAt": "2026-07-08T10:16:26.351Z"
   },
   "meta": {
     "created": "2026-01-01T00:00:00.000Z",
     "version": 1,
     "disclaimer": "NOT financial advice. Delayed/unofficial data. Confirm in your broker. Paper trading only.",
-    "lastScan": "2026-07-07T10:55:26.875Z",
+    "lastScan": "2026-07-08T10:16:26.351Z",
     "lastScore": "2026-07-06T22:45:42.649Z"
   }
 }
