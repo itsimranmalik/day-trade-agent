@@ -143,6 +143,24 @@
       "r": -2.7,
       "resolvedDate": "2026-07-03",
       "resolvedAt": "2026-07-06T22:45:42.631Z"
+    },
+    {
+      "id": "2026-07-09-HDFCBANK.NS-long",
+      "date": "2026-07-09",
+      "status": "pending",
+      "ticker": "HDFCBANK.NS",
+      "side": "long",
+      "entry": 820,
+      "stop": 810,
+      "target": 835,
+      "confidence": 0.55,
+      "catalyst": "Strong price action and sector performance",
+      "thesis": "If HDFCBANK.NS can continue its upward momentum, then it may be poised for a move towards the 835.00 level, given the overall strength in the Indian banking sector. A stop loss can be placed below the recent low, at 810.00.",
+      "invalidation": "A close below 805.00 would invalidate this thesis",
+      "rr": 1.5,
+      "shares": 10,
+      "riskAmount": 100,
+      "recordedAt": "2026-07-09T10:54:22.346Z"
     }
   ],
   "scan_history": [
@@ -321,6 +339,14 @@
       "no_trade_reason": "The market conditions are choppy and unclear, with no strong setups meeting the criteria.",
       "idea_count": 0,
       "recordedAt": "2026-07-08T10:16:26.335Z"
+    },
+    {
+      "date": "2026-07-09",
+      "provider": "groq",
+      "market_context": "Today's market conditions are mixed, with some US tech stocks experiencing significant declines, while certain UK and Indian banking stocks are showing strength. The overall sentiment is cautious, with many stocks trading below their recent highs.",
+      "no_trade_reason": null,
+      "idea_count": 1,
+      "recordedAt": "2026-07-09T10:54:22.346Z"
     }
   ],
   "scorecard": {
@@ -482,21 +508,40 @@
         "resolvedAt": "2026-06-16T23:06:29.229Z"
       }
     ],
-    "asOf": "2026-07-08T10:16:26.351Z"
+    "asOf": "2026-07-09T10:54:22.361Z"
   },
   "today": {
-    "date": "2026-07-08",
-    "market_context": "Today's market conditions are mixed, with some US tech stocks experiencing significant declines, while others, such as AMD, are seeing substantial gains. The UK market is also showing varied performance, with some stocks like LLOY.L and BARC.L rising, while others like GLEN.L and VOD.L are falling. The Indian market is seeing a similar trend, with some stocks like HDFCBANK.NS and ICICIBANK.NS increasing, while others like WIPRO.NS are decreasing.",
-    "no_trade_reason": "The market conditions are choppy and unclear, with no strong setups meeting the criteria.",
-    "ideas": [],
+    "date": "2026-07-09",
+    "market_context": "Today's market conditions are mixed, with some US tech stocks experiencing significant declines, while certain UK and Indian banking stocks are showing strength. The overall sentiment is cautious, with many stocks trading below their recent highs.",
+    "no_trade_reason": null,
+    "ideas": [
+      {
+        "id": "2026-07-09-HDFCBANK.NS-long",
+        "date": "2026-07-09",
+        "status": "pending",
+        "ticker": "HDFCBANK.NS",
+        "side": "long",
+        "entry": 820,
+        "stop": 810,
+        "target": 835,
+        "confidence": 0.55,
+        "catalyst": "Strong price action and sector performance",
+        "thesis": "If HDFCBANK.NS can continue its upward momentum, then it may be poised for a move towards the 835.00 level, given the overall strength in the Indian banking sector. A stop loss can be placed below the recent low, at 810.00.",
+        "invalidation": "A close below 805.00 would invalidate this thesis",
+        "rr": 1.5,
+        "shares": 10,
+        "riskAmount": 100,
+        "recordedAt": "2026-07-09T10:54:22.346Z"
+      }
+    ],
     "provider": "groq",
-    "scannedAt": "2026-07-08T10:16:26.351Z"
+    "scannedAt": "2026-07-09T10:54:22.361Z"
   },
   "meta": {
     "created": "2026-01-01T00:00:00.000Z",
     "version": 1,
     "disclaimer": "NOT financial advice. Delayed/unofficial data. Confirm in your broker. Paper trading only.",
-    "lastScan": "2026-07-08T10:16:26.351Z",
+    "lastScan": "2026-07-09T10:54:22.361Z",
     "lastScore": "2026-07-06T22:45:42.649Z"
   }
 }
