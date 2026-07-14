@@ -417,6 +417,14 @@
       "no_trade_reason": null,
       "idea_count": 1,
       "recordedAt": "2026-07-13T11:00:16.599Z"
+    },
+    {
+      "date": "2026-07-14",
+      "provider": "groq",
+      "market_context": "Today's market conditions are mixed, with some US tech stocks experiencing significant declines, while certain UK and Indian banking stocks are showing strength. Overall, the markets are choppy, and a cautious approach is warranted.",
+      "no_trade_reason": "The current market conditions are unclear, with no strong setups meeting the required criteria. The risk of false breakouts or whipsaws is high, making it prudent to avoid trading.",
+      "idea_count": 0,
+      "recordedAt": "2026-07-14T09:57:26.625Z"
     }
   ],
   "scorecard": {
@@ -651,40 +659,21 @@
         "resolvedAt": "2026-06-16T23:06:29.229Z"
       }
     ],
-    "asOf": "2026-07-13T22:29:45.969Z"
+    "asOf": "2026-07-14T09:57:26.795Z"
   },
   "today": {
-    "date": "2026-07-13",
-    "market_context": "Today's market is experiencing significant volatility, with several major stocks experiencing large price swings. The US market is seeing a mixed bag, with some tech stocks like AMD and META performing well, while others like TSLA and AMZN are down sharply. The UK market is also seeing some large moves, with financial stocks like LLOY and BARC up strongly, while energy stocks like BP are down. The Indian market is seeing a similar trend, with banking stocks like HDFCBANK and ICICIBANK up, while IT stocks like INFY and WIPRO are down.",
-    "no_trade_reason": null,
-    "ideas": [
-      {
-        "id": "2026-07-13-HDFCBANK.NS-long",
-        "date": "2026-07-13",
-        "status": "pending",
-        "ticker": "HDFCBANK.NS",
-        "side": "long",
-        "entry": 820,
-        "stop": 810,
-        "target": 835,
-        "confidence": 0.5,
-        "catalyst": "Improving economic conditions and strong banking sector performance",
-        "thesis": "If HDFCBANK can hold above the 815 level, it may be poised for a breakout to the upside, with a potential target of 835.00. The stock has been trending upwards and has strong momentum, with a bullish trend line on the daily chart.",
-        "invalidation": "A close below 810.00 would invalidate this thesis",
-        "rr": 1.5,
-        "shares": 10,
-        "riskAmount": 100,
-        "recordedAt": "2026-07-13T11:00:16.599Z"
-      }
-    ],
+    "date": "2026-07-14",
+    "market_context": "Today's market conditions are mixed, with some US tech stocks experiencing significant declines, while certain UK and Indian banking stocks are showing strength. Overall, the markets are choppy, and a cautious approach is warranted.",
+    "no_trade_reason": "The current market conditions are unclear, with no strong setups meeting the required criteria. The risk of false breakouts or whipsaws is high, making it prudent to avoid trading.",
+    "ideas": [],
     "provider": "groq",
-    "scannedAt": "2026-07-13T11:00:16.608Z"
+    "scannedAt": "2026-07-14T09:57:26.795Z"
   },
   "meta": {
     "created": "2026-01-01T00:00:00.000Z",
     "version": 1,
-    "disclaimer": "NOT financial advice. Delayed/unofficial data. Paper trading only.",
-    "lastScan": "2026-07-13T11:00:16.608Z",
+    "disclaimer": "NOT financial advice. Delayed/unofficial data. Confirm in your broker. Paper trading only.",
+    "lastScan": "2026-07-14T09:57:26.795Z",
     "lastScore": "2026-07-13T22:29:45.969Z"
   }
 }
