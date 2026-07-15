@@ -215,6 +215,24 @@
       "r": 0.49,
       "resolvedDate": "2026-07-10",
       "resolvedAt": "2026-07-13T22:29:45.952Z"
+    },
+    {
+      "id": "2026-07-15-HDFCBANK.NS-long",
+      "date": "2026-07-15",
+      "status": "pending",
+      "ticker": "HDFCBANK.NS",
+      "side": "long",
+      "entry": 810,
+      "stop": 795,
+      "target": 835,
+      "confidence": 0.5,
+      "catalyst": "Positive sector trends and improving economic outlook",
+      "thesis": "If HDFCBANK.NS can maintain its current momentum, it may break through the 820 level and target 835.00. The overall positive trends in the banking sector and the improving economic outlook could support this move.",
+      "invalidation": "A close below 790.00 would invalidate this thesis, suggesting a potential downturn.",
+      "rr": 1.67,
+      "shares": 6,
+      "riskAmount": 100,
+      "recordedAt": "2026-07-15T10:02:01.802Z"
     }
   ],
   "scan_history": [
@@ -425,6 +443,14 @@
       "no_trade_reason": "The current market conditions are unclear, with no strong setups meeting the required criteria. The risk of false breakouts or whipsaws is high, making it prudent to avoid trading.",
       "idea_count": 0,
       "recordedAt": "2026-07-14T09:57:26.625Z"
+    },
+    {
+      "date": "2026-07-15",
+      "provider": "groq",
+      "market_context": "Today's market conditions are mixed, with some US tech stocks experiencing significant declines, while certain UK banking stocks are seeing substantial gains. The overall volatility is moderate, with some stocks showing increased relative volume.",
+      "no_trade_reason": null,
+      "idea_count": 1,
+      "recordedAt": "2026-07-15T10:02:01.802Z"
     }
   ],
   "scorecard": {
@@ -659,21 +685,40 @@
         "resolvedAt": "2026-06-16T23:06:29.229Z"
       }
     ],
-    "asOf": "2026-07-14T09:57:26.795Z"
+    "asOf": "2026-07-15T10:02:01.958Z"
   },
   "today": {
-    "date": "2026-07-14",
-    "market_context": "Today's market conditions are mixed, with some US tech stocks experiencing significant declines, while certain UK and Indian banking stocks are showing strength. Overall, the markets are choppy, and a cautious approach is warranted.",
-    "no_trade_reason": "The current market conditions are unclear, with no strong setups meeting the required criteria. The risk of false breakouts or whipsaws is high, making it prudent to avoid trading.",
-    "ideas": [],
+    "date": "2026-07-15",
+    "market_context": "Today's market conditions are mixed, with some US tech stocks experiencing significant declines, while certain UK banking stocks are seeing substantial gains. The overall volatility is moderate, with some stocks showing increased relative volume.",
+    "no_trade_reason": null,
+    "ideas": [
+      {
+        "id": "2026-07-15-HDFCBANK.NS-long",
+        "date": "2026-07-15",
+        "status": "pending",
+        "ticker": "HDFCBANK.NS",
+        "side": "long",
+        "entry": 810,
+        "stop": 795,
+        "target": 835,
+        "confidence": 0.5,
+        "catalyst": "Positive sector trends and improving economic outlook",
+        "thesis": "If HDFCBANK.NS can maintain its current momentum, it may break through the 820 level and target 835.00. The overall positive trends in the banking sector and the improving economic outlook could support this move.",
+        "invalidation": "A close below 790.00 would invalidate this thesis, suggesting a potential downturn.",
+        "rr": 1.67,
+        "shares": 6,
+        "riskAmount": 100,
+        "recordedAt": "2026-07-15T10:02:01.802Z"
+      }
+    ],
     "provider": "groq",
-    "scannedAt": "2026-07-14T09:57:26.795Z"
+    "scannedAt": "2026-07-15T10:02:01.958Z"
   },
   "meta": {
     "created": "2026-01-01T00:00:00.000Z",
     "version": 1,
     "disclaimer": "NOT financial advice. Delayed/unofficial data. Confirm in your broker. Paper trading only.",
-    "lastScan": "2026-07-14T09:57:26.795Z",
+    "lastScan": "2026-07-15T10:02:01.958Z",
     "lastScore": "2026-07-13T22:29:45.969Z"
   }
 }
