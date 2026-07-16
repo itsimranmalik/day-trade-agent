@@ -239,6 +239,42 @@
       "r": -0.04,
       "resolvedDate": "2026-07-14",
       "resolvedAt": "2026-07-15T22:32:12.370Z"
+    },
+    {
+      "id": "2026-07-16-JPM-long",
+      "date": "2026-07-16",
+      "status": "pending",
+      "ticker": "JPM",
+      "side": "long",
+      "entry": 348,
+      "stop": 339,
+      "target": 362,
+      "confidence": 0.55,
+      "catalyst": "Strong earnings report and overall market sentiment",
+      "thesis": "If JPM can break above its current resistance level, it may see a continuation of its upward trend, driven by strong earnings and a positive market sentiment. The stock needs to hold above its recent lows to confirm this thesis.",
+      "invalidation": "A close below 339.00 would invalidate this thesis, indicating a potential reversal of the trend.",
+      "rr": 1.56,
+      "shares": 11,
+      "riskAmount": 100,
+      "recordedAt": "2026-07-16T10:08:24.015Z"
+    },
+    {
+      "id": "2026-07-16-HDFCBANK.NS-long",
+      "date": "2026-07-16",
+      "status": "pending",
+      "ticker": "HDFCBANK.NS",
+      "side": "long",
+      "entry": 810,
+      "stop": 795,
+      "target": 835,
+      "confidence": 0.5,
+      "catalyst": "Positive market sentiment and strong sector performance",
+      "thesis": "If HDFCBANK.NS can maintain its current momentum, it may see a continuation of its upward trend, driven by a positive market sentiment and strong sector performance. The stock needs to hold above its recent support levels to confirm this thesis.",
+      "invalidation": "A close below 795.00 would invalidate this thesis, indicating a potential reversal of the trend.",
+      "rr": 1.67,
+      "shares": 6,
+      "riskAmount": 100,
+      "recordedAt": "2026-07-16T10:08:24.015Z"
     }
   ],
   "scan_history": [
@@ -457,6 +493,14 @@
       "no_trade_reason": null,
       "idea_count": 1,
       "recordedAt": "2026-07-15T10:02:01.802Z"
+    },
+    {
+      "date": "2026-07-16",
+      "provider": "groq",
+      "market_context": "Today's market conditions are mixed, with some US tech stocks experiencing significant declines, while others like META and JPM are seeing substantial gains. The UK market is also seeing some notable movements, with HSBA.L and LLOY.L rising sharply. The Indian market is experiencing a mix of gains and losses, with RELIANCE.NS and HDFCBANK.NS seeing modest gains, while INFY.NS and WIPRO.NS are declining.",
+      "no_trade_reason": null,
+      "idea_count": 2,
+      "recordedAt": "2026-07-16T10:08:24.015Z"
     }
   ],
   "scorecard": {
@@ -715,16 +759,34 @@
         "resolvedAt": "2026-06-16T23:06:29.229Z"
       }
     ],
-    "asOf": "2026-07-15T22:32:12.375Z"
+    "asOf": "2026-07-16T10:08:24.029Z"
   },
   "today": {
-    "date": "2026-07-15",
-    "market_context": "Today's market conditions are mixed, with some US tech stocks experiencing significant declines, while certain UK banking stocks are seeing substantial gains. The overall volatility is moderate, with some stocks showing increased relative volume.",
+    "date": "2026-07-16",
+    "market_context": "Today's market conditions are mixed, with some US tech stocks experiencing significant declines, while others like META and JPM are seeing substantial gains. The UK market is also seeing some notable movements, with HSBA.L and LLOY.L rising sharply. The Indian market is experiencing a mix of gains and losses, with RELIANCE.NS and HDFCBANK.NS seeing modest gains, while INFY.NS and WIPRO.NS are declining.",
     "no_trade_reason": null,
     "ideas": [
       {
-        "id": "2026-07-15-HDFCBANK.NS-long",
-        "date": "2026-07-15",
+        "id": "2026-07-16-JPM-long",
+        "date": "2026-07-16",
+        "status": "pending",
+        "ticker": "JPM",
+        "side": "long",
+        "entry": 348,
+        "stop": 339,
+        "target": 362,
+        "confidence": 0.55,
+        "catalyst": "Strong earnings report and overall market sentiment",
+        "thesis": "If JPM can break above its current resistance level, it may see a continuation of its upward trend, driven by strong earnings and a positive market sentiment. The stock needs to hold above its recent lows to confirm this thesis.",
+        "invalidation": "A close below 339.00 would invalidate this thesis, indicating a potential reversal of the trend.",
+        "rr": 1.56,
+        "shares": 11,
+        "riskAmount": 100,
+        "recordedAt": "2026-07-16T10:08:24.015Z"
+      },
+      {
+        "id": "2026-07-16-HDFCBANK.NS-long",
+        "date": "2026-07-16",
         "status": "pending",
         "ticker": "HDFCBANK.NS",
         "side": "long",
@@ -732,23 +794,23 @@
         "stop": 795,
         "target": 835,
         "confidence": 0.5,
-        "catalyst": "Positive sector trends and improving economic outlook",
-        "thesis": "If HDFCBANK.NS can maintain its current momentum, it may break through the 820 level and target 835.00. The overall positive trends in the banking sector and the improving economic outlook could support this move.",
-        "invalidation": "A close below 790.00 would invalidate this thesis, suggesting a potential downturn.",
+        "catalyst": "Positive market sentiment and strong sector performance",
+        "thesis": "If HDFCBANK.NS can maintain its current momentum, it may see a continuation of its upward trend, driven by a positive market sentiment and strong sector performance. The stock needs to hold above its recent support levels to confirm this thesis.",
+        "invalidation": "A close below 795.00 would invalidate this thesis, indicating a potential reversal of the trend.",
         "rr": 1.67,
         "shares": 6,
         "riskAmount": 100,
-        "recordedAt": "2026-07-15T10:02:01.802Z"
+        "recordedAt": "2026-07-16T10:08:24.015Z"
       }
     ],
     "provider": "groq",
-    "scannedAt": "2026-07-15T10:02:01.958Z"
+    "scannedAt": "2026-07-16T10:08:24.029Z"
   },
   "meta": {
     "created": "2026-01-01T00:00:00.000Z",
     "version": 1,
-    "disclaimer": "NOT financial advice. Delayed/unofficial data. Paper trading only.",
-    "lastScan": "2026-07-15T10:02:01.958Z",
+    "disclaimer": "NOT financial advice. Delayed/unofficial data. Confirm in your broker. Paper trading only.",
+    "lastScan": "2026-07-16T10:08:24.029Z",
     "lastScore": "2026-07-15T22:32:12.375Z"
   }
 }
