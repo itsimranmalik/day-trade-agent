@@ -243,7 +243,7 @@
     {
       "id": "2026-07-16-JPM-long",
       "date": "2026-07-16",
-      "status": "pending",
+      "status": "resolved",
       "ticker": "JPM",
       "side": "long",
       "entry": 348,
@@ -256,12 +256,18 @@
       "rr": 1.56,
       "shares": 11,
       "riskAmount": 100,
-      "recordedAt": "2026-07-16T10:08:24.015Z"
+      "recordedAt": "2026-07-16T10:08:24.015Z",
+      "outcome": "expired_at_close",
+      "exitPrice": 343.15,
+      "pnl": -53.35,
+      "r": -0.53,
+      "resolvedDate": "2026-07-16",
+      "resolvedAt": "2026-07-16T22:30:34.054Z"
     },
     {
       "id": "2026-07-16-HDFCBANK.NS-long",
       "date": "2026-07-16",
-      "status": "pending",
+      "status": "resolved",
       "ticker": "HDFCBANK.NS",
       "side": "long",
       "entry": 810,
@@ -274,7 +280,13 @@
       "rr": 1.67,
       "shares": 6,
       "riskAmount": 100,
-      "recordedAt": "2026-07-16T10:08:24.015Z"
+      "recordedAt": "2026-07-16T10:08:24.015Z",
+      "outcome": "expired_at_close",
+      "exitPrice": 815.45,
+      "pnl": 32.7,
+      "r": 0.33,
+      "resolvedDate": "2026-07-15",
+      "resolvedAt": "2026-07-16T22:30:34.168Z"
     }
   ],
   "scan_history": [
@@ -504,20 +516,68 @@
     }
   ],
   "scorecard": {
-    "count": 10,
-    "wins": 2,
-    "losses": 8,
+    "count": 12,
+    "wins": 3,
+    "losses": 9,
     "even": 0,
-    "winRate": 0.2,
-    "avgR": -0.53,
-    "totalPnl": -528.9,
+    "winRate": 0.25,
+    "avgR": -0.46,
+    "totalPnl": -549.55,
     "maxDrawdown": 574.8,
     "byOutcome": {
-      "expired_at_close": 7,
+      "expired_at_close": 9,
       "stopped_gap": 2,
       "stopped": 1
     },
     "recent": [
+      {
+        "id": "2026-07-16-JPM-long",
+        "date": "2026-07-16",
+        "status": "resolved",
+        "ticker": "JPM",
+        "side": "long",
+        "entry": 348,
+        "stop": 339,
+        "target": 362,
+        "confidence": 0.55,
+        "catalyst": "Strong earnings report and overall market sentiment",
+        "thesis": "If JPM can break above its current resistance level, it may see a continuation of its upward trend, driven by strong earnings and a positive market sentiment. The stock needs to hold above its recent lows to confirm this thesis.",
+        "invalidation": "A close below 339.00 would invalidate this thesis, indicating a potential reversal of the trend.",
+        "rr": 1.56,
+        "shares": 11,
+        "riskAmount": 100,
+        "recordedAt": "2026-07-16T10:08:24.015Z",
+        "outcome": "expired_at_close",
+        "exitPrice": 343.15,
+        "pnl": -53.35,
+        "r": -0.53,
+        "resolvedDate": "2026-07-16",
+        "resolvedAt": "2026-07-16T22:30:34.054Z"
+      },
+      {
+        "id": "2026-07-16-HDFCBANK.NS-long",
+        "date": "2026-07-16",
+        "status": "resolved",
+        "ticker": "HDFCBANK.NS",
+        "side": "long",
+        "entry": 810,
+        "stop": 795,
+        "target": 835,
+        "confidence": 0.5,
+        "catalyst": "Positive market sentiment and strong sector performance",
+        "thesis": "If HDFCBANK.NS can maintain its current momentum, it may see a continuation of its upward trend, driven by a positive market sentiment and strong sector performance. The stock needs to hold above its recent support levels to confirm this thesis.",
+        "invalidation": "A close below 795.00 would invalidate this thesis, indicating a potential reversal of the trend.",
+        "rr": 1.67,
+        "shares": 6,
+        "riskAmount": 100,
+        "recordedAt": "2026-07-16T10:08:24.015Z",
+        "outcome": "expired_at_close",
+        "exitPrice": 815.45,
+        "pnl": 32.7,
+        "r": 0.33,
+        "resolvedDate": "2026-07-15",
+        "resolvedAt": "2026-07-16T22:30:34.168Z"
+      },
       {
         "id": "2026-07-15-HDFCBANK.NS-long",
         "date": "2026-07-15",
@@ -709,57 +769,9 @@
         "r": -0.52,
         "resolvedDate": "2026-06-19",
         "resolvedAt": "2026-06-22T23:03:39.653Z"
-      },
-      {
-        "id": "2026-06-16-NVDA-long",
-        "date": "2026-06-16",
-        "status": "resolved",
-        "ticker": "NVDA",
-        "side": "long",
-        "entry": 210,
-        "stop": 205,
-        "target": 220,
-        "confidence": 0.5,
-        "catalyst": "Strong earnings report and increasing demand for AI-related products",
-        "thesis": "If NVDA breaks out above its recent resistance level, it may continue its upward trend. The stock has shown strong momentum and is likely to continue its growth. A long position can be taken with a stop loss below the recent low.",
-        "invalidation": "If NVDA falls below its recent low, it may indicate a reversal in trend and the long position should be closed.",
-        "rr": 2,
-        "shares": 20,
-        "riskAmount": 100,
-        "recordedAt": "2026-06-16T12:53:43.298Z",
-        "outcome": "expired_at_close",
-        "exitPrice": 207.41,
-        "pnl": -51.8,
-        "r": -0.52,
-        "resolvedDate": "2026-06-16",
-        "resolvedAt": "2026-06-16T23:06:29.127Z"
-      },
-      {
-        "id": "2026-06-16-BARC.L-long",
-        "date": "2026-06-16",
-        "status": "resolved",
-        "ticker": "BARC.L",
-        "side": "long",
-        "entry": 480,
-        "stop": 470,
-        "target": 500,
-        "confidence": 0.45,
-        "catalyst": "Positive economic data and increasing banking sector performance",
-        "thesis": "If BARC.L breaks out above its recent resistance level, it may continue its upward trend. The stock has shown strong momentum and is likely to continue its growth. A long position can be taken with a stop loss below the recent low.",
-        "invalidation": "If BARC.L falls below its recent low, it may indicate a reversal in trend and the long position should be closed.",
-        "rr": 2,
-        "shares": 10,
-        "riskAmount": 100,
-        "recordedAt": "2026-06-16T12:53:43.298Z",
-        "outcome": "expired_at_close",
-        "exitPrice": 479.9,
-        "pnl": -1,
-        "r": -0.01,
-        "resolvedDate": "2026-06-15",
-        "resolvedAt": "2026-06-16T23:06:29.229Z"
       }
     ],
-    "asOf": "2026-07-16T10:08:24.029Z"
+    "asOf": "2026-07-16T22:30:34.181Z"
   },
   "today": {
     "date": "2026-07-16",
@@ -809,8 +821,8 @@
   "meta": {
     "created": "2026-01-01T00:00:00.000Z",
     "version": 1,
-    "disclaimer": "NOT financial advice. Delayed/unofficial data. Confirm in your broker. Paper trading only.",
+    "disclaimer": "NOT financial advice. Delayed/unofficial data. Paper trading only.",
     "lastScan": "2026-07-16T10:08:24.029Z",
-    "lastScore": "2026-07-15T22:32:12.375Z"
+    "lastScore": "2026-07-16T22:30:34.181Z"
   }
 }
