@@ -521,6 +521,14 @@
       "no_trade_reason": "No qualifying setups found after validation",
       "idea_count": 0,
       "recordedAt": "2026-07-17T09:56:42.258Z"
+    },
+    {
+      "date": "2026-07-20",
+      "provider": "groq",
+      "market_context": "Today's market conditions are mixed, with some US tech stocks experiencing significant declines, while others like JPM and LLOY.L are seeing substantial gains. The overall sentiment is cautious, with many stocks trading below their recent highs.",
+      "no_trade_reason": "No qualifying setups found after validation",
+      "idea_count": 0,
+      "recordedAt": "2026-07-20T10:51:21.388Z"
     }
   ],
   "scorecard": {
@@ -779,21 +787,21 @@
         "resolvedAt": "2026-06-22T23:03:39.653Z"
       }
     ],
-    "asOf": "2026-07-17T09:56:42.430Z"
+    "asOf": "2026-07-20T10:51:21.527Z"
   },
   "today": {
-    "date": "2026-07-17",
-    "market_context": "The US market is experiencing a mixed day with some stocks like AAPL and JPM showing significant gains, while others like TSLA and NVDA are facing losses. The UK market is seeing a surge in banking stocks like LLOY and BARC, while the Indian market is witnessing a rally in banking and IT stocks like HDFCBANK and TCS.",
+    "date": "2026-07-20",
+    "market_context": "Today's market conditions are mixed, with some US tech stocks experiencing significant declines, while others like JPM and LLOY.L are seeing substantial gains. The overall sentiment is cautious, with many stocks trading below their recent highs.",
     "no_trade_reason": "No qualifying setups found after validation",
     "ideas": [],
     "provider": "groq",
-    "scannedAt": "2026-07-17T09:56:42.430Z"
+    "scannedAt": "2026-07-20T10:51:21.527Z"
   },
   "meta": {
     "created": "2026-01-01T00:00:00.000Z",
     "version": 1,
     "disclaimer": "NOT financial advice. Delayed/unofficial data. Confirm in your broker. Paper trading only.",
-    "lastScan": "2026-07-17T09:56:42.430Z",
+    "lastScan": "2026-07-20T10:51:21.527Z",
     "lastScore": "2026-07-16T22:30:34.181Z"
   }
 }
