@@ -529,6 +529,14 @@
       "no_trade_reason": "No qualifying setups found after validation",
       "idea_count": 0,
       "recordedAt": "2026-07-20T10:51:21.388Z"
+    },
+    {
+      "date": "2026-07-21",
+      "provider": "groq",
+      "market_context": "Today's market conditions are mixed, with some US tech stocks experiencing significant declines, while certain UK and Indian banking stocks are seeing notable gains. The overall sentiment is cautious, with many stocks trading below their recent highs.",
+      "no_trade_reason": "No qualifying setups found after validation",
+      "idea_count": 0,
+      "recordedAt": "2026-07-21T10:25:40.775Z"
     }
   ],
   "scorecard": {
@@ -787,21 +795,21 @@
         "resolvedAt": "2026-06-22T23:03:39.653Z"
       }
     ],
-    "asOf": "2026-07-20T10:51:21.527Z"
+    "asOf": "2026-07-21T10:25:40.900Z"
   },
   "today": {
-    "date": "2026-07-20",
-    "market_context": "Today's market conditions are mixed, with some US tech stocks experiencing significant declines, while others like JPM and LLOY.L are seeing substantial gains. The overall sentiment is cautious, with many stocks trading below their recent highs.",
+    "date": "2026-07-21",
+    "market_context": "Today's market conditions are mixed, with some US tech stocks experiencing significant declines, while certain UK and Indian banking stocks are seeing notable gains. The overall sentiment is cautious, with many stocks trading below their recent highs.",
     "no_trade_reason": "No qualifying setups found after validation",
     "ideas": [],
     "provider": "groq",
-    "scannedAt": "2026-07-20T10:51:21.527Z"
+    "scannedAt": "2026-07-21T10:25:40.900Z"
   },
   "meta": {
     "created": "2026-01-01T00:00:00.000Z",
     "version": 1,
     "disclaimer": "NOT financial advice. Delayed/unofficial data. Confirm in your broker. Paper trading only.",
-    "lastScan": "2026-07-20T10:51:21.527Z",
+    "lastScan": "2026-07-21T10:25:40.900Z",
     "lastScore": "2026-07-16T22:30:34.181Z"
   }
 }
