@@ -287,6 +287,24 @@
       "r": 0.33,
       "resolvedDate": "2026-07-15",
       "resolvedAt": "2026-07-16T22:30:34.168Z"
+    },
+    {
+      "id": "2026-07-22-LLOY.L-long",
+      "date": "2026-07-22",
+      "status": "pending",
+      "ticker": "LLOY.L",
+      "side": "long",
+      "entry": 114,
+      "stop": 112,
+      "target": 117,
+      "confidence": 0.55,
+      "catalyst": "Strong earnings report and positive market sentiment",
+      "thesis": "If LLOY.L can break above the recent resistance level of 115.00, it may continue its upward trend, with a potential target of 117.00. The stock's strong earnings report and positive market sentiment are driving this move.",
+      "invalidation": "A close below 112.00 would invalidate this thesis, indicating a potential reversal in the stock's trend.",
+      "rr": 1.5,
+      "shares": 50,
+      "riskAmount": 100,
+      "recordedAt": "2026-07-22T10:25:38.058Z"
     }
   ],
   "scan_history": [
@@ -537,6 +555,14 @@
       "no_trade_reason": "No qualifying setups found after validation",
       "idea_count": 0,
       "recordedAt": "2026-07-21T10:25:40.775Z"
+    },
+    {
+      "date": "2026-07-22",
+      "provider": "groq",
+      "market_context": "Today's market conditions are mixed, with some US tech stocks showing gains, while others are experiencing losses. The UK market is seeing significant movements in banking stocks, with LLOY.L and BARC.L showing substantial gains. The Indian market is also experiencing some volatility, with RELIANCE.NS and ICICIBANK.NS showing positive movements.",
+      "no_trade_reason": null,
+      "idea_count": 1,
+      "recordedAt": "2026-07-22T10:25:38.058Z"
     }
   ],
   "scorecard": {
@@ -795,21 +821,40 @@
         "resolvedAt": "2026-06-22T23:03:39.653Z"
       }
     ],
-    "asOf": "2026-07-21T10:25:40.900Z"
+    "asOf": "2026-07-22T10:25:38.066Z"
   },
   "today": {
-    "date": "2026-07-21",
-    "market_context": "Today's market conditions are mixed, with some US tech stocks experiencing significant declines, while certain UK and Indian banking stocks are seeing notable gains. The overall sentiment is cautious, with many stocks trading below their recent highs.",
-    "no_trade_reason": "No qualifying setups found after validation",
-    "ideas": [],
+    "date": "2026-07-22",
+    "market_context": "Today's market conditions are mixed, with some US tech stocks showing gains, while others are experiencing losses. The UK market is seeing significant movements in banking stocks, with LLOY.L and BARC.L showing substantial gains. The Indian market is also experiencing some volatility, with RELIANCE.NS and ICICIBANK.NS showing positive movements.",
+    "no_trade_reason": null,
+    "ideas": [
+      {
+        "id": "2026-07-22-LLOY.L-long",
+        "date": "2026-07-22",
+        "status": "pending",
+        "ticker": "LLOY.L",
+        "side": "long",
+        "entry": 114,
+        "stop": 112,
+        "target": 117,
+        "confidence": 0.55,
+        "catalyst": "Strong earnings report and positive market sentiment",
+        "thesis": "If LLOY.L can break above the recent resistance level of 115.00, it may continue its upward trend, with a potential target of 117.00. The stock's strong earnings report and positive market sentiment are driving this move.",
+        "invalidation": "A close below 112.00 would invalidate this thesis, indicating a potential reversal in the stock's trend.",
+        "rr": 1.5,
+        "shares": 50,
+        "riskAmount": 100,
+        "recordedAt": "2026-07-22T10:25:38.058Z"
+      }
+    ],
     "provider": "groq",
-    "scannedAt": "2026-07-21T10:25:40.900Z"
+    "scannedAt": "2026-07-22T10:25:38.066Z"
   },
   "meta": {
     "created": "2026-01-01T00:00:00.000Z",
     "version": 1,
     "disclaimer": "NOT financial advice. Delayed/unofficial data. Confirm in your broker. Paper trading only.",
-    "lastScan": "2026-07-21T10:25:40.900Z",
+    "lastScan": "2026-07-22T10:25:38.066Z",
     "lastScore": "2026-07-16T22:30:34.181Z"
   }
 }
