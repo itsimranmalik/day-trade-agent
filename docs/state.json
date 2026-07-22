@@ -291,7 +291,7 @@
     {
       "id": "2026-07-22-LLOY.L-long",
       "date": "2026-07-22",
-      "status": "pending",
+      "status": "resolved",
       "ticker": "LLOY.L",
       "side": "long",
       "entry": 114,
@@ -304,7 +304,13 @@
       "rr": 1.5,
       "shares": 50,
       "riskAmount": 100,
-      "recordedAt": "2026-07-22T10:25:38.058Z"
+      "recordedAt": "2026-07-22T10:25:38.058Z",
+      "outcome": "expired_at_close",
+      "exitPrice": 114.85,
+      "pnl": 42.5,
+      "r": 0.42,
+      "resolvedDate": "2026-07-22",
+      "resolvedAt": "2026-07-22T22:35:16.860Z"
     }
   ],
   "scan_history": [
@@ -566,20 +572,44 @@
     }
   ],
   "scorecard": {
-    "count": 12,
-    "wins": 3,
+    "count": 13,
+    "wins": 4,
     "losses": 9,
     "even": 0,
-    "winRate": 0.25,
-    "avgR": -0.46,
-    "totalPnl": -549.55,
+    "winRate": 0.308,
+    "avgR": -0.39,
+    "totalPnl": -507.05,
     "maxDrawdown": 574.8,
     "byOutcome": {
-      "expired_at_close": 9,
+      "expired_at_close": 10,
       "stopped_gap": 2,
       "stopped": 1
     },
     "recent": [
+      {
+        "id": "2026-07-22-LLOY.L-long",
+        "date": "2026-07-22",
+        "status": "resolved",
+        "ticker": "LLOY.L",
+        "side": "long",
+        "entry": 114,
+        "stop": 112,
+        "target": 117,
+        "confidence": 0.55,
+        "catalyst": "Strong earnings report and positive market sentiment",
+        "thesis": "If LLOY.L can break above the recent resistance level of 115.00, it may continue its upward trend, with a potential target of 117.00. The stock's strong earnings report and positive market sentiment are driving this move.",
+        "invalidation": "A close below 112.00 would invalidate this thesis, indicating a potential reversal in the stock's trend.",
+        "rr": 1.5,
+        "shares": 50,
+        "riskAmount": 100,
+        "recordedAt": "2026-07-22T10:25:38.058Z",
+        "outcome": "expired_at_close",
+        "exitPrice": 114.85,
+        "pnl": 42.5,
+        "r": 0.42,
+        "resolvedDate": "2026-07-22",
+        "resolvedAt": "2026-07-22T22:35:16.860Z"
+      },
       {
         "id": "2026-07-16-JPM-long",
         "date": "2026-07-16",
@@ -795,33 +825,9 @@
         "r": 0.57,
         "resolvedDate": "2026-06-22",
         "resolvedAt": "2026-06-23T22:48:38.305Z"
-      },
-      {
-        "id": "2026-06-22-HDFCBANK.NS-long",
-        "date": "2026-06-22",
-        "status": "resolved",
-        "ticker": "HDFCBANK.NS",
-        "side": "long",
-        "entry": 785,
-        "stop": 775,
-        "target": 800,
-        "confidence": 0.45,
-        "catalyst": "Banking sector strength",
-        "thesis": "If HDFCBANK.NS can hold above the 785.00 level, it may target the 800.00 level, driven by the overall strength in the Indian banking sector. The stock's strong volume and momentum suggest a potential upside move.",
-        "invalidation": "A close below 775.00 would invalidate this thesis, indicating a lack of buying interest.",
-        "rr": 1.5,
-        "shares": 10,
-        "riskAmount": 100,
-        "recordedAt": "2026-06-22T13:35:43.434Z",
-        "outcome": "expired_at_close",
-        "exitPrice": 779.8,
-        "pnl": -52,
-        "r": -0.52,
-        "resolvedDate": "2026-06-19",
-        "resolvedAt": "2026-06-22T23:03:39.653Z"
       }
     ],
-    "asOf": "2026-07-22T10:25:38.066Z"
+    "asOf": "2026-07-22T22:35:16.866Z"
   },
   "today": {
     "date": "2026-07-22",
@@ -853,8 +859,8 @@
   "meta": {
     "created": "2026-01-01T00:00:00.000Z",
     "version": 1,
-    "disclaimer": "NOT financial advice. Delayed/unofficial data. Confirm in your broker. Paper trading only.",
+    "disclaimer": "NOT financial advice. Delayed/unofficial data. Paper trading only.",
     "lastScan": "2026-07-22T10:25:38.066Z",
-    "lastScore": "2026-07-16T22:30:34.181Z"
+    "lastScore": "2026-07-22T22:35:16.866Z"
   }
 }
