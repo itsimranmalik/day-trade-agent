@@ -311,6 +311,24 @@
       "r": 0.42,
       "resolvedDate": "2026-07-22",
       "resolvedAt": "2026-07-22T22:35:16.860Z"
+    },
+    {
+      "id": "2026-07-23-LLOY.L-long",
+      "date": "2026-07-23",
+      "status": "pending",
+      "ticker": "LLOY.L",
+      "side": "long",
+      "entry": 112,
+      "stop": 108.16,
+      "target": 120,
+      "confidence": 0.5,
+      "catalyst": "Positive market sentiment and strong banking sector performance",
+      "thesis": "If LLOY can maintain its current momentum, it may experience a significant price increase. The stock has shown a strong relative volume and a high confidence level, indicating a potential for further gains. A long position can be taken with a stop loss below the recent low and a target near the next resistance level.",
+      "invalidation": "A close below 105.00 would invalidate this thesis",
+      "rr": 2.08,
+      "shares": 26,
+      "riskAmount": 100,
+      "recordedAt": "2026-07-23T10:19:41.776Z"
     }
   ],
   "scan_history": [
@@ -569,6 +587,14 @@
       "no_trade_reason": null,
       "idea_count": 1,
       "recordedAt": "2026-07-22T10:25:38.058Z"
+    },
+    {
+      "date": "2026-07-23",
+      "provider": "groq",
+      "market_context": "The US market is showing mixed signals with some stocks like AAPL and AMD experiencing significant gains, while others like TSLA and MSFT are facing losses. The UK market is seeing a surge in banking stocks like LLOY and BARC, while the Indian market is experiencing a mix of gains and losses across various sectors.",
+      "no_trade_reason": null,
+      "idea_count": 1,
+      "recordedAt": "2026-07-23T10:19:41.776Z"
     }
   ],
   "scorecard": {
@@ -827,40 +853,40 @@
         "resolvedAt": "2026-06-23T22:48:38.305Z"
       }
     ],
-    "asOf": "2026-07-22T22:35:16.866Z"
+    "asOf": "2026-07-23T10:19:41.783Z"
   },
   "today": {
-    "date": "2026-07-22",
-    "market_context": "Today's market conditions are mixed, with some US tech stocks showing gains, while others are experiencing losses. The UK market is seeing significant movements in banking stocks, with LLOY.L and BARC.L showing substantial gains. The Indian market is also experiencing some volatility, with RELIANCE.NS and ICICIBANK.NS showing positive movements.",
+    "date": "2026-07-23",
+    "market_context": "The US market is showing mixed signals with some stocks like AAPL and AMD experiencing significant gains, while others like TSLA and MSFT are facing losses. The UK market is seeing a surge in banking stocks like LLOY and BARC, while the Indian market is experiencing a mix of gains and losses across various sectors.",
     "no_trade_reason": null,
     "ideas": [
       {
-        "id": "2026-07-22-LLOY.L-long",
-        "date": "2026-07-22",
+        "id": "2026-07-23-LLOY.L-long",
+        "date": "2026-07-23",
         "status": "pending",
         "ticker": "LLOY.L",
         "side": "long",
-        "entry": 114,
-        "stop": 112,
-        "target": 117,
-        "confidence": 0.55,
-        "catalyst": "Strong earnings report and positive market sentiment",
-        "thesis": "If LLOY.L can break above the recent resistance level of 115.00, it may continue its upward trend, with a potential target of 117.00. The stock's strong earnings report and positive market sentiment are driving this move.",
-        "invalidation": "A close below 112.00 would invalidate this thesis, indicating a potential reversal in the stock's trend.",
-        "rr": 1.5,
-        "shares": 50,
+        "entry": 112,
+        "stop": 108.16,
+        "target": 120,
+        "confidence": 0.5,
+        "catalyst": "Positive market sentiment and strong banking sector performance",
+        "thesis": "If LLOY can maintain its current momentum, it may experience a significant price increase. The stock has shown a strong relative volume and a high confidence level, indicating a potential for further gains. A long position can be taken with a stop loss below the recent low and a target near the next resistance level.",
+        "invalidation": "A close below 105.00 would invalidate this thesis",
+        "rr": 2.08,
+        "shares": 26,
         "riskAmount": 100,
-        "recordedAt": "2026-07-22T10:25:38.058Z"
+        "recordedAt": "2026-07-23T10:19:41.776Z"
       }
     ],
     "provider": "groq",
-    "scannedAt": "2026-07-22T10:25:38.066Z"
+    "scannedAt": "2026-07-23T10:19:41.783Z"
   },
   "meta": {
     "created": "2026-01-01T00:00:00.000Z",
     "version": 1,
-    "disclaimer": "NOT financial advice. Delayed/unofficial data. Paper trading only.",
-    "lastScan": "2026-07-22T10:25:38.066Z",
+    "disclaimer": "NOT financial advice. Delayed/unofficial data. Confirm in your broker. Paper trading only.",
+    "lastScan": "2026-07-23T10:19:41.783Z",
     "lastScore": "2026-07-22T22:35:16.866Z"
   }
 }
