@@ -601,6 +601,14 @@
       "no_trade_reason": null,
       "idea_count": 1,
       "recordedAt": "2026-07-23T10:19:41.776Z"
+    },
+    {
+      "date": "2026-07-24",
+      "provider": "groq",
+      "market_context": "Today's market conditions are mixed, with some US tech stocks experiencing significant volatility, while UK and Indian markets show a range of movements. The overall sentiment is cautious, with some stocks rebounding and others continuing to decline.",
+      "no_trade_reason": "No qualifying setups found after validation",
+      "idea_count": 0,
+      "recordedAt": "2026-07-24T10:16:14.483Z"
     }
   ],
   "scorecard": {
@@ -859,40 +867,21 @@
         "resolvedAt": "2026-06-26T22:46:58.693Z"
       }
     ],
-    "asOf": "2026-07-23T22:32:08.027Z"
+    "asOf": "2026-07-24T10:16:14.499Z"
   },
   "today": {
-    "date": "2026-07-23",
-    "market_context": "The US market is showing mixed signals with some stocks like AAPL and AMD experiencing significant gains, while others like TSLA and MSFT are facing losses. The UK market is seeing a surge in banking stocks like LLOY and BARC, while the Indian market is experiencing a mix of gains and losses across various sectors.",
-    "no_trade_reason": null,
-    "ideas": [
-      {
-        "id": "2026-07-23-LLOY.L-long",
-        "date": "2026-07-23",
-        "status": "pending",
-        "ticker": "LLOY.L",
-        "side": "long",
-        "entry": 112,
-        "stop": 108.16,
-        "target": 120,
-        "confidence": 0.5,
-        "catalyst": "Positive market sentiment and strong banking sector performance",
-        "thesis": "If LLOY can maintain its current momentum, it may experience a significant price increase. The stock has shown a strong relative volume and a high confidence level, indicating a potential for further gains. A long position can be taken with a stop loss below the recent low and a target near the next resistance level.",
-        "invalidation": "A close below 105.00 would invalidate this thesis",
-        "rr": 2.08,
-        "shares": 26,
-        "riskAmount": 100,
-        "recordedAt": "2026-07-23T10:19:41.776Z"
-      }
-    ],
+    "date": "2026-07-24",
+    "market_context": "Today's market conditions are mixed, with some US tech stocks experiencing significant volatility, while UK and Indian markets show a range of movements. The overall sentiment is cautious, with some stocks rebounding and others continuing to decline.",
+    "no_trade_reason": "No qualifying setups found after validation",
+    "ideas": [],
     "provider": "groq",
-    "scannedAt": "2026-07-23T10:19:41.783Z"
+    "scannedAt": "2026-07-24T10:16:14.499Z"
   },
   "meta": {
     "created": "2026-01-01T00:00:00.000Z",
     "version": 1,
-    "disclaimer": "NOT financial advice. Delayed/unofficial data. Paper trading only.",
-    "lastScan": "2026-07-23T10:19:41.783Z",
+    "disclaimer": "NOT financial advice. Delayed/unofficial data. Confirm in your broker. Paper trading only.",
+    "lastScan": "2026-07-24T10:16:14.499Z",
     "lastScore": "2026-07-23T22:32:08.027Z"
   }
 }
