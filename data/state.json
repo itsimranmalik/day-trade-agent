@@ -609,6 +609,14 @@
       "no_trade_reason": "No qualifying setups found after validation",
       "idea_count": 0,
       "recordedAt": "2026-07-24T10:16:14.483Z"
+    },
+    {
+      "date": "2026-07-27",
+      "provider": "groq",
+      "market_context": "Today's market conditions show a mix of gains and losses across the US, UK, and Indian equity markets. The US market saw significant movements in tech stocks, with AAPL and AMD experiencing large gains, while TSLA and MSFT saw notable losses. The UK market saw gains in banking stocks, with LLOY and BARC experiencing double-digit percentage increases. The Indian market saw mixed results, with some stocks like ICICIBANK and TCS experiencing gains, while others like RELIANCE and INFY saw losses.",
+      "no_trade_reason": "No qualifying setups found after validation",
+      "idea_count": 0,
+      "recordedAt": "2026-07-27T11:19:27.531Z"
     }
   ],
   "scorecard": {
@@ -867,21 +875,21 @@
         "resolvedAt": "2026-06-26T22:46:58.693Z"
       }
     ],
-    "asOf": "2026-07-24T10:16:14.499Z"
+    "asOf": "2026-07-27T11:19:27.546Z"
   },
   "today": {
-    "date": "2026-07-24",
-    "market_context": "Today's market conditions are mixed, with some US tech stocks experiencing significant volatility, while UK and Indian markets show a range of movements. The overall sentiment is cautious, with some stocks rebounding and others continuing to decline.",
+    "date": "2026-07-27",
+    "market_context": "Today's market conditions show a mix of gains and losses across the US, UK, and Indian equity markets. The US market saw significant movements in tech stocks, with AAPL and AMD experiencing large gains, while TSLA and MSFT saw notable losses. The UK market saw gains in banking stocks, with LLOY and BARC experiencing double-digit percentage increases. The Indian market saw mixed results, with some stocks like ICICIBANK and TCS experiencing gains, while others like RELIANCE and INFY saw losses.",
     "no_trade_reason": "No qualifying setups found after validation",
     "ideas": [],
     "provider": "groq",
-    "scannedAt": "2026-07-24T10:16:14.499Z"
+    "scannedAt": "2026-07-27T11:19:27.546Z"
   },
   "meta": {
     "created": "2026-01-01T00:00:00.000Z",
     "version": 1,
     "disclaimer": "NOT financial advice. Delayed/unofficial data. Confirm in your broker. Paper trading only.",
-    "lastScan": "2026-07-24T10:16:14.499Z",
+    "lastScan": "2026-07-27T11:19:27.546Z",
     "lastScore": "2026-07-23T22:32:08.027Z"
   }
 }
