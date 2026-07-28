@@ -339,7 +339,7 @@
     {
       "id": "2026-07-28-JPM-long",
       "date": "2026-07-28",
-      "status": "pending",
+      "status": "resolved",
       "ticker": "JPM",
       "side": "long",
       "entry": 357,
@@ -352,7 +352,13 @@
       "rr": 1.6,
       "shares": 20,
       "riskAmount": 100,
-      "recordedAt": "2026-07-28T10:34:13.161Z"
+      "recordedAt": "2026-07-28T10:34:13.161Z",
+      "outcome": "expired_at_close",
+      "exitPrice": 357.31,
+      "pnl": 6.2,
+      "r": 0.06,
+      "resolvedDate": "2026-07-28",
+      "resolvedAt": "2026-07-28T22:35:15.497Z"
     }
   ],
   "scan_history": [
@@ -646,20 +652,44 @@
     }
   ],
   "scorecard": {
-    "count": 14,
-    "wins": 5,
+    "count": 15,
+    "wins": 6,
     "losses": 9,
     "even": 0,
-    "winRate": 0.357,
-    "avgR": -0.35,
-    "totalPnl": -495.35,
+    "winRate": 0.4,
+    "avgR": -0.33,
+    "totalPnl": -489.15,
     "maxDrawdown": 574.8,
     "byOutcome": {
-      "expired_at_close": 11,
+      "expired_at_close": 12,
       "stopped_gap": 2,
       "stopped": 1
     },
     "recent": [
+      {
+        "id": "2026-07-28-JPM-long",
+        "date": "2026-07-28",
+        "status": "resolved",
+        "ticker": "JPM",
+        "side": "long",
+        "entry": 357,
+        "stop": 352,
+        "target": 365,
+        "confidence": 0.55,
+        "catalyst": "Earnings report",
+        "thesis": "If JPM breaks out above its recent resistance level, it may continue its upward trend. The stock has shown strong momentum after its earnings report, and a long position could be considered if it holds above the $352 level.",
+        "invalidation": "A close below $352 would invalidate this thesis.",
+        "rr": 1.6,
+        "shares": 20,
+        "riskAmount": 100,
+        "recordedAt": "2026-07-28T10:34:13.161Z",
+        "outcome": "expired_at_close",
+        "exitPrice": 357.31,
+        "pnl": 6.2,
+        "r": 0.06,
+        "resolvedDate": "2026-07-28",
+        "resolvedAt": "2026-07-28T22:35:15.497Z"
+      },
       {
         "id": "2026-07-23-LLOY.L-long",
         "date": "2026-07-23",
@@ -875,33 +905,9 @@
         "r": -2.7,
         "resolvedDate": "2026-07-03",
         "resolvedAt": "2026-07-06T22:45:42.631Z"
-      },
-      {
-        "id": "2026-06-26-HDFCBANK.NS-long",
-        "date": "2026-06-26",
-        "status": "resolved",
-        "ticker": "HDFCBANK.NS",
-        "side": "long",
-        "entry": 800,
-        "stop": 790,
-        "target": 815,
-        "confidence": 0.55,
-        "catalyst": "Positive earnings report and increasing trading volume",
-        "thesis": "If HDFCBANK.NS can break above the 805 level, it may continue its upward trend, potentially reaching the 815 resistance level. A strong bullish candle and increasing trading volume could be indicative of a further price increase.",
-        "invalidation": "A close below 790 would invalidate this thesis, suggesting a potential reversal in the trend.",
-        "rr": 1.5,
-        "shares": 10,
-        "riskAmount": 100,
-        "recordedAt": "2026-06-26T10:51:37.380Z",
-        "outcome": "expired_at_close",
-        "exitPrice": 796.3,
-        "pnl": -37,
-        "r": -0.37,
-        "resolvedDate": "2026-06-25",
-        "resolvedAt": "2026-06-26T22:46:58.693Z"
       }
     ],
-    "asOf": "2026-07-28T10:34:13.330Z"
+    "asOf": "2026-07-28T22:35:15.513Z"
   },
   "today": {
     "date": "2026-07-28",
@@ -933,8 +939,8 @@
   "meta": {
     "created": "2026-01-01T00:00:00.000Z",
     "version": 1,
-    "disclaimer": "NOT financial advice. Delayed/unofficial data. Confirm in your broker. Paper trading only.",
+    "disclaimer": "NOT financial advice. Delayed/unofficial data. Paper trading only.",
     "lastScan": "2026-07-28T10:34:13.331Z",
-    "lastScore": "2026-07-23T22:32:08.027Z"
+    "lastScore": "2026-07-28T22:35:15.513Z"
   }
 }
