@@ -335,6 +335,24 @@
       "r": 0.12,
       "resolvedDate": "2026-07-23",
       "resolvedAt": "2026-07-23T22:32:08.013Z"
+    },
+    {
+      "id": "2026-07-28-JPM-long",
+      "date": "2026-07-28",
+      "status": "pending",
+      "ticker": "JPM",
+      "side": "long",
+      "entry": 357,
+      "stop": 352,
+      "target": 365,
+      "confidence": 0.55,
+      "catalyst": "Earnings report",
+      "thesis": "If JPM breaks out above its recent resistance level, it may continue its upward trend. The stock has shown strong momentum after its earnings report, and a long position could be considered if it holds above the $352 level.",
+      "invalidation": "A close below $352 would invalidate this thesis.",
+      "rr": 1.6,
+      "shares": 20,
+      "riskAmount": 100,
+      "recordedAt": "2026-07-28T10:34:13.161Z"
     }
   ],
   "scan_history": [
@@ -617,6 +635,14 @@
       "no_trade_reason": "No qualifying setups found after validation",
       "idea_count": 0,
       "recordedAt": "2026-07-27T11:19:27.531Z"
+    },
+    {
+      "date": "2026-07-28",
+      "provider": "groq",
+      "market_context": "Today's market conditions are mixed, with some US stocks like AAPL and JPM showing significant gains, while others like TSLA and NVDA are experiencing losses. The UK market is seeing some positive movement with BP.L and HSBA.L, but the Indian market is more bearish with RELIANCE.NS and HDFCBANK.NS declining.",
+      "no_trade_reason": null,
+      "idea_count": 1,
+      "recordedAt": "2026-07-28T10:34:13.161Z"
     }
   ],
   "scorecard": {
@@ -875,21 +901,40 @@
         "resolvedAt": "2026-06-26T22:46:58.693Z"
       }
     ],
-    "asOf": "2026-07-27T11:19:27.546Z"
+    "asOf": "2026-07-28T10:34:13.330Z"
   },
   "today": {
-    "date": "2026-07-27",
-    "market_context": "Today's market conditions show a mix of gains and losses across the US, UK, and Indian equity markets. The US market saw significant movements in tech stocks, with AAPL and AMD experiencing large gains, while TSLA and MSFT saw notable losses. The UK market saw gains in banking stocks, with LLOY and BARC experiencing double-digit percentage increases. The Indian market saw mixed results, with some stocks like ICICIBANK and TCS experiencing gains, while others like RELIANCE and INFY saw losses.",
-    "no_trade_reason": "No qualifying setups found after validation",
-    "ideas": [],
+    "date": "2026-07-28",
+    "market_context": "Today's market conditions are mixed, with some US stocks like AAPL and JPM showing significant gains, while others like TSLA and NVDA are experiencing losses. The UK market is seeing some positive movement with BP.L and HSBA.L, but the Indian market is more bearish with RELIANCE.NS and HDFCBANK.NS declining.",
+    "no_trade_reason": null,
+    "ideas": [
+      {
+        "id": "2026-07-28-JPM-long",
+        "date": "2026-07-28",
+        "status": "pending",
+        "ticker": "JPM",
+        "side": "long",
+        "entry": 357,
+        "stop": 352,
+        "target": 365,
+        "confidence": 0.55,
+        "catalyst": "Earnings report",
+        "thesis": "If JPM breaks out above its recent resistance level, it may continue its upward trend. The stock has shown strong momentum after its earnings report, and a long position could be considered if it holds above the $352 level.",
+        "invalidation": "A close below $352 would invalidate this thesis.",
+        "rr": 1.6,
+        "shares": 20,
+        "riskAmount": 100,
+        "recordedAt": "2026-07-28T10:34:13.161Z"
+      }
+    ],
     "provider": "groq",
-    "scannedAt": "2026-07-27T11:19:27.546Z"
+    "scannedAt": "2026-07-28T10:34:13.331Z"
   },
   "meta": {
     "created": "2026-01-01T00:00:00.000Z",
     "version": 1,
     "disclaimer": "NOT financial advice. Delayed/unofficial data. Confirm in your broker. Paper trading only.",
-    "lastScan": "2026-07-27T11:19:27.546Z",
+    "lastScan": "2026-07-28T10:34:13.331Z",
     "lastScore": "2026-07-23T22:32:08.027Z"
   }
 }
