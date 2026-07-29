@@ -363,7 +363,7 @@
     {
       "id": "2026-07-29-TCS.NS-long",
       "date": "2026-07-29",
-      "status": "pending",
+      "status": "resolved",
       "ticker": "TCS.NS",
       "side": "long",
       "entry": 2420,
@@ -376,7 +376,13 @@
       "rr": 1.5,
       "shares": 2,
       "riskAmount": 100,
-      "recordedAt": "2026-07-29T10:38:24.339Z"
+      "recordedAt": "2026-07-29T10:38:24.339Z",
+      "outcome": "stopped_gap",
+      "exitPrice": 2325,
+      "pnl": -190,
+      "r": -1.9,
+      "resolvedDate": "2026-07-28",
+      "resolvedAt": "2026-07-29T22:30:34.817Z"
     }
   ],
   "scan_history": [
@@ -678,20 +684,44 @@
     }
   ],
   "scorecard": {
-    "count": 15,
+    "count": 16,
     "wins": 6,
-    "losses": 9,
+    "losses": 10,
     "even": 0,
-    "winRate": 0.4,
-    "avgR": -0.33,
-    "totalPnl": -489.15,
-    "maxDrawdown": 574.8,
+    "winRate": 0.375,
+    "avgR": -0.43,
+    "totalPnl": -679.15,
+    "maxDrawdown": 679.15,
     "byOutcome": {
       "expired_at_close": 12,
-      "stopped_gap": 2,
+      "stopped_gap": 3,
       "stopped": 1
     },
     "recent": [
+      {
+        "id": "2026-07-29-TCS.NS-long",
+        "date": "2026-07-29",
+        "status": "resolved",
+        "ticker": "TCS.NS",
+        "side": "long",
+        "entry": 2420,
+        "stop": 2380,
+        "target": 2480,
+        "confidence": 0.5,
+        "catalyst": "Strong earnings report and positive sector trends",
+        "thesis": "If TCS.NS breaks above the recent resistance level, it may continue its upward momentum, driven by strong earnings and sector growth. The stock needs to hold above the 2380 level to confirm the bullish thesis.",
+        "invalidation": "A close below 2380 would invalidate this long thesis, indicating a potential reversal.",
+        "rr": 1.5,
+        "shares": 2,
+        "riskAmount": 100,
+        "recordedAt": "2026-07-29T10:38:24.339Z",
+        "outcome": "stopped_gap",
+        "exitPrice": 2325,
+        "pnl": -190,
+        "r": -1.9,
+        "resolvedDate": "2026-07-28",
+        "resolvedAt": "2026-07-29T22:30:34.817Z"
+      },
       {
         "id": "2026-07-28-JPM-long",
         "date": "2026-07-28",
@@ -907,33 +937,9 @@
         "r": -1,
         "resolvedDate": "2026-07-08",
         "resolvedAt": "2026-07-09T22:50:47.155Z"
-      },
-      {
-        "id": "2026-07-06-HDFCBANK.NS-long",
-        "date": "2026-07-06",
-        "status": "resolved",
-        "ticker": "HDFCBANK.NS",
-        "side": "long",
-        "entry": 830,
-        "stop": 820,
-        "target": 845,
-        "confidence": 0.55,
-        "catalyst": "Strong banking sector performance in India",
-        "thesis": "If HDFCBANK.NS can maintain its current momentum, it may break through the 845.00 level. This setup is based on the stock's recent strength and the overall positive sentiment in the Indian banking sector.",
-        "invalidation": "A close below 820.00 would invalidate this thesis.",
-        "rr": 1.5,
-        "shares": 10,
-        "riskAmount": 100,
-        "recordedAt": "2026-07-06T12:04:04.761Z",
-        "outcome": "stopped_gap",
-        "exitPrice": 803,
-        "pnl": -270,
-        "r": -2.7,
-        "resolvedDate": "2026-07-03",
-        "resolvedAt": "2026-07-06T22:45:42.631Z"
       }
     ],
-    "asOf": "2026-07-29T10:38:24.456Z"
+    "asOf": "2026-07-29T22:30:34.832Z"
   },
   "today": {
     "date": "2026-07-29",
@@ -965,8 +971,8 @@
   "meta": {
     "created": "2026-01-01T00:00:00.000Z",
     "version": 1,
-    "disclaimer": "NOT financial advice. Delayed/unofficial data. Confirm in your broker. Paper trading only.",
+    "disclaimer": "NOT financial advice. Delayed/unofficial data. Paper trading only.",
     "lastScan": "2026-07-29T10:38:24.456Z",
-    "lastScore": "2026-07-28T22:35:15.513Z"
+    "lastScore": "2026-07-29T22:30:34.832Z"
   }
 }
