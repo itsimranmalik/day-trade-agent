@@ -359,6 +359,24 @@
       "r": 0.06,
       "resolvedDate": "2026-07-28",
       "resolvedAt": "2026-07-28T22:35:15.497Z"
+    },
+    {
+      "id": "2026-07-29-TCS.NS-long",
+      "date": "2026-07-29",
+      "status": "pending",
+      "ticker": "TCS.NS",
+      "side": "long",
+      "entry": 2420,
+      "stop": 2380,
+      "target": 2480,
+      "confidence": 0.5,
+      "catalyst": "Strong earnings report and positive sector trends",
+      "thesis": "If TCS.NS breaks above the recent resistance level, it may continue its upward momentum, driven by strong earnings and sector growth. The stock needs to hold above the 2380 level to confirm the bullish thesis.",
+      "invalidation": "A close below 2380 would invalidate this long thesis, indicating a potential reversal.",
+      "rr": 1.5,
+      "shares": 2,
+      "riskAmount": 100,
+      "recordedAt": "2026-07-29T10:38:24.339Z"
     }
   ],
   "scan_history": [
@@ -649,6 +667,14 @@
       "no_trade_reason": null,
       "idea_count": 1,
       "recordedAt": "2026-07-28T10:34:13.161Z"
+    },
+    {
+      "date": "2026-07-29",
+      "provider": "groq",
+      "market_context": "Today's market conditions are mixed, with some US tech stocks experiencing significant volatility, while UK and Indian markets show varied performances. The overall sentiment is cautious, with some stocks rebounding and others continuing to decline.",
+      "no_trade_reason": null,
+      "idea_count": 1,
+      "recordedAt": "2026-07-29T10:38:24.339Z"
     }
   ],
   "scorecard": {
@@ -907,40 +933,40 @@
         "resolvedAt": "2026-07-06T22:45:42.631Z"
       }
     ],
-    "asOf": "2026-07-28T22:35:15.513Z"
+    "asOf": "2026-07-29T10:38:24.456Z"
   },
   "today": {
-    "date": "2026-07-28",
-    "market_context": "Today's market conditions are mixed, with some US stocks like AAPL and JPM showing significant gains, while others like TSLA and NVDA are experiencing losses. The UK market is seeing some positive movement with BP.L and HSBA.L, but the Indian market is more bearish with RELIANCE.NS and HDFCBANK.NS declining.",
+    "date": "2026-07-29",
+    "market_context": "Today's market conditions are mixed, with some US tech stocks experiencing significant volatility, while UK and Indian markets show varied performances. The overall sentiment is cautious, with some stocks rebounding and others continuing to decline.",
     "no_trade_reason": null,
     "ideas": [
       {
-        "id": "2026-07-28-JPM-long",
-        "date": "2026-07-28",
+        "id": "2026-07-29-TCS.NS-long",
+        "date": "2026-07-29",
         "status": "pending",
-        "ticker": "JPM",
+        "ticker": "TCS.NS",
         "side": "long",
-        "entry": 357,
-        "stop": 352,
-        "target": 365,
-        "confidence": 0.55,
-        "catalyst": "Earnings report",
-        "thesis": "If JPM breaks out above its recent resistance level, it may continue its upward trend. The stock has shown strong momentum after its earnings report, and a long position could be considered if it holds above the $352 level.",
-        "invalidation": "A close below $352 would invalidate this thesis.",
-        "rr": 1.6,
-        "shares": 20,
+        "entry": 2420,
+        "stop": 2380,
+        "target": 2480,
+        "confidence": 0.5,
+        "catalyst": "Strong earnings report and positive sector trends",
+        "thesis": "If TCS.NS breaks above the recent resistance level, it may continue its upward momentum, driven by strong earnings and sector growth. The stock needs to hold above the 2380 level to confirm the bullish thesis.",
+        "invalidation": "A close below 2380 would invalidate this long thesis, indicating a potential reversal.",
+        "rr": 1.5,
+        "shares": 2,
         "riskAmount": 100,
-        "recordedAt": "2026-07-28T10:34:13.161Z"
+        "recordedAt": "2026-07-29T10:38:24.339Z"
       }
     ],
     "provider": "groq",
-    "scannedAt": "2026-07-28T10:34:13.331Z"
+    "scannedAt": "2026-07-29T10:38:24.456Z"
   },
   "meta": {
     "created": "2026-01-01T00:00:00.000Z",
     "version": 1,
-    "disclaimer": "NOT financial advice. Delayed/unofficial data. Paper trading only.",
-    "lastScan": "2026-07-28T10:34:13.331Z",
+    "disclaimer": "NOT financial advice. Delayed/unofficial data. Confirm in your broker. Paper trading only.",
+    "lastScan": "2026-07-29T10:38:24.456Z",
     "lastScore": "2026-07-28T22:35:15.513Z"
   }
 }
