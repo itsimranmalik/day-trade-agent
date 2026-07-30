@@ -383,6 +383,42 @@
       "r": -1.9,
       "resolvedDate": "2026-07-28",
       "resolvedAt": "2026-07-29T22:30:34.817Z"
+    },
+    {
+      "id": "2026-07-30-BP.L-long",
+      "date": "2026-07-30",
+      "status": "pending",
+      "ticker": "BP.L",
+      "side": "long",
+      "entry": 542,
+      "stop": 530,
+      "target": 560,
+      "confidence": 0.55,
+      "catalyst": "Sector-specific news and trends",
+      "thesis": "If BP.L can hold above the 530.00 level, it may continue its upward momentum, potentially driven by sector-specific catalysts, and reach the target of 560.00. The stock has shown strong gains today, and this setup is based on the idea that this trend will continue.",
+      "invalidation": "A close below 525.00 would invalidate this thesis, indicating a potential reversal of the trend.",
+      "rr": 1.5,
+      "shares": 8,
+      "riskAmount": 100,
+      "recordedAt": "2026-07-30T10:24:46.525Z"
+    },
+    {
+      "id": "2026-07-30-TCS.NS-long",
+      "date": "2026-07-30",
+      "status": "pending",
+      "ticker": "TCS.NS",
+      "side": "long",
+      "entry": 2440,
+      "stop": 2380,
+      "target": 2600,
+      "confidence": 0.5,
+      "catalyst": "Earnings report and sector trends",
+      "thesis": "If TCS.NS can break above the 2440.00 level, it may continue its upward momentum, potentially driven by the recent earnings report and sector trends, and reach the target of 2600.00. The stock has shown significant gains today, and this setup is based on the idea that this trend will continue.",
+      "invalidation": "A close below 2350.00 would invalidate this thesis, indicating a potential reversal of the trend.",
+      "rr": 2.67,
+      "shares": 1,
+      "riskAmount": 100,
+      "recordedAt": "2026-07-30T10:24:46.525Z"
     }
   ],
   "scan_history": [
@@ -681,6 +717,14 @@
       "no_trade_reason": null,
       "idea_count": 1,
       "recordedAt": "2026-07-29T10:38:24.339Z"
+    },
+    {
+      "date": "2026-07-30",
+      "provider": "groq",
+      "market_context": "Today's market conditions are highly volatile, with significant price movements in major US and UK stocks. The overall sentiment is bearish, with many stocks experiencing large declines. However, some stocks, such as BP.L and SHEL.L, have shown strong gains, potentially driven by sector-specific catalysts.",
+      "no_trade_reason": null,
+      "idea_count": 2,
+      "recordedAt": "2026-07-30T10:24:46.525Z"
     }
   ],
   "scorecard": {
@@ -939,40 +983,58 @@
         "resolvedAt": "2026-07-09T22:50:47.155Z"
       }
     ],
-    "asOf": "2026-07-29T22:30:34.832Z"
+    "asOf": "2026-07-30T10:24:46.538Z"
   },
   "today": {
-    "date": "2026-07-29",
-    "market_context": "Today's market conditions are mixed, with some US tech stocks experiencing significant volatility, while UK and Indian markets show varied performances. The overall sentiment is cautious, with some stocks rebounding and others continuing to decline.",
+    "date": "2026-07-30",
+    "market_context": "Today's market conditions are highly volatile, with significant price movements in major US and UK stocks. The overall sentiment is bearish, with many stocks experiencing large declines. However, some stocks, such as BP.L and SHEL.L, have shown strong gains, potentially driven by sector-specific catalysts.",
     "no_trade_reason": null,
     "ideas": [
       {
-        "id": "2026-07-29-TCS.NS-long",
-        "date": "2026-07-29",
+        "id": "2026-07-30-BP.L-long",
+        "date": "2026-07-30",
+        "status": "pending",
+        "ticker": "BP.L",
+        "side": "long",
+        "entry": 542,
+        "stop": 530,
+        "target": 560,
+        "confidence": 0.55,
+        "catalyst": "Sector-specific news and trends",
+        "thesis": "If BP.L can hold above the 530.00 level, it may continue its upward momentum, potentially driven by sector-specific catalysts, and reach the target of 560.00. The stock has shown strong gains today, and this setup is based on the idea that this trend will continue.",
+        "invalidation": "A close below 525.00 would invalidate this thesis, indicating a potential reversal of the trend.",
+        "rr": 1.5,
+        "shares": 8,
+        "riskAmount": 100,
+        "recordedAt": "2026-07-30T10:24:46.525Z"
+      },
+      {
+        "id": "2026-07-30-TCS.NS-long",
+        "date": "2026-07-30",
         "status": "pending",
         "ticker": "TCS.NS",
         "side": "long",
-        "entry": 2420,
+        "entry": 2440,
         "stop": 2380,
-        "target": 2480,
+        "target": 2600,
         "confidence": 0.5,
-        "catalyst": "Strong earnings report and positive sector trends",
-        "thesis": "If TCS.NS breaks above the recent resistance level, it may continue its upward momentum, driven by strong earnings and sector growth. The stock needs to hold above the 2380 level to confirm the bullish thesis.",
-        "invalidation": "A close below 2380 would invalidate this long thesis, indicating a potential reversal.",
-        "rr": 1.5,
-        "shares": 2,
+        "catalyst": "Earnings report and sector trends",
+        "thesis": "If TCS.NS can break above the 2440.00 level, it may continue its upward momentum, potentially driven by the recent earnings report and sector trends, and reach the target of 2600.00. The stock has shown significant gains today, and this setup is based on the idea that this trend will continue.",
+        "invalidation": "A close below 2350.00 would invalidate this thesis, indicating a potential reversal of the trend.",
+        "rr": 2.67,
+        "shares": 1,
         "riskAmount": 100,
-        "recordedAt": "2026-07-29T10:38:24.339Z"
+        "recordedAt": "2026-07-30T10:24:46.525Z"
       }
     ],
     "provider": "groq",
-    "scannedAt": "2026-07-29T10:38:24.456Z"
+    "scannedAt": "2026-07-30T10:24:46.538Z"
   },
   "meta": {
     "created": "2026-01-01T00:00:00.000Z",
     "version": 1,
-    "disclaimer": "NOT financial advice. Delayed/unofficial data. Paper trading only.",
-    "lastScan": "2026-07-29T10:38:24.456Z",
+    "disclaimer": "NOT financial advice. Delayed/unofficial data. Confirm in your broker. Paper trading only.",
+    "lastScan": "2026-07-30T10:24:46.538Z",
     "lastScore": "2026-07-29T22:30:34.832Z"
   }
 }
