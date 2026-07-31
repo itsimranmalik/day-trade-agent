@@ -431,6 +431,24 @@
       "r": 0.07,
       "resolvedDate": "2026-07-29",
       "resolvedAt": "2026-07-30T22:38:16.717Z"
+    },
+    {
+      "id": "2026-07-31-MSFT-long",
+      "date": "2026-07-31",
+      "status": "pending",
+      "ticker": "MSFT",
+      "side": "long",
+      "entry": 445,
+      "stop": 435,
+      "target": 465,
+      "confidence": 0.55,
+      "catalyst": "Strong earnings report",
+      "thesis": "If MSFT can break above its recent high of 458.69, it may continue its upward momentum, targeting the 465 level. The stock's strong earnings report and positive market sentiment are driving this move.",
+      "invalidation": "A close below 435 would invalidate this thesis, indicating a potential reversal in the stock's trend.",
+      "rr": 2,
+      "shares": 10,
+      "riskAmount": 100,
+      "recordedAt": "2026-07-31T10:38:09.953Z"
     }
   ],
   "scan_history": [
@@ -737,6 +755,14 @@
       "no_trade_reason": null,
       "idea_count": 2,
       "recordedAt": "2026-07-30T10:24:46.525Z"
+    },
+    {
+      "date": "2026-07-31",
+      "provider": "groq",
+      "market_context": "Today's market conditions are mixed, with some stocks experiencing significant gains while others are facing losses. The US market is seeing a decline in tech stocks like TSLA and NVDA, while MSFT is experiencing a surge. The UK market is seeing gains in energy stocks like BP.L and SHEL.L, and the Indian market is seeing gains in IT stocks like TCS.NS and INFY.NS.",
+      "no_trade_reason": null,
+      "idea_count": 1,
+      "recordedAt": "2026-07-31T10:38:09.954Z"
     }
   ],
   "scorecard": {
@@ -995,58 +1021,40 @@
         "resolvedAt": "2026-07-13T22:29:45.952Z"
       }
     ],
-    "asOf": "2026-07-30T22:38:16.732Z"
+    "asOf": "2026-07-31T10:38:09.966Z"
   },
   "today": {
-    "date": "2026-07-30",
-    "market_context": "Today's market conditions are highly volatile, with significant price movements in major US and UK stocks. The overall sentiment is bearish, with many stocks experiencing large declines. However, some stocks, such as BP.L and SHEL.L, have shown strong gains, potentially driven by sector-specific catalysts.",
+    "date": "2026-07-31",
+    "market_context": "Today's market conditions are mixed, with some stocks experiencing significant gains while others are facing losses. The US market is seeing a decline in tech stocks like TSLA and NVDA, while MSFT is experiencing a surge. The UK market is seeing gains in energy stocks like BP.L and SHEL.L, and the Indian market is seeing gains in IT stocks like TCS.NS and INFY.NS.",
     "no_trade_reason": null,
     "ideas": [
       {
-        "id": "2026-07-30-BP.L-long",
-        "date": "2026-07-30",
+        "id": "2026-07-31-MSFT-long",
+        "date": "2026-07-31",
         "status": "pending",
-        "ticker": "BP.L",
+        "ticker": "MSFT",
         "side": "long",
-        "entry": 542,
-        "stop": 530,
-        "target": 560,
+        "entry": 445,
+        "stop": 435,
+        "target": 465,
         "confidence": 0.55,
-        "catalyst": "Sector-specific news and trends",
-        "thesis": "If BP.L can hold above the 530.00 level, it may continue its upward momentum, potentially driven by sector-specific catalysts, and reach the target of 560.00. The stock has shown strong gains today, and this setup is based on the idea that this trend will continue.",
-        "invalidation": "A close below 525.00 would invalidate this thesis, indicating a potential reversal of the trend.",
-        "rr": 1.5,
-        "shares": 8,
+        "catalyst": "Strong earnings report",
+        "thesis": "If MSFT can break above its recent high of 458.69, it may continue its upward momentum, targeting the 465 level. The stock's strong earnings report and positive market sentiment are driving this move.",
+        "invalidation": "A close below 435 would invalidate this thesis, indicating a potential reversal in the stock's trend.",
+        "rr": 2,
+        "shares": 10,
         "riskAmount": 100,
-        "recordedAt": "2026-07-30T10:24:46.525Z"
-      },
-      {
-        "id": "2026-07-30-TCS.NS-long",
-        "date": "2026-07-30",
-        "status": "pending",
-        "ticker": "TCS.NS",
-        "side": "long",
-        "entry": 2440,
-        "stop": 2380,
-        "target": 2600,
-        "confidence": 0.5,
-        "catalyst": "Earnings report and sector trends",
-        "thesis": "If TCS.NS can break above the 2440.00 level, it may continue its upward momentum, potentially driven by the recent earnings report and sector trends, and reach the target of 2600.00. The stock has shown significant gains today, and this setup is based on the idea that this trend will continue.",
-        "invalidation": "A close below 2350.00 would invalidate this thesis, indicating a potential reversal of the trend.",
-        "rr": 2.67,
-        "shares": 1,
-        "riskAmount": 100,
-        "recordedAt": "2026-07-30T10:24:46.525Z"
+        "recordedAt": "2026-07-31T10:38:09.953Z"
       }
     ],
     "provider": "groq",
-    "scannedAt": "2026-07-30T10:24:46.538Z"
+    "scannedAt": "2026-07-31T10:38:09.966Z"
   },
   "meta": {
     "created": "2026-01-01T00:00:00.000Z",
     "version": 1,
-    "disclaimer": "NOT financial advice. Delayed/unofficial data. Paper trading only.",
-    "lastScan": "2026-07-30T10:24:46.538Z",
+    "disclaimer": "NOT financial advice. Delayed/unofficial data. Confirm in your broker. Paper trading only.",
+    "lastScan": "2026-07-31T10:38:09.966Z",
     "lastScore": "2026-07-30T22:38:16.732Z"
   }
 }
