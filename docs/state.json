@@ -435,7 +435,7 @@
     {
       "id": "2026-07-31-MSFT-long",
       "date": "2026-07-31",
-      "status": "pending",
+      "status": "resolved",
       "ticker": "MSFT",
       "side": "long",
       "entry": 445,
@@ -448,7 +448,13 @@
       "rr": 2,
       "shares": 10,
       "riskAmount": 100,
-      "recordedAt": "2026-07-31T10:38:09.953Z"
+      "recordedAt": "2026-07-31T10:38:09.953Z",
+      "outcome": "target",
+      "exitPrice": 465,
+      "pnl": 200,
+      "r": 2,
+      "resolvedDate": "2026-07-31",
+      "resolvedAt": "2026-07-31T22:34:28.001Z"
     }
   ],
   "scan_history": [
@@ -766,20 +772,45 @@
     }
   ],
   "scorecard": {
-    "count": 18,
-    "wins": 8,
+    "count": 19,
+    "wins": 9,
     "losses": 10,
     "even": 0,
-    "winRate": 0.444,
-    "avgR": -0.37,
-    "totalPnl": -665.35,
+    "winRate": 0.474,
+    "avgR": -0.25,
+    "totalPnl": -465.35,
     "maxDrawdown": 679.15,
     "byOutcome": {
       "expired_at_close": 14,
       "stopped_gap": 3,
-      "stopped": 1
+      "stopped": 1,
+      "target": 1
     },
     "recent": [
+      {
+        "id": "2026-07-31-MSFT-long",
+        "date": "2026-07-31",
+        "status": "resolved",
+        "ticker": "MSFT",
+        "side": "long",
+        "entry": 445,
+        "stop": 435,
+        "target": 465,
+        "confidence": 0.55,
+        "catalyst": "Strong earnings report",
+        "thesis": "If MSFT can break above its recent high of 458.69, it may continue its upward momentum, targeting the 465 level. The stock's strong earnings report and positive market sentiment are driving this move.",
+        "invalidation": "A close below 435 would invalidate this thesis, indicating a potential reversal in the stock's trend.",
+        "rr": 2,
+        "shares": 10,
+        "riskAmount": 100,
+        "recordedAt": "2026-07-31T10:38:09.953Z",
+        "outcome": "target",
+        "exitPrice": 465,
+        "pnl": 200,
+        "r": 2,
+        "resolvedDate": "2026-07-31",
+        "resolvedAt": "2026-07-31T22:34:28.001Z"
+      },
       {
         "id": "2026-07-30-BP.L-long",
         "date": "2026-07-30",
@@ -995,33 +1026,9 @@
         "r": -0.04,
         "resolvedDate": "2026-07-14",
         "resolvedAt": "2026-07-15T22:32:12.370Z"
-      },
-      {
-        "id": "2026-07-13-HDFCBANK.NS-long",
-        "date": "2026-07-13",
-        "status": "resolved",
-        "ticker": "HDFCBANK.NS",
-        "side": "long",
-        "entry": 820,
-        "stop": 810,
-        "target": 835,
-        "confidence": 0.5,
-        "catalyst": "Improving economic conditions and strong banking sector performance",
-        "thesis": "If HDFCBANK can hold above the 815 level, it may be poised for a breakout to the upside, with a potential target of 835.00. The stock has been trending upwards and has strong momentum, with a bullish trend line on the daily chart.",
-        "invalidation": "A close below 810.00 would invalidate this thesis",
-        "rr": 1.5,
-        "shares": 10,
-        "riskAmount": 100,
-        "recordedAt": "2026-07-13T11:00:16.599Z",
-        "outcome": "expired_at_close",
-        "exitPrice": 824.95,
-        "pnl": 49.5,
-        "r": 0.49,
-        "resolvedDate": "2026-07-10",
-        "resolvedAt": "2026-07-13T22:29:45.952Z"
       }
     ],
-    "asOf": "2026-07-31T10:38:09.966Z"
+    "asOf": "2026-07-31T22:34:28.018Z"
   },
   "today": {
     "date": "2026-07-31",
@@ -1053,8 +1060,8 @@
   "meta": {
     "created": "2026-01-01T00:00:00.000Z",
     "version": 1,
-    "disclaimer": "NOT financial advice. Delayed/unofficial data. Confirm in your broker. Paper trading only.",
+    "disclaimer": "NOT financial advice. Delayed/unofficial data. Paper trading only.",
     "lastScan": "2026-07-31T10:38:09.966Z",
-    "lastScore": "2026-07-30T22:38:16.732Z"
+    "lastScore": "2026-07-31T22:34:28.018Z"
   }
 }
