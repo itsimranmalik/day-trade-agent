@@ -459,7 +459,7 @@
     {
       "id": "2026-08-03-MSFT-long",
       "date": "2026-08-03",
-      "status": "pending",
+      "status": "resolved",
       "ticker": "MSFT",
       "side": "long",
       "entry": 460,
@@ -472,12 +472,18 @@
       "rr": 2,
       "shares": 10,
       "riskAmount": 100,
-      "recordedAt": "2026-08-03T11:21:37.961Z"
+      "recordedAt": "2026-08-03T11:21:37.961Z",
+      "outcome": "target",
+      "exitPrice": 480,
+      "pnl": 200,
+      "r": 2,
+      "resolvedDate": "2026-08-03",
+      "resolvedAt": "2026-08-03T22:33:46.091Z"
     },
     {
       "id": "2026-08-03-TCS.NS-long",
       "date": "2026-08-03",
-      "status": "pending",
+      "status": "resolved",
       "ticker": "TCS.NS",
       "side": "long",
       "entry": 2400,
@@ -490,7 +496,13 @@
       "rr": 3,
       "shares": 2,
       "riskAmount": 100,
-      "recordedAt": "2026-08-03T11:21:37.961Z"
+      "recordedAt": "2026-08-03T11:21:37.961Z",
+      "outcome": "stopped",
+      "exitPrice": 2350,
+      "pnl": -100,
+      "r": -1,
+      "resolvedDate": "2026-07-31",
+      "resolvedAt": "2026-08-03T22:33:46.149Z"
     }
   ],
   "scan_history": [
@@ -816,21 +828,69 @@
     }
   ],
   "scorecard": {
-    "count": 19,
-    "wins": 9,
-    "losses": 10,
+    "count": 21,
+    "wins": 10,
+    "losses": 11,
     "even": 0,
-    "winRate": 0.474,
-    "avgR": -0.25,
-    "totalPnl": -465.35,
+    "winRate": 0.476,
+    "avgR": -0.17,
+    "totalPnl": -365.35,
     "maxDrawdown": 679.15,
     "byOutcome": {
       "expired_at_close": 14,
       "stopped_gap": 3,
-      "stopped": 1,
-      "target": 1
+      "stopped": 2,
+      "target": 2
     },
     "recent": [
+      {
+        "id": "2026-08-03-MSFT-long",
+        "date": "2026-08-03",
+        "status": "resolved",
+        "ticker": "MSFT",
+        "side": "long",
+        "entry": 460,
+        "stop": 450,
+        "target": 480,
+        "confidence": 0.55,
+        "catalyst": "Strong earnings report and positive market sentiment",
+        "thesis": "If MSFT can break above its recent highs, it may continue its upward trend, driven by strong earnings and a positive market environment. The stock needs to hold above the $450 level to maintain its momentum.",
+        "invalidation": "A close below $450 would invalidate this thesis, indicating a potential reversal in the stock's trend.",
+        "rr": 2,
+        "shares": 10,
+        "riskAmount": 100,
+        "recordedAt": "2026-08-03T11:21:37.961Z",
+        "outcome": "target",
+        "exitPrice": 480,
+        "pnl": 200,
+        "r": 2,
+        "resolvedDate": "2026-08-03",
+        "resolvedAt": "2026-08-03T22:33:46.091Z"
+      },
+      {
+        "id": "2026-08-03-TCS.NS-long",
+        "date": "2026-08-03",
+        "status": "resolved",
+        "ticker": "TCS.NS",
+        "side": "long",
+        "entry": 2400,
+        "stop": 2350,
+        "target": 2550,
+        "confidence": 0.5,
+        "catalyst": "Positive earnings report and sectoral strength",
+        "thesis": "If TCS.NS can maintain its current momentum, it may continue to rise, driven by a strong earnings report and a positive sectoral trend. The stock needs to hold above the 2350 level to maintain its upward trajectory.",
+        "invalidation": "A close below 2350 would invalidate this thesis, indicating a potential reversal in the stock's trend.",
+        "rr": 3,
+        "shares": 2,
+        "riskAmount": 100,
+        "recordedAt": "2026-08-03T11:21:37.961Z",
+        "outcome": "stopped",
+        "exitPrice": 2350,
+        "pnl": -100,
+        "r": -1,
+        "resolvedDate": "2026-07-31",
+        "resolvedAt": "2026-08-03T22:33:46.149Z"
+      },
       {
         "id": "2026-07-31-MSFT-long",
         "date": "2026-07-31",
@@ -1022,57 +1082,9 @@
         "r": -0.53,
         "resolvedDate": "2026-07-16",
         "resolvedAt": "2026-07-16T22:30:34.054Z"
-      },
-      {
-        "id": "2026-07-16-HDFCBANK.NS-long",
-        "date": "2026-07-16",
-        "status": "resolved",
-        "ticker": "HDFCBANK.NS",
-        "side": "long",
-        "entry": 810,
-        "stop": 795,
-        "target": 835,
-        "confidence": 0.5,
-        "catalyst": "Positive market sentiment and strong sector performance",
-        "thesis": "If HDFCBANK.NS can maintain its current momentum, it may see a continuation of its upward trend, driven by a positive market sentiment and strong sector performance. The stock needs to hold above its recent support levels to confirm this thesis.",
-        "invalidation": "A close below 795.00 would invalidate this thesis, indicating a potential reversal of the trend.",
-        "rr": 1.67,
-        "shares": 6,
-        "riskAmount": 100,
-        "recordedAt": "2026-07-16T10:08:24.015Z",
-        "outcome": "expired_at_close",
-        "exitPrice": 815.45,
-        "pnl": 32.7,
-        "r": 0.33,
-        "resolvedDate": "2026-07-15",
-        "resolvedAt": "2026-07-16T22:30:34.168Z"
-      },
-      {
-        "id": "2026-07-15-HDFCBANK.NS-long",
-        "date": "2026-07-15",
-        "status": "resolved",
-        "ticker": "HDFCBANK.NS",
-        "side": "long",
-        "entry": 810,
-        "stop": 795,
-        "target": 835,
-        "confidence": 0.5,
-        "catalyst": "Positive sector trends and improving economic outlook",
-        "thesis": "If HDFCBANK.NS can maintain its current momentum, it may break through the 820 level and target 835.00. The overall positive trends in the banking sector and the improving economic outlook could support this move.",
-        "invalidation": "A close below 790.00 would invalidate this thesis, suggesting a potential downturn.",
-        "rr": 1.67,
-        "shares": 6,
-        "riskAmount": 100,
-        "recordedAt": "2026-07-15T10:02:01.802Z",
-        "outcome": "expired_at_close",
-        "exitPrice": 809.4,
-        "pnl": -3.6,
-        "r": -0.04,
-        "resolvedDate": "2026-07-14",
-        "resolvedAt": "2026-07-15T22:32:12.370Z"
       }
     ],
-    "asOf": "2026-08-03T11:21:37.976Z"
+    "asOf": "2026-08-03T22:33:46.162Z"
   },
   "today": {
     "date": "2026-08-03",
@@ -1122,8 +1134,8 @@
   "meta": {
     "created": "2026-01-01T00:00:00.000Z",
     "version": 1,
-    "disclaimer": "NOT financial advice. Delayed/unofficial data. Confirm in your broker. Paper trading only.",
+    "disclaimer": "NOT financial advice. Delayed/unofficial data. Paper trading only.",
     "lastScan": "2026-08-03T11:21:37.976Z",
-    "lastScore": "2026-07-31T22:34:28.018Z"
+    "lastScore": "2026-08-03T22:33:46.162Z"
   }
 }
