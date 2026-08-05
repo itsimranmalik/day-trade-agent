@@ -503,6 +503,42 @@
       "r": -1,
       "resolvedDate": "2026-07-31",
       "resolvedAt": "2026-08-03T22:33:46.149Z"
+    },
+    {
+      "id": "2026-08-05-TCS.NS-long",
+      "date": "2026-08-05",
+      "status": "pending",
+      "ticker": "TCS.NS",
+      "side": "long",
+      "entry": 2420,
+      "stop": 2380,
+      "target": 2480,
+      "confidence": 0.55,
+      "catalyst": "Strong earnings report",
+      "thesis": "If TCS.NS breaks out above the recent high of 2460.90, it could lead to a strong uptrend. The stock has shown significant growth in the past few days and a breakout could lead to further gains. The stop loss is placed at 2380.0, just below the recent low of 2408.00.",
+      "invalidation": "A close below 2380.0 would invalidate this thesis.",
+      "rr": 1.5,
+      "shares": 2,
+      "riskAmount": 100,
+      "recordedAt": "2026-08-05T10:34:02.841Z"
+    },
+    {
+      "id": "2026-08-05-MSFT-long",
+      "date": "2026-08-05",
+      "status": "pending",
+      "ticker": "MSFT",
+      "side": "long",
+      "entry": 495,
+      "stop": 485,
+      "target": 510,
+      "confidence": 0.5,
+      "catalyst": "Strong market momentum",
+      "thesis": "If MSFT breaks out above the recent high of 499.44, it could lead to a strong uptrend. The stock has shown significant growth in the past few days and a breakout could lead to further gains. The stop loss is placed at 485.0, just below the recent low of 479.17.",
+      "invalidation": "A close below 485.0 would invalidate this thesis.",
+      "rr": 1.5,
+      "shares": 10,
+      "riskAmount": 100,
+      "recordedAt": "2026-08-05T10:34:02.841Z"
     }
   ],
   "scan_history": [
@@ -833,6 +869,14 @@
       "no_trade_reason": "No qualifying setups found after validation",
       "idea_count": 0,
       "recordedAt": "2026-08-04T10:36:44.372Z"
+    },
+    {
+      "date": "2026-08-05",
+      "provider": "groq",
+      "market_context": "The US market is showing a strong uptrend with AAPL, MSFT, and AMZN leading the charge. The UK market is also seeing a surge with BP.L, HSBA.L, and GLEN.L making significant gains. The Indian market is mixed with some stocks like TCS.NS and INFY.NS showing strong growth while others like HDFCBANK.NS are declining.",
+      "no_trade_reason": null,
+      "idea_count": 2,
+      "recordedAt": "2026-08-05T10:34:02.841Z"
     }
   ],
   "scorecard": {
@@ -1092,21 +1136,58 @@
         "resolvedAt": "2026-07-16T22:30:34.054Z"
       }
     ],
-    "asOf": "2026-08-04T10:36:44.385Z"
+    "asOf": "2026-08-05T10:34:02.977Z"
   },
   "today": {
-    "date": "2026-08-04",
-    "market_context": "The US market is showing mixed signals with some stocks like AAPL and MSFT gaining, while others like TSLA and NVDA are declining. The UK market is seeing a surge in energy stocks like BP.L and SHEL.L, while Indian stocks like TCS.NS and INFY.NS are experiencing significant gains.",
-    "no_trade_reason": "No qualifying setups found after validation",
-    "ideas": [],
+    "date": "2026-08-05",
+    "market_context": "The US market is showing a strong uptrend with AAPL, MSFT, and AMZN leading the charge. The UK market is also seeing a surge with BP.L, HSBA.L, and GLEN.L making significant gains. The Indian market is mixed with some stocks like TCS.NS and INFY.NS showing strong growth while others like HDFCBANK.NS are declining.",
+    "no_trade_reason": null,
+    "ideas": [
+      {
+        "id": "2026-08-05-TCS.NS-long",
+        "date": "2026-08-05",
+        "status": "pending",
+        "ticker": "TCS.NS",
+        "side": "long",
+        "entry": 2420,
+        "stop": 2380,
+        "target": 2480,
+        "confidence": 0.55,
+        "catalyst": "Strong earnings report",
+        "thesis": "If TCS.NS breaks out above the recent high of 2460.90, it could lead to a strong uptrend. The stock has shown significant growth in the past few days and a breakout could lead to further gains. The stop loss is placed at 2380.0, just below the recent low of 2408.00.",
+        "invalidation": "A close below 2380.0 would invalidate this thesis.",
+        "rr": 1.5,
+        "shares": 2,
+        "riskAmount": 100,
+        "recordedAt": "2026-08-05T10:34:02.841Z"
+      },
+      {
+        "id": "2026-08-05-MSFT-long",
+        "date": "2026-08-05",
+        "status": "pending",
+        "ticker": "MSFT",
+        "side": "long",
+        "entry": 495,
+        "stop": 485,
+        "target": 510,
+        "confidence": 0.5,
+        "catalyst": "Strong market momentum",
+        "thesis": "If MSFT breaks out above the recent high of 499.44, it could lead to a strong uptrend. The stock has shown significant growth in the past few days and a breakout could lead to further gains. The stop loss is placed at 485.0, just below the recent low of 479.17.",
+        "invalidation": "A close below 485.0 would invalidate this thesis.",
+        "rr": 1.5,
+        "shares": 10,
+        "riskAmount": 100,
+        "recordedAt": "2026-08-05T10:34:02.841Z"
+      }
+    ],
     "provider": "groq",
-    "scannedAt": "2026-08-04T10:36:44.385Z"
+    "scannedAt": "2026-08-05T10:34:02.977Z"
   },
   "meta": {
     "created": "2026-01-01T00:00:00.000Z",
     "version": 1,
     "disclaimer": "NOT financial advice. Delayed/unofficial data. Confirm in your broker. Paper trading only.",
-    "lastScan": "2026-08-04T10:36:44.385Z",
+    "lastScan": "2026-08-05T10:34:02.977Z",
     "lastScore": "2026-08-03T22:33:46.162Z"
   }
 }
