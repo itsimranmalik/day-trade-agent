@@ -551,6 +551,42 @@
       "r": -0.75,
       "resolvedDate": "2026-08-05",
       "resolvedAt": "2026-08-05T22:35:38.927Z"
+    },
+    {
+      "id": "2026-08-07-TCS.NS-long",
+      "date": "2026-08-07",
+      "status": "pending",
+      "ticker": "TCS.NS",
+      "side": "long",
+      "entry": 2420,
+      "stop": 2350,
+      "target": 2550,
+      "confidence": 0.5,
+      "catalyst": "Strong earnings report",
+      "thesis": "If TCS.NS breaks out above the recent high of 2453.40, it could lead to a strong uptrend. The stock has shown significant gains in the past few days and the momentum is likely to continue. The stop loss is placed at 2350.00, which is below the recent low of 2375.00.",
+      "invalidation": "If the stock fails to break out above 2453.40 and instead breaks down below 2350.00, it would invalidate the thesis.",
+      "rr": 1.86,
+      "shares": 1,
+      "riskAmount": 100,
+      "recordedAt": "2026-08-07T08:57:14.225Z"
+    },
+    {
+      "id": "2026-08-07-BP.L-long",
+      "date": "2026-08-07",
+      "status": "pending",
+      "ticker": "BP.L",
+      "side": "long",
+      "entry": 522,
+      "stop": 510,
+      "target": 540,
+      "confidence": 0.45,
+      "catalyst": "Increase in oil prices",
+      "thesis": "If BP.L breaks out above the recent high of 526.80, it could lead to a strong uptrend. The stock has shown significant gains in the past few days and the momentum is likely to continue. The stop loss is placed at 510.00, which is below the recent low of 518.70.",
+      "invalidation": "If the stock fails to break out above 526.80 and instead breaks down below 510.00, it would invalidate the thesis.",
+      "rr": 1.5,
+      "shares": 8,
+      "riskAmount": 100,
+      "recordedAt": "2026-08-07T08:57:14.225Z"
     }
   ],
   "scan_history": [
@@ -897,6 +933,14 @@
       "no_trade_reason": "No qualifying setups found after validation",
       "idea_count": 0,
       "recordedAt": "2026-08-06T10:38:00.354Z"
+    },
+    {
+      "date": "2026-08-07",
+      "provider": "groq",
+      "market_context": "The US market is showing a strong bullish trend with most of the major stocks like AAPL, NVDA, and MSFT showing significant gains. The UK market is also seeing a positive trend with stocks like BP.L and HSBA.L showing substantial increases. The Indian market is mixed with some stocks like TCS.NS and INFY.NS showing strong gains while others like HDFCBANK.NS are experiencing losses.",
+      "no_trade_reason": null,
+      "idea_count": 2,
+      "recordedAt": "2026-08-07T08:57:14.225Z"
     }
   ],
   "scorecard": {
@@ -1156,21 +1200,58 @@
         "resolvedAt": "2026-07-23T22:32:08.013Z"
       }
     ],
-    "asOf": "2026-08-06T10:38:00.373Z"
+    "asOf": "2026-08-07T08:57:14.230Z"
   },
   "today": {
-    "date": "2026-08-06",
-    "market_context": "Today's market conditions show a mix of gains and losses across various sectors, with some stocks experiencing significant price movements. The overall trend is bullish, but with some stocks showing signs of correction. The Indian market is seeing a surge in technology stocks, while the UK market is experiencing gains in energy and banking sectors.",
-    "no_trade_reason": "No qualifying setups found after validation",
-    "ideas": [],
+    "date": "2026-08-07",
+    "market_context": "The US market is showing a strong bullish trend with most of the major stocks like AAPL, NVDA, and MSFT showing significant gains. The UK market is also seeing a positive trend with stocks like BP.L and HSBA.L showing substantial increases. The Indian market is mixed with some stocks like TCS.NS and INFY.NS showing strong gains while others like HDFCBANK.NS are experiencing losses.",
+    "no_trade_reason": null,
+    "ideas": [
+      {
+        "id": "2026-08-07-TCS.NS-long",
+        "date": "2026-08-07",
+        "status": "pending",
+        "ticker": "TCS.NS",
+        "side": "long",
+        "entry": 2420,
+        "stop": 2350,
+        "target": 2550,
+        "confidence": 0.5,
+        "catalyst": "Strong earnings report",
+        "thesis": "If TCS.NS breaks out above the recent high of 2453.40, it could lead to a strong uptrend. The stock has shown significant gains in the past few days and the momentum is likely to continue. The stop loss is placed at 2350.00, which is below the recent low of 2375.00.",
+        "invalidation": "If the stock fails to break out above 2453.40 and instead breaks down below 2350.00, it would invalidate the thesis.",
+        "rr": 1.86,
+        "shares": 1,
+        "riskAmount": 100,
+        "recordedAt": "2026-08-07T08:57:14.225Z"
+      },
+      {
+        "id": "2026-08-07-BP.L-long",
+        "date": "2026-08-07",
+        "status": "pending",
+        "ticker": "BP.L",
+        "side": "long",
+        "entry": 522,
+        "stop": 510,
+        "target": 540,
+        "confidence": 0.45,
+        "catalyst": "Increase in oil prices",
+        "thesis": "If BP.L breaks out above the recent high of 526.80, it could lead to a strong uptrend. The stock has shown significant gains in the past few days and the momentum is likely to continue. The stop loss is placed at 510.00, which is below the recent low of 518.70.",
+        "invalidation": "If the stock fails to break out above 526.80 and instead breaks down below 510.00, it would invalidate the thesis.",
+        "rr": 1.5,
+        "shares": 8,
+        "riskAmount": 100,
+        "recordedAt": "2026-08-07T08:57:14.225Z"
+      }
+    ],
     "provider": "groq",
-    "scannedAt": "2026-08-06T10:38:00.373Z"
+    "scannedAt": "2026-08-07T08:57:14.230Z"
   },
   "meta": {
     "created": "2026-01-01T00:00:00.000Z",
     "version": 1,
     "disclaimer": "NOT financial advice. Delayed/unofficial data. Confirm in your broker. Paper trading only.",
-    "lastScan": "2026-08-06T10:38:00.373Z",
+    "lastScan": "2026-08-07T08:57:14.230Z",
     "lastScore": "2026-08-05T22:35:38.943Z"
   }
 }
