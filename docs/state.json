@@ -555,7 +555,7 @@
     {
       "id": "2026-08-07-TCS.NS-long",
       "date": "2026-08-07",
-      "status": "pending",
+      "status": "resolved",
       "ticker": "TCS.NS",
       "side": "long",
       "entry": 2420,
@@ -568,12 +568,18 @@
       "rr": 1.86,
       "shares": 1,
       "riskAmount": 100,
-      "recordedAt": "2026-08-07T08:57:14.225Z"
+      "recordedAt": "2026-08-07T08:57:14.225Z",
+      "outcome": "expired_at_close",
+      "exitPrice": 2373,
+      "pnl": -47,
+      "r": -0.47,
+      "resolvedDate": "2026-08-06",
+      "resolvedAt": "2026-08-07T22:07:18.102Z"
     },
     {
       "id": "2026-08-07-BP.L-long",
       "date": "2026-08-07",
-      "status": "pending",
+      "status": "resolved",
       "ticker": "BP.L",
       "side": "long",
       "entry": 522,
@@ -586,7 +592,13 @@
       "rr": 1.5,
       "shares": 8,
       "riskAmount": 100,
-      "recordedAt": "2026-08-07T08:57:14.225Z"
+      "recordedAt": "2026-08-07T08:57:14.225Z",
+      "outcome": "expired_at_close",
+      "exitPrice": 517.2,
+      "pnl": -38.4,
+      "r": -0.38,
+      "resolvedDate": "2026-08-07",
+      "resolvedAt": "2026-08-07T22:07:18.260Z"
     }
   ],
   "scan_history": [
@@ -944,21 +956,69 @@
     }
   ],
   "scorecard": {
-    "count": 23,
+    "count": 25,
     "wins": 11,
-    "losses": 12,
+    "losses": 14,
     "even": 0,
-    "winRate": 0.478,
-    "avgR": -0.16,
-    "totalPnl": -360.75,
+    "winRate": 0.44,
+    "avgR": -0.18,
+    "totalPnl": -446.15,
     "maxDrawdown": 679.15,
     "byOutcome": {
-      "expired_at_close": 16,
+      "expired_at_close": 18,
       "stopped_gap": 3,
       "stopped": 2,
       "target": 2
     },
     "recent": [
+      {
+        "id": "2026-08-07-BP.L-long",
+        "date": "2026-08-07",
+        "status": "resolved",
+        "ticker": "BP.L",
+        "side": "long",
+        "entry": 522,
+        "stop": 510,
+        "target": 540,
+        "confidence": 0.45,
+        "catalyst": "Increase in oil prices",
+        "thesis": "If BP.L breaks out above the recent high of 526.80, it could lead to a strong uptrend. The stock has shown significant gains in the past few days and the momentum is likely to continue. The stop loss is placed at 510.00, which is below the recent low of 518.70.",
+        "invalidation": "If the stock fails to break out above 526.80 and instead breaks down below 510.00, it would invalidate the thesis.",
+        "rr": 1.5,
+        "shares": 8,
+        "riskAmount": 100,
+        "recordedAt": "2026-08-07T08:57:14.225Z",
+        "outcome": "expired_at_close",
+        "exitPrice": 517.2,
+        "pnl": -38.4,
+        "r": -0.38,
+        "resolvedDate": "2026-08-07",
+        "resolvedAt": "2026-08-07T22:07:18.260Z"
+      },
+      {
+        "id": "2026-08-07-TCS.NS-long",
+        "date": "2026-08-07",
+        "status": "resolved",
+        "ticker": "TCS.NS",
+        "side": "long",
+        "entry": 2420,
+        "stop": 2350,
+        "target": 2550,
+        "confidence": 0.5,
+        "catalyst": "Strong earnings report",
+        "thesis": "If TCS.NS breaks out above the recent high of 2453.40, it could lead to a strong uptrend. The stock has shown significant gains in the past few days and the momentum is likely to continue. The stop loss is placed at 2350.00, which is below the recent low of 2375.00.",
+        "invalidation": "If the stock fails to break out above 2453.40 and instead breaks down below 2350.00, it would invalidate the thesis.",
+        "rr": 1.86,
+        "shares": 1,
+        "riskAmount": 100,
+        "recordedAt": "2026-08-07T08:57:14.225Z",
+        "outcome": "expired_at_close",
+        "exitPrice": 2373,
+        "pnl": -47,
+        "r": -0.47,
+        "resolvedDate": "2026-08-06",
+        "resolvedAt": "2026-08-07T22:07:18.102Z"
+      },
       {
         "id": "2026-08-05-MSFT-long",
         "date": "2026-08-05",
@@ -1150,57 +1210,9 @@
         "r": -1.9,
         "resolvedDate": "2026-07-28",
         "resolvedAt": "2026-07-29T22:30:34.817Z"
-      },
-      {
-        "id": "2026-07-28-JPM-long",
-        "date": "2026-07-28",
-        "status": "resolved",
-        "ticker": "JPM",
-        "side": "long",
-        "entry": 357,
-        "stop": 352,
-        "target": 365,
-        "confidence": 0.55,
-        "catalyst": "Earnings report",
-        "thesis": "If JPM breaks out above its recent resistance level, it may continue its upward trend. The stock has shown strong momentum after its earnings report, and a long position could be considered if it holds above the $352 level.",
-        "invalidation": "A close below $352 would invalidate this thesis.",
-        "rr": 1.6,
-        "shares": 20,
-        "riskAmount": 100,
-        "recordedAt": "2026-07-28T10:34:13.161Z",
-        "outcome": "expired_at_close",
-        "exitPrice": 357.31,
-        "pnl": 6.2,
-        "r": 0.06,
-        "resolvedDate": "2026-07-28",
-        "resolvedAt": "2026-07-28T22:35:15.497Z"
-      },
-      {
-        "id": "2026-07-23-LLOY.L-long",
-        "date": "2026-07-23",
-        "status": "resolved",
-        "ticker": "LLOY.L",
-        "side": "long",
-        "entry": 112,
-        "stop": 108.16,
-        "target": 120,
-        "confidence": 0.5,
-        "catalyst": "Positive market sentiment and strong banking sector performance",
-        "thesis": "If LLOY can maintain its current momentum, it may experience a significant price increase. The stock has shown a strong relative volume and a high confidence level, indicating a potential for further gains. A long position can be taken with a stop loss below the recent low and a target near the next resistance level.",
-        "invalidation": "A close below 105.00 would invalidate this thesis",
-        "rr": 2.08,
-        "shares": 26,
-        "riskAmount": 100,
-        "recordedAt": "2026-07-23T10:19:41.776Z",
-        "outcome": "expired_at_close",
-        "exitPrice": 112.45,
-        "pnl": 11.7,
-        "r": 0.12,
-        "resolvedDate": "2026-07-23",
-        "resolvedAt": "2026-07-23T22:32:08.013Z"
       }
     ],
-    "asOf": "2026-08-07T08:57:14.230Z"
+    "asOf": "2026-08-07T22:07:18.274Z"
   },
   "today": {
     "date": "2026-08-07",
@@ -1250,8 +1262,8 @@
   "meta": {
     "created": "2026-01-01T00:00:00.000Z",
     "version": 1,
-    "disclaimer": "NOT financial advice. Delayed/unofficial data. Confirm in your broker. Paper trading only.",
+    "disclaimer": "NOT financial advice. Delayed/unofficial data. Paper trading only.",
     "lastScan": "2026-08-07T08:57:14.230Z",
-    "lastScore": "2026-08-05T22:35:38.943Z"
+    "lastScore": "2026-08-07T22:07:18.274Z"
   }
 }
