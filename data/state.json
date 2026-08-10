@@ -603,7 +603,7 @@
     {
       "id": "2026-08-10-TCS.NS-long",
       "date": "2026-08-10",
-      "status": "pending",
+      "status": "resolved",
       "ticker": "TCS.NS",
       "side": "long",
       "entry": 2450,
@@ -616,12 +616,18 @@
       "rr": 2.14,
       "shares": 1,
       "riskAmount": 100,
-      "recordedAt": "2026-08-10T09:18:23.597Z"
+      "recordedAt": "2026-08-10T09:18:23.597Z",
+      "outcome": "stopped_gap",
+      "exitPrice": 2375,
+      "pnl": -75,
+      "r": -0.75,
+      "resolvedDate": "2026-08-07",
+      "resolvedAt": "2026-08-10T22:08:35.774Z"
     },
     {
       "id": "2026-08-10-NVDA-long",
       "date": "2026-08-10",
-      "status": "pending",
+      "status": "resolved",
       "ticker": "NVDA",
       "side": "long",
       "entry": 220,
@@ -634,7 +640,13 @@
       "rr": 2,
       "shares": 10,
       "riskAmount": 100,
-      "recordedAt": "2026-08-10T09:18:23.597Z"
+      "recordedAt": "2026-08-10T09:18:23.597Z",
+      "outcome": "expired_at_close",
+      "exitPrice": 217.55,
+      "pnl": -24.5,
+      "r": -0.24,
+      "resolvedDate": "2026-08-10",
+      "resolvedAt": "2026-08-10T22:08:35.831Z"
     }
   ],
   "scan_history": [
@@ -1000,21 +1012,69 @@
     }
   ],
   "scorecard": {
-    "count": 25,
+    "count": 27,
     "wins": 11,
-    "losses": 14,
+    "losses": 16,
     "even": 0,
-    "winRate": 0.44,
-    "avgR": -0.18,
-    "totalPnl": -446.15,
+    "winRate": 0.407,
+    "avgR": -0.2,
+    "totalPnl": -545.65,
     "maxDrawdown": 679.15,
     "byOutcome": {
-      "expired_at_close": 18,
-      "stopped_gap": 3,
+      "expired_at_close": 19,
+      "stopped_gap": 4,
       "stopped": 2,
       "target": 2
     },
     "recent": [
+      {
+        "id": "2026-08-10-NVDA-long",
+        "date": "2026-08-10",
+        "status": "resolved",
+        "ticker": "NVDA",
+        "side": "long",
+        "entry": 220,
+        "stop": 210,
+        "target": 240,
+        "confidence": 0.5,
+        "catalyst": "Positive market sentiment and sector trends",
+        "thesis": "If NVDA can maintain its current price level and break above resistance, it may see further upside driven by positive market sentiment and sector trends. The stock needs to stay above the 210 level to support this thesis.",
+        "invalidation": "Failure to hold above 210 would suggest a lack of buying interest and potentially invalidate this long thesis.",
+        "rr": 2,
+        "shares": 10,
+        "riskAmount": 100,
+        "recordedAt": "2026-08-10T09:18:23.597Z",
+        "outcome": "expired_at_close",
+        "exitPrice": 217.55,
+        "pnl": -24.5,
+        "r": -0.24,
+        "resolvedDate": "2026-08-10",
+        "resolvedAt": "2026-08-10T22:08:35.831Z"
+      },
+      {
+        "id": "2026-08-10-TCS.NS-long",
+        "date": "2026-08-10",
+        "status": "resolved",
+        "ticker": "TCS.NS",
+        "side": "long",
+        "entry": 2450,
+        "stop": 2380,
+        "target": 2600,
+        "confidence": 0.55,
+        "catalyst": "Strong earnings report and positive sector trends",
+        "thesis": "If TCS.NS can break above its recent highs, it may continue its upward momentum driven by strong sector performance and recent earnings. The stock needs to hold above the 2380 level to maintain bullish momentum.",
+        "invalidation": "A close below 2380 would invalidate this thesis, indicating a potential reversal.",
+        "rr": 2.14,
+        "shares": 1,
+        "riskAmount": 100,
+        "recordedAt": "2026-08-10T09:18:23.597Z",
+        "outcome": "stopped_gap",
+        "exitPrice": 2375,
+        "pnl": -75,
+        "r": -0.75,
+        "resolvedDate": "2026-08-07",
+        "resolvedAt": "2026-08-10T22:08:35.774Z"
+      },
       {
         "id": "2026-08-07-BP.L-long",
         "date": "2026-08-07",
@@ -1206,57 +1266,9 @@
         "r": 0.07,
         "resolvedDate": "2026-07-30",
         "resolvedAt": "2026-07-30T22:38:16.637Z"
-      },
-      {
-        "id": "2026-07-30-TCS.NS-long",
-        "date": "2026-07-30",
-        "status": "resolved",
-        "ticker": "TCS.NS",
-        "side": "long",
-        "entry": 2440,
-        "stop": 2380,
-        "target": 2600,
-        "confidence": 0.5,
-        "catalyst": "Earnings report and sector trends",
-        "thesis": "If TCS.NS can break above the 2440.00 level, it may continue its upward momentum, potentially driven by the recent earnings report and sector trends, and reach the target of 2600.00. The stock has shown significant gains today, and this setup is based on the idea that this trend will continue.",
-        "invalidation": "A close below 2350.00 would invalidate this thesis, indicating a potential reversal of the trend.",
-        "rr": 2.67,
-        "shares": 1,
-        "riskAmount": 100,
-        "recordedAt": "2026-07-30T10:24:46.525Z",
-        "outcome": "expired_at_close",
-        "exitPrice": 2446.6001,
-        "pnl": 6.6,
-        "r": 0.07,
-        "resolvedDate": "2026-07-29",
-        "resolvedAt": "2026-07-30T22:38:16.717Z"
-      },
-      {
-        "id": "2026-07-29-TCS.NS-long",
-        "date": "2026-07-29",
-        "status": "resolved",
-        "ticker": "TCS.NS",
-        "side": "long",
-        "entry": 2420,
-        "stop": 2380,
-        "target": 2480,
-        "confidence": 0.5,
-        "catalyst": "Strong earnings report and positive sector trends",
-        "thesis": "If TCS.NS breaks above the recent resistance level, it may continue its upward momentum, driven by strong earnings and sector growth. The stock needs to hold above the 2380 level to confirm the bullish thesis.",
-        "invalidation": "A close below 2380 would invalidate this long thesis, indicating a potential reversal.",
-        "rr": 1.5,
-        "shares": 2,
-        "riskAmount": 100,
-        "recordedAt": "2026-07-29T10:38:24.339Z",
-        "outcome": "stopped_gap",
-        "exitPrice": 2325,
-        "pnl": -190,
-        "r": -1.9,
-        "resolvedDate": "2026-07-28",
-        "resolvedAt": "2026-07-29T22:30:34.817Z"
       }
     ],
-    "asOf": "2026-08-10T09:18:23.611Z"
+    "asOf": "2026-08-10T22:08:35.844Z"
   },
   "today": {
     "date": "2026-08-10",
@@ -1306,8 +1318,8 @@
   "meta": {
     "created": "2026-01-01T00:00:00.000Z",
     "version": 1,
-    "disclaimer": "NOT financial advice. Delayed/unofficial data. Confirm in your broker. Paper trading only.",
+    "disclaimer": "NOT financial advice. Delayed/unofficial data. Paper trading only.",
     "lastScan": "2026-08-10T09:18:23.611Z",
-    "lastScore": "2026-08-07T22:07:18.274Z"
+    "lastScore": "2026-08-10T22:08:35.844Z"
   }
 }
