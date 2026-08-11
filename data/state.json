@@ -647,6 +647,42 @@
       "r": -0.24,
       "resolvedDate": "2026-08-10",
       "resolvedAt": "2026-08-10T22:08:35.831Z"
+    },
+    {
+      "id": "2026-08-11-NVDA-long",
+      "date": "2026-08-11",
+      "status": "pending",
+      "ticker": "NVDA",
+      "side": "long",
+      "entry": 220,
+      "stop": 215,
+      "target": 230,
+      "confidence": 0.5,
+      "catalyst": "Strong earnings report and positive sector trends",
+      "thesis": "If NVDA breaks out above its recent resistance level, it may continue its upward momentum, driven by strong demand for its products and services. The stock's technical indicators suggest a potential bullish trend, and a long position could be considered if the stock price surpasses the resistance level.",
+      "invalidation": "A close below the support level of $210 would invalidate this thesis",
+      "rr": 2,
+      "shares": 20,
+      "riskAmount": 100,
+      "recordedAt": "2026-08-11T08:49:35.282Z"
+    },
+    {
+      "id": "2026-08-11-TCS.NS-long",
+      "date": "2026-08-11",
+      "status": "pending",
+      "ticker": "TCS.NS",
+      "side": "long",
+      "entry": 2450,
+      "stop": 2400,
+      "target": 2550,
+      "confidence": 0.55,
+      "catalyst": "Positive earnings report and growing demand for IT services",
+      "thesis": "If TCS.NS continues its upward trend, driven by strong earnings and growing demand for its services, it may reach new highs. The stock's technical indicators suggest a potential bullish trend, and a long position could be considered if the stock price surpasses the resistance level.",
+      "invalidation": "A close below the support level of $2350 would invalidate this thesis",
+      "rr": 2,
+      "shares": 2,
+      "riskAmount": 100,
+      "recordedAt": "2026-08-11T08:49:35.282Z"
     }
   ],
   "scan_history": [
@@ -1009,6 +1045,14 @@
       "no_trade_reason": null,
       "idea_count": 2,
       "recordedAt": "2026-08-10T09:18:23.597Z"
+    },
+    {
+      "date": "2026-08-11",
+      "provider": "groq",
+      "market_context": "Today's market conditions show a mix of gains and losses across various sectors, with some stocks experiencing significant price movements. The overall sentiment appears to be cautiously optimistic, with some stocks rebounding from previous losses. However, the volatility and uncertainty in the market make it essential to approach trading with a disciplined and risk-managed strategy.",
+      "no_trade_reason": null,
+      "idea_count": 2,
+      "recordedAt": "2026-08-11T08:49:35.283Z"
     }
   ],
   "scorecard": {
@@ -1268,58 +1312,58 @@
         "resolvedAt": "2026-07-30T22:38:16.637Z"
       }
     ],
-    "asOf": "2026-08-10T22:08:35.844Z"
+    "asOf": "2026-08-11T08:49:35.298Z"
   },
   "today": {
-    "date": "2026-08-10",
-    "market_context": "Today's market conditions are characterized by significant price movements in various US and UK stocks, with some experiencing large gains while others saw substantial losses. The Indian market also saw notable movements, particularly in the technology sector. Overall, the markets appear to be highly volatile.",
+    "date": "2026-08-11",
+    "market_context": "Today's market conditions show a mix of gains and losses across various sectors, with some stocks experiencing significant price movements. The overall sentiment appears to be cautiously optimistic, with some stocks rebounding from previous losses. However, the volatility and uncertainty in the market make it essential to approach trading with a disciplined and risk-managed strategy.",
     "no_trade_reason": null,
     "ideas": [
       {
-        "id": "2026-08-10-TCS.NS-long",
-        "date": "2026-08-10",
-        "status": "pending",
-        "ticker": "TCS.NS",
-        "side": "long",
-        "entry": 2450,
-        "stop": 2380,
-        "target": 2600,
-        "confidence": 0.55,
-        "catalyst": "Strong earnings report and positive sector trends",
-        "thesis": "If TCS.NS can break above its recent highs, it may continue its upward momentum driven by strong sector performance and recent earnings. The stock needs to hold above the 2380 level to maintain bullish momentum.",
-        "invalidation": "A close below 2380 would invalidate this thesis, indicating a potential reversal.",
-        "rr": 2.14,
-        "shares": 1,
-        "riskAmount": 100,
-        "recordedAt": "2026-08-10T09:18:23.597Z"
-      },
-      {
-        "id": "2026-08-10-NVDA-long",
-        "date": "2026-08-10",
+        "id": "2026-08-11-NVDA-long",
+        "date": "2026-08-11",
         "status": "pending",
         "ticker": "NVDA",
         "side": "long",
         "entry": 220,
-        "stop": 210,
-        "target": 240,
+        "stop": 215,
+        "target": 230,
         "confidence": 0.5,
-        "catalyst": "Positive market sentiment and sector trends",
-        "thesis": "If NVDA can maintain its current price level and break above resistance, it may see further upside driven by positive market sentiment and sector trends. The stock needs to stay above the 210 level to support this thesis.",
-        "invalidation": "Failure to hold above 210 would suggest a lack of buying interest and potentially invalidate this long thesis.",
+        "catalyst": "Strong earnings report and positive sector trends",
+        "thesis": "If NVDA breaks out above its recent resistance level, it may continue its upward momentum, driven by strong demand for its products and services. The stock's technical indicators suggest a potential bullish trend, and a long position could be considered if the stock price surpasses the resistance level.",
+        "invalidation": "A close below the support level of $210 would invalidate this thesis",
         "rr": 2,
-        "shares": 10,
+        "shares": 20,
         "riskAmount": 100,
-        "recordedAt": "2026-08-10T09:18:23.597Z"
+        "recordedAt": "2026-08-11T08:49:35.282Z"
+      },
+      {
+        "id": "2026-08-11-TCS.NS-long",
+        "date": "2026-08-11",
+        "status": "pending",
+        "ticker": "TCS.NS",
+        "side": "long",
+        "entry": 2450,
+        "stop": 2400,
+        "target": 2550,
+        "confidence": 0.55,
+        "catalyst": "Positive earnings report and growing demand for IT services",
+        "thesis": "If TCS.NS continues its upward trend, driven by strong earnings and growing demand for its services, it may reach new highs. The stock's technical indicators suggest a potential bullish trend, and a long position could be considered if the stock price surpasses the resistance level.",
+        "invalidation": "A close below the support level of $2350 would invalidate this thesis",
+        "rr": 2,
+        "shares": 2,
+        "riskAmount": 100,
+        "recordedAt": "2026-08-11T08:49:35.282Z"
       }
     ],
     "provider": "groq",
-    "scannedAt": "2026-08-10T09:18:23.611Z"
+    "scannedAt": "2026-08-11T08:49:35.298Z"
   },
   "meta": {
     "created": "2026-01-01T00:00:00.000Z",
     "version": 1,
-    "disclaimer": "NOT financial advice. Delayed/unofficial data. Paper trading only.",
-    "lastScan": "2026-08-10T09:18:23.611Z",
+    "disclaimer": "NOT financial advice. Delayed/unofficial data. Confirm in your broker. Paper trading only.",
+    "lastScan": "2026-08-11T08:49:35.298Z",
     "lastScore": "2026-08-10T22:08:35.844Z"
   }
 }
