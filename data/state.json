@@ -699,7 +699,7 @@
     {
       "id": "2026-08-12-NVDA-long",
       "date": "2026-08-12",
-      "status": "pending",
+      "status": "resolved",
       "ticker": "NVDA",
       "side": "long",
       "entry": 220,
@@ -712,12 +712,18 @@
       "rr": 2,
       "shares": 20,
       "riskAmount": 100,
-      "recordedAt": "2026-08-12T09:07:43.923Z"
+      "recordedAt": "2026-08-12T09:07:43.923Z",
+      "outcome": "expired_at_close",
+      "exitPrice": 224.09,
+      "pnl": 81.8,
+      "r": 0.82,
+      "resolvedDate": "2026-08-12",
+      "resolvedAt": "2026-08-12T22:19:37.759Z"
     },
     {
       "id": "2026-08-12-TCS.NS-long",
       "date": "2026-08-12",
-      "status": "pending",
+      "status": "resolved",
       "ticker": "TCS.NS",
       "side": "long",
       "entry": 2400,
@@ -730,7 +736,13 @@
       "rr": 3,
       "shares": 2,
       "riskAmount": 100,
-      "recordedAt": "2026-08-12T09:07:43.923Z"
+      "recordedAt": "2026-08-12T09:07:43.923Z",
+      "outcome": "expired_at_close",
+      "exitPrice": 2445.7,
+      "pnl": 91.4,
+      "r": 0.91,
+      "resolvedDate": "2026-08-11",
+      "resolvedAt": "2026-08-12T22:19:37.814Z"
     }
   ],
   "scan_history": [
@@ -1112,21 +1124,69 @@
     }
   ],
   "scorecard": {
-    "count": 29,
-    "wins": 11,
+    "count": 31,
+    "wins": 13,
     "losses": 18,
     "even": 0,
-    "winRate": 0.379,
-    "avgR": -0.22,
-    "totalPnl": -644.25,
+    "winRate": 0.419,
+    "avgR": -0.15,
+    "totalPnl": -471.05,
     "maxDrawdown": 679.15,
     "byOutcome": {
-      "expired_at_close": 21,
+      "expired_at_close": 23,
       "stopped_gap": 4,
       "stopped": 2,
       "target": 2
     },
     "recent": [
+      {
+        "id": "2026-08-12-NVDA-long",
+        "date": "2026-08-12",
+        "status": "resolved",
+        "ticker": "NVDA",
+        "side": "long",
+        "entry": 220,
+        "stop": 215,
+        "target": 230,
+        "confidence": 0.5,
+        "catalyst": "Strong earnings report",
+        "thesis": "If NVDA can break above its recent highs, it may continue its upward momentum, with a potential target of 230.00. The stock's strong earnings report and positive sector trends support this thesis.",
+        "invalidation": "A close below 215.00 would invalidate this thesis, indicating a potential reversal in the stock's trend.",
+        "rr": 2,
+        "shares": 20,
+        "riskAmount": 100,
+        "recordedAt": "2026-08-12T09:07:43.923Z",
+        "outcome": "expired_at_close",
+        "exitPrice": 224.09,
+        "pnl": 81.8,
+        "r": 0.82,
+        "resolvedDate": "2026-08-12",
+        "resolvedAt": "2026-08-12T22:19:37.759Z"
+      },
+      {
+        "id": "2026-08-12-TCS.NS-long",
+        "date": "2026-08-12",
+        "status": "resolved",
+        "ticker": "TCS.NS",
+        "side": "long",
+        "entry": 2400,
+        "stop": 2350,
+        "target": 2550,
+        "confidence": 0.55,
+        "catalyst": "Positive sector trends",
+        "thesis": "If TCS.NS can break above its recent highs, it may continue its upward momentum, with a potential target of 2550.00. The stock's strong sector trends and positive earnings report support this thesis.",
+        "invalidation": "A close below 2350.00 would invalidate this thesis, indicating a potential reversal in the stock's trend.",
+        "rr": 3,
+        "shares": 2,
+        "riskAmount": 100,
+        "recordedAt": "2026-08-12T09:07:43.923Z",
+        "outcome": "expired_at_close",
+        "exitPrice": 2445.7,
+        "pnl": 91.4,
+        "r": 0.91,
+        "resolvedDate": "2026-08-11",
+        "resolvedAt": "2026-08-12T22:19:37.814Z"
+      },
       {
         "id": "2026-08-11-NVDA-long",
         "date": "2026-08-11",
@@ -1318,57 +1378,9 @@
         "r": 0.8,
         "resolvedDate": "2026-08-04",
         "resolvedAt": "2026-08-05T22:35:38.861Z"
-      },
-      {
-        "id": "2026-08-03-MSFT-long",
-        "date": "2026-08-03",
-        "status": "resolved",
-        "ticker": "MSFT",
-        "side": "long",
-        "entry": 460,
-        "stop": 450,
-        "target": 480,
-        "confidence": 0.55,
-        "catalyst": "Strong earnings report and positive market sentiment",
-        "thesis": "If MSFT can break above its recent highs, it may continue its upward trend, driven by strong earnings and a positive market environment. The stock needs to hold above the $450 level to maintain its momentum.",
-        "invalidation": "A close below $450 would invalidate this thesis, indicating a potential reversal in the stock's trend.",
-        "rr": 2,
-        "shares": 10,
-        "riskAmount": 100,
-        "recordedAt": "2026-08-03T11:21:37.961Z",
-        "outcome": "target",
-        "exitPrice": 480,
-        "pnl": 200,
-        "r": 2,
-        "resolvedDate": "2026-08-03",
-        "resolvedAt": "2026-08-03T22:33:46.091Z"
-      },
-      {
-        "id": "2026-08-03-TCS.NS-long",
-        "date": "2026-08-03",
-        "status": "resolved",
-        "ticker": "TCS.NS",
-        "side": "long",
-        "entry": 2400,
-        "stop": 2350,
-        "target": 2550,
-        "confidence": 0.5,
-        "catalyst": "Positive earnings report and sectoral strength",
-        "thesis": "If TCS.NS can maintain its current momentum, it may continue to rise, driven by a strong earnings report and a positive sectoral trend. The stock needs to hold above the 2350 level to maintain its upward trajectory.",
-        "invalidation": "A close below 2350 would invalidate this thesis, indicating a potential reversal in the stock's trend.",
-        "rr": 3,
-        "shares": 2,
-        "riskAmount": 100,
-        "recordedAt": "2026-08-03T11:21:37.961Z",
-        "outcome": "stopped",
-        "exitPrice": 2350,
-        "pnl": -100,
-        "r": -1,
-        "resolvedDate": "2026-07-31",
-        "resolvedAt": "2026-08-03T22:33:46.149Z"
       }
     ],
-    "asOf": "2026-08-12T09:07:44.090Z"
+    "asOf": "2026-08-12T22:19:37.827Z"
   },
   "today": {
     "date": "2026-08-12",
@@ -1418,8 +1430,8 @@
   "meta": {
     "created": "2026-01-01T00:00:00.000Z",
     "version": 1,
-    "disclaimer": "NOT financial advice. Delayed/unofficial data. Confirm in your broker. Paper trading only.",
+    "disclaimer": "NOT financial advice. Delayed/unofficial data. Paper trading only.",
     "lastScan": "2026-08-12T09:07:44.090Z",
-    "lastScore": "2026-08-11T22:19:53.020Z"
+    "lastScore": "2026-08-12T22:19:37.827Z"
   }
 }
