@@ -747,7 +747,7 @@
     {
       "id": "2026-08-13-NVDA-long",
       "date": "2026-08-13",
-      "status": "pending",
+      "status": "resolved",
       "ticker": "NVDA",
       "side": "long",
       "entry": 223,
@@ -760,12 +760,18 @@
       "rr": 1.75,
       "shares": 25,
       "riskAmount": 100,
-      "recordedAt": "2026-08-13T09:07:41.352Z"
+      "recordedAt": "2026-08-13T09:07:41.352Z",
+      "outcome": "expired_at_close",
+      "exitPrice": 225.3,
+      "pnl": 57.5,
+      "r": 0.57,
+      "resolvedDate": "2026-08-13",
+      "resolvedAt": "2026-08-13T22:20:19.082Z"
     },
     {
       "id": "2026-08-13-MSFT-long",
       "date": "2026-08-13",
-      "status": "pending",
+      "status": "resolved",
       "ticker": "MSFT",
       "side": "long",
       "entry": 495,
@@ -778,7 +784,13 @@
       "rr": 2,
       "shares": 20,
       "riskAmount": 100,
-      "recordedAt": "2026-08-13T09:07:41.352Z"
+      "recordedAt": "2026-08-13T09:07:41.352Z",
+      "outcome": "expired_at_close",
+      "exitPrice": 496.88,
+      "pnl": 37.6,
+      "r": 0.38,
+      "resolvedDate": "2026-08-13",
+      "resolvedAt": "2026-08-13T22:20:19.193Z"
     }
   ],
   "scan_history": [
@@ -1168,21 +1180,69 @@
     }
   ],
   "scorecard": {
-    "count": 31,
-    "wins": 13,
+    "count": 33,
+    "wins": 15,
     "losses": 18,
     "even": 0,
-    "winRate": 0.419,
-    "avgR": -0.15,
-    "totalPnl": -471.05,
+    "winRate": 0.455,
+    "avgR": -0.11,
+    "totalPnl": -375.95,
     "maxDrawdown": 679.15,
     "byOutcome": {
-      "expired_at_close": 23,
+      "expired_at_close": 25,
       "stopped_gap": 4,
       "stopped": 2,
       "target": 2
     },
     "recent": [
+      {
+        "id": "2026-08-13-MSFT-long",
+        "date": "2026-08-13",
+        "status": "resolved",
+        "ticker": "MSFT",
+        "side": "long",
+        "entry": 495,
+        "stop": 490,
+        "target": 505,
+        "confidence": 0.5,
+        "catalyst": "Positive market sentiment and strong earnings report",
+        "thesis": "If MSFT continues its upward trend, driven by strong demand for its products and services, a long position could be considered if it trades above $495. A stop-loss can be placed below $490, and a target can be set at $505. The stock's recent price action suggests a potential bullish continuation, and a long position could be a good opportunity to capitalize on this trend.",
+        "invalidation": "A close below $490 would invalidate this thesis, indicating a potential reversal in the stock's trend.",
+        "rr": 2,
+        "shares": 20,
+        "riskAmount": 100,
+        "recordedAt": "2026-08-13T09:07:41.352Z",
+        "outcome": "expired_at_close",
+        "exitPrice": 496.88,
+        "pnl": 37.6,
+        "r": 0.38,
+        "resolvedDate": "2026-08-13",
+        "resolvedAt": "2026-08-13T22:20:19.193Z"
+      },
+      {
+        "id": "2026-08-13-NVDA-long",
+        "date": "2026-08-13",
+        "status": "resolved",
+        "ticker": "NVDA",
+        "side": "long",
+        "entry": 223,
+        "stop": 219,
+        "target": 230,
+        "confidence": 0.55,
+        "catalyst": "Strong earnings report and positive market sentiment",
+        "thesis": "If NVDA breaks out above its current resistance level, it may continue its upward trend, driven by strong demand for its products and services. The stock's recent price action suggests a potential bullish reversal, and a long position could be considered if it trades above $223. A stop-loss can be placed below $219, and a target can be set at $230.",
+        "invalidation": "A close below $219 would invalidate this thesis, indicating a potential reversal in the stock's trend.",
+        "rr": 1.75,
+        "shares": 25,
+        "riskAmount": 100,
+        "recordedAt": "2026-08-13T09:07:41.352Z",
+        "outcome": "expired_at_close",
+        "exitPrice": 225.3,
+        "pnl": 57.5,
+        "r": 0.57,
+        "resolvedDate": "2026-08-13",
+        "resolvedAt": "2026-08-13T22:20:19.082Z"
+      },
       {
         "id": "2026-08-12-NVDA-long",
         "date": "2026-08-12",
@@ -1374,57 +1434,9 @@
         "r": -0.47,
         "resolvedDate": "2026-08-06",
         "resolvedAt": "2026-08-07T22:07:18.102Z"
-      },
-      {
-        "id": "2026-08-05-MSFT-long",
-        "date": "2026-08-05",
-        "status": "resolved",
-        "ticker": "MSFT",
-        "side": "long",
-        "entry": 495,
-        "stop": 485,
-        "target": 510,
-        "confidence": 0.5,
-        "catalyst": "Strong market momentum",
-        "thesis": "If MSFT breaks out above the recent high of 499.44, it could lead to a strong uptrend. The stock has shown significant growth in the past few days and a breakout could lead to further gains. The stop loss is placed at 485.0, just below the recent low of 479.17.",
-        "invalidation": "A close below 485.0 would invalidate this thesis.",
-        "rr": 1.5,
-        "shares": 10,
-        "riskAmount": 100,
-        "recordedAt": "2026-08-05T10:34:02.841Z",
-        "outcome": "expired_at_close",
-        "exitPrice": 487.46,
-        "pnl": -75.4,
-        "r": -0.75,
-        "resolvedDate": "2026-08-05",
-        "resolvedAt": "2026-08-05T22:35:38.927Z"
-      },
-      {
-        "id": "2026-08-05-TCS.NS-long",
-        "date": "2026-08-05",
-        "status": "resolved",
-        "ticker": "TCS.NS",
-        "side": "long",
-        "entry": 2420,
-        "stop": 2380,
-        "target": 2480,
-        "confidence": 0.55,
-        "catalyst": "Strong earnings report",
-        "thesis": "If TCS.NS breaks out above the recent high of 2460.90, it could lead to a strong uptrend. The stock has shown significant growth in the past few days and a breakout could lead to further gains. The stop loss is placed at 2380.0, just below the recent low of 2408.00.",
-        "invalidation": "A close below 2380.0 would invalidate this thesis.",
-        "rr": 1.5,
-        "shares": 2,
-        "riskAmount": 100,
-        "recordedAt": "2026-08-05T10:34:02.841Z",
-        "outcome": "expired_at_close",
-        "exitPrice": 2460,
-        "pnl": 80,
-        "r": 0.8,
-        "resolvedDate": "2026-08-04",
-        "resolvedAt": "2026-08-05T22:35:38.861Z"
       }
     ],
-    "asOf": "2026-08-13T09:07:41.358Z"
+    "asOf": "2026-08-13T22:20:19.200Z"
   },
   "today": {
     "date": "2026-08-13",
@@ -1474,8 +1486,8 @@
   "meta": {
     "created": "2026-01-01T00:00:00.000Z",
     "version": 1,
-    "disclaimer": "NOT financial advice. Delayed/unofficial data. Confirm in your broker. Paper trading only.",
+    "disclaimer": "NOT financial advice. Delayed/unofficial data. Paper trading only.",
     "lastScan": "2026-08-13T09:07:41.358Z",
-    "lastScore": "2026-08-12T22:19:37.827Z"
+    "lastScore": "2026-08-13T22:20:19.200Z"
   }
 }
