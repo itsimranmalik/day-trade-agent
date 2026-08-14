@@ -795,7 +795,7 @@
     {
       "id": "2026-08-14-NVDA-long",
       "date": "2026-08-14",
-      "status": "pending",
+      "status": "resolved",
       "ticker": "NVDA",
       "side": "long",
       "entry": 224.5,
@@ -808,7 +808,13 @@
       "rr": 1.55,
       "shares": 18,
       "riskAmount": 100,
-      "recordedAt": "2026-08-14T09:03:43.694Z"
+      "recordedAt": "2026-08-14T09:03:43.694Z",
+      "outcome": "expired_at_close",
+      "exitPrice": 225.16,
+      "pnl": 11.88,
+      "r": 0.12,
+      "resolvedDate": "2026-08-14",
+      "resolvedAt": "2026-08-14T21:51:30.993Z"
     }
   ],
   "scan_history": [
@@ -1206,21 +1212,45 @@
     }
   ],
   "scorecard": {
-    "count": 33,
-    "wins": 15,
+    "count": 34,
+    "wins": 16,
     "losses": 18,
     "even": 0,
-    "winRate": 0.455,
+    "winRate": 0.471,
     "avgR": -0.11,
-    "totalPnl": -375.95,
+    "totalPnl": -364.07,
     "maxDrawdown": 679.15,
     "byOutcome": {
-      "expired_at_close": 25,
+      "expired_at_close": 26,
       "stopped_gap": 4,
       "stopped": 2,
       "target": 2
     },
     "recent": [
+      {
+        "id": "2026-08-14-NVDA-long",
+        "date": "2026-08-14",
+        "status": "resolved",
+        "ticker": "NVDA",
+        "side": "long",
+        "entry": 224.5,
+        "stop": 219,
+        "target": 233,
+        "confidence": 0.55,
+        "catalyst": "Recent surge in tech stocks",
+        "thesis": "If NVDA breaks out above its recent resistance level, it may continue its upward momentum, driven by the overall positive sentiment in the tech sector. The stock's strong volume and relative strength index support this thesis.",
+        "invalidation": "A close below $219 would invalidate this thesis, indicating a potential reversal in the stock's trend.",
+        "rr": 1.55,
+        "shares": 18,
+        "riskAmount": 100,
+        "recordedAt": "2026-08-14T09:03:43.694Z",
+        "outcome": "expired_at_close",
+        "exitPrice": 225.16,
+        "pnl": 11.88,
+        "r": 0.12,
+        "resolvedDate": "2026-08-14",
+        "resolvedAt": "2026-08-14T21:51:30.993Z"
+      },
       {
         "id": "2026-08-13-MSFT-long",
         "date": "2026-08-13",
@@ -1436,33 +1466,9 @@
         "r": -0.38,
         "resolvedDate": "2026-08-07",
         "resolvedAt": "2026-08-07T22:07:18.260Z"
-      },
-      {
-        "id": "2026-08-07-TCS.NS-long",
-        "date": "2026-08-07",
-        "status": "resolved",
-        "ticker": "TCS.NS",
-        "side": "long",
-        "entry": 2420,
-        "stop": 2350,
-        "target": 2550,
-        "confidence": 0.5,
-        "catalyst": "Strong earnings report",
-        "thesis": "If TCS.NS breaks out above the recent high of 2453.40, it could lead to a strong uptrend. The stock has shown significant gains in the past few days and the momentum is likely to continue. The stop loss is placed at 2350.00, which is below the recent low of 2375.00.",
-        "invalidation": "If the stock fails to break out above 2453.40 and instead breaks down below 2350.00, it would invalidate the thesis.",
-        "rr": 1.86,
-        "shares": 1,
-        "riskAmount": 100,
-        "recordedAt": "2026-08-07T08:57:14.225Z",
-        "outcome": "expired_at_close",
-        "exitPrice": 2373,
-        "pnl": -47,
-        "r": -0.47,
-        "resolvedDate": "2026-08-06",
-        "resolvedAt": "2026-08-07T22:07:18.102Z"
       }
     ],
-    "asOf": "2026-08-14T09:03:43.711Z"
+    "asOf": "2026-08-14T21:51:31.140Z"
   },
   "today": {
     "date": "2026-08-14",
@@ -1494,8 +1500,8 @@
   "meta": {
     "created": "2026-01-01T00:00:00.000Z",
     "version": 1,
-    "disclaimer": "NOT financial advice. Delayed/unofficial data. Confirm in your broker. Paper trading only.",
+    "disclaimer": "NOT financial advice. Delayed/unofficial data. Paper trading only.",
     "lastScan": "2026-08-14T09:03:43.712Z",
-    "lastScore": "2026-08-13T22:20:19.200Z"
+    "lastScore": "2026-08-14T21:51:31.140Z"
   }
 }
