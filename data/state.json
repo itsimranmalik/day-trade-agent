@@ -791,6 +791,24 @@
       "r": 0.38,
       "resolvedDate": "2026-08-13",
       "resolvedAt": "2026-08-13T22:20:19.193Z"
+    },
+    {
+      "id": "2026-08-14-NVDA-long",
+      "date": "2026-08-14",
+      "status": "pending",
+      "ticker": "NVDA",
+      "side": "long",
+      "entry": 224.5,
+      "stop": 219,
+      "target": 233,
+      "confidence": 0.55,
+      "catalyst": "Recent surge in tech stocks",
+      "thesis": "If NVDA breaks out above its recent resistance level, it may continue its upward momentum, driven by the overall positive sentiment in the tech sector. The stock's strong volume and relative strength index support this thesis.",
+      "invalidation": "A close below $219 would invalidate this thesis, indicating a potential reversal in the stock's trend.",
+      "rr": 1.55,
+      "shares": 18,
+      "riskAmount": 100,
+      "recordedAt": "2026-08-14T09:03:43.694Z"
     }
   ],
   "scan_history": [
@@ -1177,6 +1195,14 @@
       "no_trade_reason": null,
       "idea_count": 2,
       "recordedAt": "2026-08-13T09:07:41.352Z"
+    },
+    {
+      "date": "2026-08-14",
+      "provider": "groq",
+      "market_context": "Today's market conditions show a mix of gains and losses across various sectors, with some stocks experiencing significant price movements. The overall sentiment appears to be cautiously optimistic, with some stocks rebounding from previous losses. However, the high volatility in certain stocks, such as TSLA and AZN.L, warrants caution.",
+      "no_trade_reason": null,
+      "idea_count": 1,
+      "recordedAt": "2026-08-14T09:03:43.694Z"
     }
   ],
   "scorecard": {
@@ -1436,58 +1462,40 @@
         "resolvedAt": "2026-08-07T22:07:18.102Z"
       }
     ],
-    "asOf": "2026-08-13T22:20:19.200Z"
+    "asOf": "2026-08-14T09:03:43.711Z"
   },
   "today": {
-    "date": "2026-08-13",
-    "market_context": "Today's market conditions show a mixed bag of performances across the US, UK, and Indian equity markets. Some stocks like AAPL, NVDA, and MSFT are showing significant gains, while others like TSLA and AMD are experiencing losses. The overall sentiment seems cautious, with many stocks trading below their average volumes.",
+    "date": "2026-08-14",
+    "market_context": "Today's market conditions show a mix of gains and losses across various sectors, with some stocks experiencing significant price movements. The overall sentiment appears to be cautiously optimistic, with some stocks rebounding from previous losses. However, the high volatility in certain stocks, such as TSLA and AZN.L, warrants caution.",
     "no_trade_reason": null,
     "ideas": [
       {
-        "id": "2026-08-13-NVDA-long",
-        "date": "2026-08-13",
+        "id": "2026-08-14-NVDA-long",
+        "date": "2026-08-14",
         "status": "pending",
         "ticker": "NVDA",
         "side": "long",
-        "entry": 223,
+        "entry": 224.5,
         "stop": 219,
-        "target": 230,
+        "target": 233,
         "confidence": 0.55,
-        "catalyst": "Strong earnings report and positive market sentiment",
-        "thesis": "If NVDA breaks out above its current resistance level, it may continue its upward trend, driven by strong demand for its products and services. The stock's recent price action suggests a potential bullish reversal, and a long position could be considered if it trades above $223. A stop-loss can be placed below $219, and a target can be set at $230.",
+        "catalyst": "Recent surge in tech stocks",
+        "thesis": "If NVDA breaks out above its recent resistance level, it may continue its upward momentum, driven by the overall positive sentiment in the tech sector. The stock's strong volume and relative strength index support this thesis.",
         "invalidation": "A close below $219 would invalidate this thesis, indicating a potential reversal in the stock's trend.",
-        "rr": 1.75,
-        "shares": 25,
+        "rr": 1.55,
+        "shares": 18,
         "riskAmount": 100,
-        "recordedAt": "2026-08-13T09:07:41.352Z"
-      },
-      {
-        "id": "2026-08-13-MSFT-long",
-        "date": "2026-08-13",
-        "status": "pending",
-        "ticker": "MSFT",
-        "side": "long",
-        "entry": 495,
-        "stop": 490,
-        "target": 505,
-        "confidence": 0.5,
-        "catalyst": "Positive market sentiment and strong earnings report",
-        "thesis": "If MSFT continues its upward trend, driven by strong demand for its products and services, a long position could be considered if it trades above $495. A stop-loss can be placed below $490, and a target can be set at $505. The stock's recent price action suggests a potential bullish continuation, and a long position could be a good opportunity to capitalize on this trend.",
-        "invalidation": "A close below $490 would invalidate this thesis, indicating a potential reversal in the stock's trend.",
-        "rr": 2,
-        "shares": 20,
-        "riskAmount": 100,
-        "recordedAt": "2026-08-13T09:07:41.352Z"
+        "recordedAt": "2026-08-14T09:03:43.694Z"
       }
     ],
     "provider": "groq",
-    "scannedAt": "2026-08-13T09:07:41.358Z"
+    "scannedAt": "2026-08-14T09:03:43.712Z"
   },
   "meta": {
     "created": "2026-01-01T00:00:00.000Z",
     "version": 1,
-    "disclaimer": "NOT financial advice. Delayed/unofficial data. Paper trading only.",
-    "lastScan": "2026-08-13T09:07:41.358Z",
+    "disclaimer": "NOT financial advice. Delayed/unofficial data. Confirm in your broker. Paper trading only.",
+    "lastScan": "2026-08-14T09:03:43.712Z",
     "lastScore": "2026-08-13T22:20:19.200Z"
   }
 }
