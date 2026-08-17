@@ -1209,6 +1209,14 @@
       "no_trade_reason": null,
       "idea_count": 1,
       "recordedAt": "2026-08-14T09:03:43.694Z"
+    },
+    {
+      "date": "2026-08-17",
+      "provider": "groq",
+      "market_context": "Today's market conditions are mixed, with some US tech stocks like NVDA and MSFT showing significant gains, while others like TSLA are experiencing large losses. The UK market is seeing some gains in energy stocks like BP.L and SHEL.L, while Indian stocks like TCS.NS and INFY.NS are also rising.",
+      "no_trade_reason": "Most setups lack clear catalysts or confluent technical conditions, and the risk-reward ratios are not favorable.",
+      "idea_count": 0,
+      "recordedAt": "2026-08-17T08:37:25.129Z"
     }
   ],
   "scorecard": {
@@ -1468,40 +1476,21 @@
         "resolvedAt": "2026-08-07T22:07:18.260Z"
       }
     ],
-    "asOf": "2026-08-14T21:51:31.140Z"
+    "asOf": "2026-08-17T08:37:25.147Z"
   },
   "today": {
-    "date": "2026-08-14",
-    "market_context": "Today's market conditions show a mix of gains and losses across various sectors, with some stocks experiencing significant price movements. The overall sentiment appears to be cautiously optimistic, with some stocks rebounding from previous losses. However, the high volatility in certain stocks, such as TSLA and AZN.L, warrants caution.",
-    "no_trade_reason": null,
-    "ideas": [
-      {
-        "id": "2026-08-14-NVDA-long",
-        "date": "2026-08-14",
-        "status": "pending",
-        "ticker": "NVDA",
-        "side": "long",
-        "entry": 224.5,
-        "stop": 219,
-        "target": 233,
-        "confidence": 0.55,
-        "catalyst": "Recent surge in tech stocks",
-        "thesis": "If NVDA breaks out above its recent resistance level, it may continue its upward momentum, driven by the overall positive sentiment in the tech sector. The stock's strong volume and relative strength index support this thesis.",
-        "invalidation": "A close below $219 would invalidate this thesis, indicating a potential reversal in the stock's trend.",
-        "rr": 1.55,
-        "shares": 18,
-        "riskAmount": 100,
-        "recordedAt": "2026-08-14T09:03:43.694Z"
-      }
-    ],
+    "date": "2026-08-17",
+    "market_context": "Today's market conditions are mixed, with some US tech stocks like NVDA and MSFT showing significant gains, while others like TSLA are experiencing large losses. The UK market is seeing some gains in energy stocks like BP.L and SHEL.L, while Indian stocks like TCS.NS and INFY.NS are also rising.",
+    "no_trade_reason": "Most setups lack clear catalysts or confluent technical conditions, and the risk-reward ratios are not favorable.",
+    "ideas": [],
     "provider": "groq",
-    "scannedAt": "2026-08-14T09:03:43.712Z"
+    "scannedAt": "2026-08-17T08:37:25.147Z"
   },
   "meta": {
     "created": "2026-01-01T00:00:00.000Z",
     "version": 1,
-    "disclaimer": "NOT financial advice. Delayed/unofficial data. Paper trading only.",
-    "lastScan": "2026-08-14T09:03:43.712Z",
+    "disclaimer": "NOT financial advice. Delayed/unofficial data. Confirm in your broker. Paper trading only.",
+    "lastScan": "2026-08-17T08:37:25.147Z",
     "lastScore": "2026-08-14T21:51:31.140Z"
   }
 }
